@@ -8,8 +8,7 @@ ProjectName: SmartItCording
 
 URL: smartitcording.com
 
-개발환경-
-        Programming Language - Java 1.8
+개발환경-Programming Language - Java 1.8
         IDE - STS(Spring Tool Suite)
         DB - MySQL 5.x 
         Framework - MyBatis, Spring 4
