@@ -45,3 +45,17 @@ ps.git bash 를 사용한 동기화 vi 편집기를 통한read.me 수정
 
 
 
+Next Plan..
+
+AOP,Transaction - 댓글보완
+
+File Down&Upload
+
+Login , Member
+
+UI
+
+다중게시판
+
+좋아요 등 기타기능.
+
