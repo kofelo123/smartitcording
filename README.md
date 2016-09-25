@@ -1,6 +1,6 @@
 # smartitcording
 
-16.9.25 깃허브 저장소 생성.
+16.9.25 깃허브 저장소 생성
 
 Team:AtoZ 
 
