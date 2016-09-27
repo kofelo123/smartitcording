@@ -47,7 +47,7 @@
 					</select> <input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
 					<button id='searchBtn'>Search</button>
-					
+					<button id='newBtn'>New Board</button>
 
 				</div>
 			</div>
@@ -73,7 +73,8 @@
 								<td>${boardVO.bno}</td>
 								<td><a
 									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}'>
-										${boardVO.title} </a></td>
+										${boardVO.title} <strong>[ ${boardVO.replycnt} ]</strong>
+								</a></td>
 								<td>${boardVO.writer}</td>
 								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
 										value="${boardVO.regdate}" /></td>
@@ -86,13 +87,10 @@
 				</div>
 				<!-- /.box-body -->
 
-			
+
 				<div class="box-footer">
-				<!--  버튼 -->
-					<button id='newBtn'>새 글 쓰기</button>
+
 					<div class="text-center">
-					
-				
 						<ul class="pagination">
 
 							<c:if test="${pageMaker.prev}">

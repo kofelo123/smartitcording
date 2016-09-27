@@ -16,7 +16,7 @@ public interface ReplyService {
   public void removeReply(Integer rno) throws Exception;
 
   public List<ReplyVO> listReplyPage(Integer bno, Criteria cri) 
-	      throws Exception;
+      throws Exception;
 
-	  public int count(Integer bno) throws Exception;
+  public int count(Integer bno) throws Exception;
 }

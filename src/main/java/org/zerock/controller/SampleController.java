@@ -14,71 +14,71 @@ import org.zerock.domain.SampleVO;
 @RestController
 @RequestMapping("/sample")
 public class SampleController {
-	
-	 @RequestMapping("/hello")
-	  public String sayHello() {
-	    return "Hello World ";
-	  }
 
-	 @RequestMapping("/sendVO")
-	  public SampleVO sendVO() {
+  @RequestMapping("/hello")
+  public String sayHello() {
+    return "Hello World ";
+  }
 
-	    SampleVO vo = new SampleVO();
-	    vo.setFirstName("길동");
-	    vo.setLastName("홍");
-	    vo.setMno(123);
+  @RequestMapping("/sendVO")
+  public SampleVO sendVO() {
 
-	    return vo;
-	  }
-	 
-	 @RequestMapping("/sendList")
-	  public List<SampleVO> sendList() {
+    SampleVO vo = new SampleVO();
+    vo.setFirstName("길동");
+    vo.setLastName("홍");
+    vo.setMno(123);
 
-	    List<SampleVO> list = new ArrayList<>();
-	    for (int i = 0; i < 10; i++) {
-	      SampleVO vo = new SampleVO();
-	      vo.setFirstName("길동");
-	      vo.setLastName("홍");
-	      vo.setMno(i);
-	      list.add(vo);
-	    }
-	    return list;
-	  }
-	 
-	 @RequestMapping("/sendMap")
-	  public Map<Integer, SampleVO> sendMap() {
+    return vo;
+  }
 
-	    Map<Integer, SampleVO> map = new HashMap<>();
+  @RequestMapping("/sendList")
+  public List<SampleVO> sendList() {
 
-	    for (int i = 0; i < 10; i++) {
-	      SampleVO vo = new SampleVO();
-	      vo.setFirstName("길동");
-	      vo.setLastName("홍");
-	      vo.setMno(i);
-	      map.put(i, vo);
-	    }
-	    return map;
-	  }
+    List<SampleVO> list = new ArrayList<>();
+    for (int i = 0; i < 10; i++) {
+      SampleVO vo = new SampleVO();
+      vo.setFirstName("길동");
+      vo.setLastName("홍");
+      vo.setMno(i);
+      list.add(vo);
+    }
+    return list;
+  }
 
-	 @RequestMapping("/sendErrorAuth")
-	  public ResponseEntity<Void> sendListAuth() {
+  @RequestMapping("/sendMap")
+  public Map<Integer, SampleVO> sendMap() {
 
-	    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-	  }
+    Map<Integer, SampleVO> map = new HashMap<>();
 
-	 @RequestMapping("/sendErrorNot")
-	  public ResponseEntity<List<SampleVO>> sendListNot() {
+    for (int i = 0; i < 10; i++) {
+      SampleVO vo = new SampleVO();
+      vo.setFirstName("길동");
+      vo.setLastName("홍");
+      vo.setMno(i);
+      map.put(i, vo);
+    }
+    return map;
+  }
 
-	    List<SampleVO> list = new ArrayList<>();
-	    for (int i = 0; i < 10; i++) {
-	      SampleVO vo = new SampleVO();
-	      vo.setFirstName("길동");
-	      vo.setLastName("홍");
-	      vo.setMno(i);
-	      list.add(vo);
-	    }
+  @RequestMapping("/sendErrorAuth")
+  public ResponseEntity<Void> sendListAuth() {
 
-	    return new ResponseEntity<>(list, HttpStatus.NOT_FOUND);
-	  }
-	 
+    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+  }
+
+  @RequestMapping("/sendErrorNot")
+  public ResponseEntity<List<SampleVO>> sendListNot() {
+
+    List<SampleVO> list = new ArrayList<>();
+    for (int i = 0; i < 10; i++) {
+      SampleVO vo = new SampleVO();
+      vo.setFirstName("길동");
+      vo.setLastName("홍");
+      vo.setMno(i);
+      list.add(vo);
+    }
+
+    return new ResponseEntity<>(list, HttpStatus.NOT_FOUND);
+  }
+
 }

@@ -38,7 +38,6 @@ public class ReplyController {
     }
     return entity;
   }
-  
 
   @RequestMapping(value = "/all/{bno}", method = RequestMethod.GET)
   public ResponseEntity<List<ReplyVO>> list(@PathVariable("bno") Integer bno) {
@@ -54,7 +53,7 @@ public class ReplyController {
 
     return entity;
   }
-  
+
   @RequestMapping(value = "/{rno}", method = { RequestMethod.PUT, RequestMethod.PATCH })
   public ResponseEntity<String> update(@PathVariable("rno") Integer rno, @RequestBody ReplyVO vo) {
 
@@ -70,7 +69,6 @@ public class ReplyController {
     }
     return entity;
   }
-  
 
   @RequestMapping(value = "/{rno}", method = RequestMethod.DELETE)
   public ResponseEntity<String> remove(@PathVariable("rno") Integer rno) {
@@ -118,7 +116,5 @@ public class ReplyController {
     }
     return entity;
   }
-
-
 
 }
