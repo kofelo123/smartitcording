@@ -46,9 +46,8 @@
 
 
 
-	<context:component-scan base-package="org.zerock.persistence"></context:component-scan>
-	<context:component-scan base-package="org.zerock.service"></context:component-scan>
-	<context:component-scan base-package="org.zerock.aop"></context:component-scan>
+	<context:component-scan base-package="com.smartitcording.persistence"></context:component-scan>
+	<context:component-scan base-package="com.smartitcording.service"></context:component-scan>
 
 	<aop:config>
 	</aop:config>
