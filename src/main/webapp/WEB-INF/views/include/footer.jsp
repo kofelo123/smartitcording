@@ -2,9 +2,9 @@
     pageEncoding="UTF-8"%>
       <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>Version</b> 2.0
+          <b>Version</b> 10.01	
         </div>
-        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2016 <a href="https://github.com/kofelo123">HeoJeongWon</a>.</strong> All rights reserved.
       </footer>
       
       <!-- Control Sidebar -->      

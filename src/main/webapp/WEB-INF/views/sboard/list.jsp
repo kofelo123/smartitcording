@@ -47,7 +47,7 @@
 					</select> <input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
 					<button id='searchBtn'>Search</button>
-					<button id='newBtn'>New Board</button>
+					
 
 				</div>
 			</div>
@@ -89,7 +89,8 @@
 
 
 				<div class="box-footer">
-
+				<!--  버튼 -->
+ 				<button id='newBtn'>새 글 쓰기</button>
 					<div class="text-center">
 						<ul class="pagination">
 

@@ -5,12 +5,6 @@
 </head>
 
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-
-<h2>${result}</h2>
-
+	<c:redirect url="/sboard/list"></c:redirect>
 </body>
 </html>
