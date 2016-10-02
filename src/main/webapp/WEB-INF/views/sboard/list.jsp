@@ -46,7 +46,7 @@
 							Title OR Content OR Writer</option>
 					</select> <input type="text" name='keyword' id="keywordInput"
 						value='${cri.keyword }'>
-					<button id='searchBtn'>Search</button>
+					<button id='searchBtn'>검색</button>
 					
 
 				</div>
@@ -60,11 +60,11 @@
 				<div class="box-body">
 					<table class="table table-bordered">
 						<tr>
-							<th style="width: 10px">BNO</th>
-							<th>TITLE</th>
-							<th>WRITER</th>
-							<th>REGDATE</th>
-							<th style="width: 40px">VIEWCNT</th>
+							<th>번호</th>
+							<th>제목</th>
+							<th>작성자</th>
+							<th>등록일</th>
+							<th>조회수</th>
 						</tr>
 
 						<c:forEach items="${list}" var="boardVO">
