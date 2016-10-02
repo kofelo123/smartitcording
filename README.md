@@ -50,11 +50,9 @@ ps.git bash 를 사용한 동기화 vi 편집기를 통한read.me 수정
 
 Next Plan..
 
-AOP,Transaction - 댓글보완
+회원가입 페이지 만들기
 
-File Down&Upload
-
-Login , Member
+메인화면 구상
 
 UI
 
