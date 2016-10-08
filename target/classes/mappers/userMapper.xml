@@ -19,6 +19,25 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	select * from tbl_user where sessionKey = #{value}  and sessionlimit > now()
 	</select>	
 
+	<insert id="join">
+		insert into tbl_user(uid, upw, uname, zip_num,email,address,phone)
+		values(#{uid},#{upw},#{uname},#{zipNum},#{email},#{addr1},#{phone1})
+	
+	</insert>
+	
+	<select id="confirmId" resultType="UserVO">
+		select * from tbl_user where uid= #{uid}	
+	</select>
+	
+	 
+	<select id="findzipnum" resultType="AddressVO">
+		<![CDATA[
+		select * from address where dong like "%"#{dong}"%"
+		 
+		]]>
+	</select><!-- (기본적으로 mybatis의 #{}은 ' ' 처리가된다. 그래서 더큰 범위가 있을때는 ""해야한다.  -->
+
+
 </mapper>
 
 

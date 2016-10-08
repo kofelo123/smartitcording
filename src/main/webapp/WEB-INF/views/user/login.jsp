@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>AdminLTE 2 | Log in</title>
+    <title>로그인</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
         <a href="/resources/index2.html"><b>SmartItCording</b>Team</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
-        <p class="login-box-msg">구현중.. 임시 ID:user PW:user</p>
+        <p class="login-box-msg">Sign in to start your session</p>
 
 <form action="/user/loginPost" method="post">
   <div class="form-group has-feedback">
@@ -43,19 +43,19 @@
     <div class="col-xs-8">    
       <div class="checkbox icheck">
         <label>
-          <input type="checkbox" name="useCookie"> 로그인 상태 유지
+          <input type="checkbox" name="useCookie"> Remember Me
         </label>
       </div>                        
     </div><!-- /.col -->
     <div class="col-xs-4">
-      <button type="submit" class="btn btn-primary btn-block btn-flat">로그인</button>
+      <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
     </div><!-- /.col -->
   </div>
 </form>
 
 
-        <a href="#">비밀번호 찾기</a><br>
-        <a href="register.html" class="text-center">회원가입</a>
+        <a href="#">I forgot my password</a><br>
+        <a href="http://localhost:8181/user/join" class="text-center">Register a new membership</a>
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

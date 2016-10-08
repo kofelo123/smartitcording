@@ -23,33 +23,33 @@
 			<!-- general form elements -->
 			<div class="box box-primary">
 				<div class="box-header">
-					<h3 class="box-title">게시글 작성</h3>
+					<h3 class="box-title">REGISTER BOARD ${login }</h3>
 				</div>
 				<!-- /.box-header -->
 
 <form id='registerForm' role="form" method="post">
 	<div class="box-body">
 		<div class="form-group">
-			<label for="exampleInputEmail1">제목</label> <input type="text"
-				name='title' class="form-control" placeholder="제목을 작성하세요..">
+			<label for="exampleInputEmail1">Title</label> <input type="text"
+				name='title' class="form-control" placeholder="Enter Title">
 		</div>
 		<div class="form-group">
-			<label for="exampleInputPassword1">내용</label>
+			<label for="exampleInputPassword1">Content</label>
 			<textarea class="form-control" name="content" rows="3"
-				placeholder="내용을 입력하세요.."></textarea>
+				placeholder="Enter ..."></textarea>
 		</div>
 		
 		
 		
 		
 		<div class="form-group">
-			<label for="exampleInputEmail1">작성자</label> 
+			<label for="exampleInputEmail1">Writer</label> 
 			<input type="text" name="writer" 
 			  class="form-control"  value="${login.uid }" readonly>
 		</div>
 
 		<div class="form-group">
-			<label for="exampleInputEmail1">업로드 파일을 아래에 드래그&드롭 해주세요.</label>
+			<label for="exampleInputEmail1">File DROP Here</label>
 			<div class="fileDrop"></div>
 		</div>
 	</div>
@@ -64,7 +64,7 @@
 		<ul class="mailbox-attachments clearfix uploadedList">
 		</ul>
 
-		<button type="submit" class="btn btn-primary">등록</button>
+		<button type="submit" class="btn btn-primary">Submit</button>
 
 	</div>
 </form>

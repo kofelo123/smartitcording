@@ -2,12 +2,15 @@ package com.smartitcording.persistence;
 
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+
+import com.smartitcording.domain.AddressVO;
 import com.smartitcording.domain.UserVO;
 import com.smartitcording.dto.LoginDTO;
 
@@ -41,5 +44,25 @@ public class UserDAOImpl implements UserDAO {
   public UserVO checkUserWithSessionKey(String value) {
 
     return session.selectOne(namespace +".checkUserWithSessionKey", value);
-  }	
+  }
+
+  @Override
+  public void joinPost(UserVO user) {
+	// TODO Auto-generated method stub
+	
+	session.insert(namespace + ".join", user);
+	
+  }
+
+@Override
+public UserVO confirmId(UserVO uid) {
+	// TODO Auto-generated method stub
+	return session.selectOne(namespace +".confirmId", uid);
+	}
+
+@Override
+public List<AddressVO> findzipnum(AddressVO address) {
+	// TODO Auto-generated method stub
+	return session.selectList(namespace +".findzipnum", address);
+}
 }
