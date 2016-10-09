@@ -23,7 +23,7 @@
         <input type="hidden"    name="reid">
         <input type="button"    value="중복 체크"  class="dup" onclick="idcheck()"><br>
         <label>비밀번호</label> 
-        <input type="password"  name="upw" style="margin-left:40px">&nbsp;평상시에 본인이 자주쓰는 것은 사용x 권장(DB에 보임)<br>
+        <input type="password"  name="upw" style="margin-left:45px">&nbsp;평상시에 본인이 자주쓰는 것은 사용x 권장(DB에 보임)<br>
         <label>비밀번호 확인</label> 
         <input type="password"  name="upwCheck"><br>
         <label>이름</label>
@@ -47,10 +47,10 @@
       <fieldset>
         <legend>추가정보</legend><br>
         <label>우편번호</label> 
-        <input type="text"       name="zipNum"   size="10" >      
+        <input type="text"       name="zipNum"   size="10" placeholder="눌러주세요 -->">      
         <input type="button"     value="우편 번호" class="dup" onclick="post_zip()"><br>
         <label>주소</label> 
-        <input type="text"        name="addr1"   size="30" style="margin-left:35px"><br>
+        <input type="text"        name="addr1"   size="30" style="margin-left:40px"><br>
         <label>상세주소</label>
         <input type="text"        name="addr2"   size="40"  > <br>
         <label>휴대전화</label> 
