@@ -77,7 +77,7 @@ Last Plan..
 //////////////////////////
 Next Plan..
 
-
+AWS cloud
 
 메인화면 구상
 
