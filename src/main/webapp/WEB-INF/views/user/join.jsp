@@ -23,7 +23,7 @@
         <input type="hidden"    name="reid">
         <input type="button"    value="중복 체크"  class="dup" onclick="idcheck()"><br>
         <label>비밀번호</label> 
-        <input type="password"  name="upw" style="margin-left:45px">&nbsp;평상시에 본인이 자주쓰는 것은 사용x 권장(DB에 보임)<br>
+        <input type="password"  name="upw" style="margin-left:45px"><br>
         <label>비밀번호 확인</label> 
         <input type="password"  name="upwCheck"><br>
         <label>이름</label>

@@ -28,34 +28,34 @@
         <a href="/resources/index2.html"><b>SmartItCording</b>Team</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session</p>
+        <p class="login-box-msg"></p>
 
 <form action="/user/loginPost" method="post">
   <div class="form-group has-feedback">
-    <input type="text" name="uid" class="form-control" placeholder="USER ID"/>
+    <input type="text" name="uid" class="form-control" placeholder="아이디입력"/>
     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
   </div>
   <div class="form-group has-feedback">
-    <input type="password" name="upw" class="form-control" placeholder="Password"/>
+    <input type="password" name="upw" class="form-control" placeholder="패스워드입력"/>
     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
   </div>
   <div class="row">
     <div class="col-xs-8">    
       <div class="checkbox icheck">
         <label>
-          <input type="checkbox" name="useCookie"> Remember Me
+          <input type="checkbox" name="useCookie"> 로그인 상태 유지
         </label>
       </div>                        
     </div><!-- /.col -->
     <div class="col-xs-4">
-      <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+      <button type="submit" class="btn btn-primary btn-block btn-flat">로그인</button>
     </div><!-- /.col -->
   </div>
 </form>
 
 
-        <a href="#">I forgot my password</a><br>
-        <a href="http://localhost:8181/user/join" class="text-center">Register a new membership</a>
+        <a href="#">비밀번호 찾기(구현예정)</a><br>
+        <a href="http://localhost:8181/user/join" class="text-center">회원가입</a>
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

@@ -2,7 +2,7 @@ function go_save() {
   if (document.formm.uid.value == "") {
     alert("아이디를 입력하여 주세요.");
     document.formm.uid.focus();
-  }/* else if (document.formm.uid.value != document.formm.reid.value) {
+  } else if (document.formm.uid.value != document.formm.reid.value) {
     alert("중복확인을 클릭하여 주세요.");
     document.formm.uid.focus();
   } else if (document.formm.upw.value == "") {
@@ -17,7 +17,7 @@ function go_save() {
   } else if (document.formm.email.value == "") {
     alert("이메일을 입력해 주세요.");
     document.formm.email.focus();
-  }*/ else {
+  } else {
     document.formm.action = "/user/joinPost";
     document.formm.submit();
   }
