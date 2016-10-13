@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -8,9 +10,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <script type="text/javascript">
+	<c:if test="${userVO == null }"> <!-- model의 userVO여부로 로그인 성공 실패   -->
+		<script type="text/javascript">
+		alert('아이디혹은 비밀번호가 일치하지 않습니다.');
+		self.location="/user/login";
+		</script>
+	</c:if>
+	<c:if test="${userVO != null }">
+		<c:redirect url="sboard/list"></c:redirect>
+	</c:if>
+  <!-- <script type="text/javascript">
+  var user = "${userVO.uid}";
+  	if(user==null){
+  		self.location="/user/login";
+  	}else{
     self.location = "/sboard/list";
-  </script>
+  	} -->
+  
 </body>
 </html>
 

@@ -45,9 +45,9 @@ public class UserController {
 
     UserVO vo = service.login(dto);
 
-    if (vo == null) {
+    /*if (vo == null) {
       return;
-    }
+    }*/
 
     model.addAttribute("userVO", vo);
 

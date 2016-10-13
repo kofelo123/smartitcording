@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-   
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>   
 <!DOCTYPE html>
 <html>
   <head>
@@ -290,7 +290,35 @@
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
           <!-- Sidebar user panel -->
-          <div class="user-panel">
+          
+          <!-- 현재작업  -->
+          
+          <c:if test="${not empty login }">
+             <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
+            <div class="pull-left image">
+              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p>&nbsp;&nbsp;${login.uname }</p>
+
+              <a href="/user/logout"><i class="fa fa-circle text-success"></i> 로그인상태</a>
+            </div>
+          </div>
+          </c:if>
+          
+          <c:if test="${empty login }">
+             <div class="user-panel">
+            <div class="pull-left image">
+              <img src="/resources/dist/img/notlogin.png" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p>로그인 해주세요</p>
+
+              <a href="/user/login"><i class="fa fa-circle text-fail"></i> 비로그인상태</a>
+            </div>
+          </div>
+          </c:if>
+      <!--     <div class="user-panel">
             <div class="pull-left image">
               <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
@@ -299,9 +327,13 @@
 
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
-          </div>
+          </div> -->
+          
+          
+          
+          
           <!-- search form -->
-          <form action="#" method="get" class="sidebar-form">
+          <form action="http://www.google.com/search" method="get" class="sidebar-form">
             <div class="input-group">
               <input type="text" name="q" class="form-control" placeholder="Search..."/>
               <span class="input-group-btn">
