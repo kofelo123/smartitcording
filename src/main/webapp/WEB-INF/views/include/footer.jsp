@@ -176,13 +176,13 @@
     </div><!-- ./wrapper -->
 
 
-    <!-- Bootstrap 3.3.2 JS -->
-    <script src="/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- FastClick -->
+     <!-- Bootstrap 3.3.2 JS -->
+   <!--  <script src="/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    FastClick -->
     <script src='/resources/plugins/fastclick/fastclick.min.js'></script>
-    <!-- AdminLTE App -->
+    AdminLTE App
     <script src="/resources/dist/js/app.min.js" type="text/javascript"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="/resources/dist/js/demo.js" type="text/javascript"></script>
+    AdminLTE for demo purposes
+    <script src="/resources/dist/js/demo.js" type="text/javascript"></script> 
   </body>
 </html>

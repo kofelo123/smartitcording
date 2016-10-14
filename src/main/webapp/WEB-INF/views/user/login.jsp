@@ -25,7 +25,7 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="/resources/index2.html"><b>SmartItCording</b>Team</a>
+        <a href="/sboard/list"><b>SmartItCording</b>Team</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg"></p>

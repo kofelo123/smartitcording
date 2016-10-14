@@ -33,11 +33,22 @@
 			<label for="exampleInputEmail1">Title</label> <input type="text"
 				name='title' class="form-control" placeholder="Enter Title">
 		</div>
-		<div class="form-group">
+		<!-- <div class="form-group">
 			<label for="exampleInputPassword1">Content</label>
 			<textarea class="form-control" name="content" rows="3"
 				placeholder="Enter ..."></textarea>
-		</div>
+		</div> -->
+		
+		<textarea div id="summernote" name="content"  placeholder="내용을 입력하세요"></textarea></div>
+  <script>
+  $('#summernote').summernote({
+	  height: 300,                 // set editor height
+	  minHeight: null,             // set minimum height of editor
+	  maxHeight: null,             // set maximum height of editor
+	  focus: true                  // set focus to editable area after initializing summernote
+	});
+  </script>
+		s
 		
 		
 		
@@ -164,3 +175,5 @@ $("#registerForm").submit(function(event){
  
 
 <%@include file="../include/footer.jsp"%>
+ 
+ 
