@@ -42,7 +42,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="http://localhost:8181/sboard/list" class="logo">
+        <a href="/sboard/list" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->

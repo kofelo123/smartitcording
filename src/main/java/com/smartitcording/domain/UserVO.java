@@ -8,8 +8,9 @@ public class UserVO {
 	private String upw;
 	private String uname;
 	private int upoint;	
-	private String email;
+	private String email;// 아이디@메일주소 하는과정에서 email과 email2로 나뉘지만 email의 getter에 email+email2가 되어 병합되어 저장된다.
 	private String email2;
+	private String email3;// 위의 나뉘어지는 상황떄문에 id/pw 찾기 과정에서 이메일 전체값이 필요해서 그냥 만들어서 전달용.. db는 없다.
 	private String zipNum;
 	private String addr1;
 	private String addr2;
@@ -17,6 +18,7 @@ public class UserVO {
 	private String phone2;
 	private String phone3;	
 	private Timestamp indate;
+	private String encrypthash; // 해쉬코드값 저장용
 
 	public String getUid() {
 		return uid;
@@ -130,5 +132,21 @@ public class UserVO {
 	@Override
 	public String toString() {
 		return "UserVO [uid=" + uid + ", upw=" + upw + ", uname=" + uname + ", upoint=" + upoint + "]";
+	}
+
+	public String getEmail3() {
+		return email3;
+	}
+
+	public void setEmail3(String email3) {
+		this.email3 = email3;
+	}
+
+	public String getEncrypthash() {
+		return encrypthash;
+	}
+
+	public void setEncrypthash(String encrypthash) {
+		this.encrypthash = encrypthash;
 	}
 }

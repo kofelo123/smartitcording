@@ -65,4 +65,21 @@ public List<AddressVO> findzipnum(AddressVO address) {
 	// TODO Auto-generated method stub
 	return session.selectList(namespace +".findzipnum", address);
 }
+
+@Override
+public UserVO idfindofmail(UserVO user) {
+	// TODO Auto-generated method stub
+	return session.selectOne(namespace +".idfindofmail",user);
+}
+
+@Override
+public void encrypthash(String pwUriEnc,String userid) { // keeplogin참조 -> 여기서 여러 파라미터 지원x-> map으로 넣어준다.
+	// TODO Auto-generated method stub
+	 Map<String, Object> paramMap = new HashMap<String, Object>();
+	    paramMap.put("pwUriEnc", pwUriEnc);
+	    paramMap.put("userid", userid);
+	    
+	
+	session.update(namespace +".encrypthash",paramMap);
+}
 }

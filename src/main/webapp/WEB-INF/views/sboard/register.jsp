@@ -45,10 +45,13 @@
 	  height: 300,                 // set editor height
 	  minHeight: null,             // set minimum height of editor
 	  maxHeight: null,             // set maximum height of editor
-	  focus: true                  // set focus to editable area after initializing summernote
+	  focus: true,                  // set focus to editable area after initializing summernote
+	  placeholder: '내용을 입력해 주세요'
 	});
+ 
+ 
   </script>
-		s
+		
 		
 		
 		
@@ -75,7 +78,7 @@
 		<ul class="mailbox-attachments clearfix uploadedList">
 		</ul>
 
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<button type="submit" class="btn btn-primary" onclick="isEmpty()">Submit</button>
 
 	</div>
 </form>

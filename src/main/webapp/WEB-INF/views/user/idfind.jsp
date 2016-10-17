@@ -31,32 +31,30 @@
       <div class="login-box-body">
         <p class="login-box-msg"></p>
 
-<form action="/user/loginPost" method="post">
+<form action="/user/idfindmail" method="get">
+<div id='expression' style="padding-bottom:20px">
+<b>회원 가입시 입력하신 이메일 주소를 입력하시면,<br></b>
+<b>아이디 및 비밀번호 변경 링크를 보내드립니다.<br></b>
+</div>
   <div class="form-group has-feedback">
-    <input type="text" name="uid" class="form-control" placeholder="아이디입력"/>
+    <input type="text" name="email3" class="form-control" placeholder="이메일을 입력해주세요"/>
     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
   </div>
-  <div class="form-group has-feedback">
-    <input type="password" name="upw" class="form-control" placeholder="패스워드입력"/>
+ <!--  <div class="form-group has-feedback">
+    <input type="password" name="upw" class="form-control" placeholder=""/>
     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-  </div>
-  <div class="row">
-    <div class="col-xs-8">    
-      <div class="checkbox icheck">
-        <label>
-          <input type="checkbox" name="useCookie"> 로그인 상태 유지
-        </label>
-      </div>                        
-    </div><!-- /.col -->
-    <div class="col-xs-4" style="float:right">
-      <button type="submit" class="btn btn-primary btn-block btn-flat" >로그인</button>
-    </div><!-- /.col -->
+  </div> -->
+  <div class="row" style="padding-bottom:10px">
+    
+    <center><div class="col-xs-4">
+      <button type="submit" class="btn btn-primary btn-block btn-flat">메일발송</button>
+      
+    </div><!-- /.col --></center>
   </div>
 </form>
 
-           
-        <a href="/user/idfind">아이디-비밀번호 찾기</a><br>
-        <a href="/user/join" class="text-center">회원가입</a>
+
+        
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

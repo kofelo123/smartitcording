@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class mailSend {
 
 	//메일발송 테스트
-		@RequestMapping("/navermailtest")
+	/*	@RequestMapping("/navermailtest") 현재 사용 x*/
 		public void navermailtest(HttpServletRequest request, ModelMap mo) throws Exception{
 			
 			// 메일 관련 정보

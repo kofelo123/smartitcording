@@ -22,6 +22,10 @@ public interface UserDAO {
 	  public UserVO confirmId(UserVO uid);
 
 	  public List<AddressVO> findzipnum(AddressVO address);
+	  
+	  public UserVO idfindofmail(UserVO user);
+	  
+	  public void encrypthash(String pwUriEnc,String userid);
 }
 
 

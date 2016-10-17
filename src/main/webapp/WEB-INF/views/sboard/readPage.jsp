@@ -65,17 +65,21 @@
   <script>
   $(document).ready(function(){
 	  $('#summernote').summernote({
-		  height: 450,                 
+		  height: 'auto',                 
 		  minHeight: null,             
 		  maxHeight: null,             
-		  focus: false,                
+		  focus: false,
+		  
 		  toolbar: [
 		 		   
-		  		  ]
+		  		  ],
+		  
 			
 		});
-	 	 
+	  $('#summernote').summernote('foreColor', 'white');	 
 	  $('#summernote').summernote('disable');
+	  
+	 
 	
   });
   

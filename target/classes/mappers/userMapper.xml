@@ -37,7 +37,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		]]>
 	</select><!-- (기본적으로 mybatis의 #{}은 ' ' 처리가된다. 그래서 더큰 범위가 있을때는 ""해야한다.  -->
 
+	<select id="idfindofmail" resultType="UserVO">
+		select uid,uname from tbl_user where email= #{email3}
+	</select>
+	
+	<update id="encrypthash">
+		update tbl_user set encrypthash = #{pwUriEnc} where uid = #{userid}
+	</update>
 
 </mapper>
 
-
+<!--   <update id="keepLogin" >
+  update tbl_user set sessionKey = #{sessionId}, sessionLimit = #{next} where uid = #{uid}
+  </update>  -->

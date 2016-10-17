@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -140,6 +141,34 @@ public class UserController {
 	  model.addAttribute("addressList",service.findzipnum(address));
   }
   
+  @RequestMapping(value = "/idfind", method = RequestMethod.GET)
+  public void idfind() {
+
+  }
+  
+  @RequestMapping(value="/idfindmail", method = RequestMethod.GET)
+	public void idfindmail(UserVO user,HttpServletRequest request, ModelMap mo) throws Exception{
+  
+	  service.idfindmail(request,mo,user);
+  }
+  
+  
+ @RequestMapping(value="/mailhashcheck", method = RequestMethod.GET)
+  public void mailhashcheck(UserVO user){
+	  System.out.println("콘솔테스트");
+	  System.out.println(user.getEncrypthash());
+	  System.out.println(user.getUid());
+	  
+	/*  service.hashbyid(User);*/
+	  //로직을 어떻게 할지..
+	  //1.해쉬코드 검사하는 로직(아이디로 찾아야 될지 동적 sql을 써야할지?) 2.view에 전달 해쉬코드 일치하면 비밀번호 변경폼, 일치x시에 실패 메세지
+	  //3.비밀번호 변경하는 로직->(update) 4.처리결과 처리 (간단하게 alert해도 될듯) -> 메인페이지로 redirect
+	  
+	  
+	  
+	  
+	  
+  }
 
 }
 
