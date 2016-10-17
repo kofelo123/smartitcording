@@ -132,9 +132,15 @@ public void idfindmail(HttpServletRequest request, ModelMap mo,UserVO user) thro
 }
 
 @Override
-public void hashbyid(UserVO user) throws Exception {
+public UserVO hashbyid(UserVO user) throws Exception {
 	// TODO Auto-generated method stub
-	
+	return dao.hashbyid(user);
+}
+
+@Override
+public void modifypw(UserVO user) throws Exception {
+	// TODO Auto-generated method stub
+	dao.modifypw(user);
 }
 
 

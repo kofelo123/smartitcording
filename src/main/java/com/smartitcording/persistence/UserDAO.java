@@ -23,9 +23,14 @@ public interface UserDAO {
 
 	  public List<AddressVO> findzipnum(AddressVO address);
 	  
+	  // 아아디 비밀번호 찾기 로직관련
 	  public UserVO idfindofmail(UserVO user);
 	  
 	  public void encrypthash(String pwUriEnc,String userid);
+	  
+	  public UserVO hashbyid(UserVO user);
+	  
+	  public void modifypw(UserVO user);
 }
 
 

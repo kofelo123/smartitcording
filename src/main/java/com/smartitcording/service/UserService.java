@@ -27,5 +27,7 @@ public interface UserService {
   
   public void idfindmail(HttpServletRequest request, ModelMap mo,UserVO user)throws Exception;
   
-  public void hashbyid(UserVO user)throws Exception;
+  public UserVO hashbyid(UserVO user)throws Exception;
+  
+  public void modifypw(UserVO user)throws Exception;
 }

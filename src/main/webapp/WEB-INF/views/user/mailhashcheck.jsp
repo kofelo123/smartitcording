@@ -32,21 +32,38 @@
         <p class="login-box-msg"></p>
 
 
+<form action="/user/modifypw" method="POST" name="formm">
 <div id='expression' style="padding-bottom:20px">
-비밀번호 변경페이지(최종)
+<b>${user.uid }님 변경하실 비밀번호를 입력해 주세요.<br></b>
+<input type="hidden" name="uid" value="${user.uid }">
 </div>
-
+  <div class="form-group has-feedback">
+    <input type="password" name="upw" class="form-control" placeholder="비밀번호"/>
+    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+  </div>
+  <div class="form-group has-feedback">
+    <input type="password" name="upwcheck" class="form-control" placeholder="비밀번호 확인"/>
+    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+  </div>
+  
  <!--  <div class="form-group has-feedback">
     <input type="password" name="upw" class="form-control" placeholder=""/>
     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
   </div> -->
   <div class="row" style="padding-bottom:10px">
-   
-   <center><div class="col-xs-4" >
-      <button class="btn btn-primary btn-block btn-flat"><a href="/user/login">로그인</a></button>
+    
+    <center><div class="col-xs-5">
+      <input type="button" class="btn btn-primary btn-block btn-flat" onclick="go_save()" value="비밀번호 변경"></button>
       
-    </div><!-- /.col -->
-  </div></center> 
+      
+    </div><!-- /.col --></center>
+  </div>
+</form>
+ <!--  <div class="form-group has-feedback">
+    <input type="password" name="upw" class="form-control" placeholder=""/>
+    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+  </div> -->
+  
 </form>
 
 
@@ -70,7 +87,20 @@
         });
       });
     </script>
-    
+    <script>
+    function go_save() {
+ if (document.formm.upw.value == "") {
+    alert("비밀번호를 입력해 주세요.");
+    document.formm.upw.focus();
+  } else if ((document.formm.upw.value != document.formm.upwcheck.value)) {
+    alert("비밀번호가 일치하지 않습니다.");
+    document.formm.upw.focus();
+  } else{
+	  document.formm.action = "/user/modifypw";
+	  document.formm.submit();
+  }
+}
+    </script>
     
 				
   </body>

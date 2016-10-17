@@ -82,4 +82,16 @@ public void encrypthash(String pwUriEnc,String userid) { // keeplogin참조 -> �
 	
 	session.update(namespace +".encrypthash",paramMap);
 }
+
+@Override
+public UserVO hashbyid(UserVO user) {
+	// TODO Auto-generated method stub
+	return session.selectOne(namespace +".hashbyid",user);
+	}
+
+@Override
+public void modifypw(UserVO user) {
+	// TODO Auto-generated method stub
+	session.update(namespace +".modifypw",user);
+}
 }

@@ -154,12 +154,15 @@ public class UserController {
   
   
  @RequestMapping(value="/mailhashcheck", method = RequestMethod.GET)
-  public void mailhashcheck(UserVO user){
+  public void mailhashcheck(UserVO user,Model model) throws Exception{
 	  System.out.println("콘솔테스트");
 	  System.out.println(user.getEncrypthash());
 	  System.out.println(user.getUid());
 	  
-	/*  service.hashbyid(User);*/
+	  UserVO user2 =service.hashbyid(user);
+	  if(user2.getUid()!=null)
+		  model.addAttribute("user", user2);
+	  
 	  //로직을 어떻게 할지..
 	  //1.해쉬코드 검사하는 로직(아이디로 찾아야 될지 동적 sql을 써야할지?) 2.view에 전달 해쉬코드 일치하면 비밀번호 변경폼, 일치x시에 실패 메세지
 	  //3.비밀번호 변경하는 로직->(update) 4.처리결과 처리 (간단하게 alert해도 될듯) -> 메인페이지로 redirect
@@ -169,6 +172,18 @@ public class UserController {
 	  
 	  
   }
+  @RequestMapping(value="/modifypw" ,method=RequestMethod.POST)
+ public String modifypw(UserVO user)throws Exception{
+	  System.out.println("콘솔파라미터테스트");
+	  System.out.println(user.getUid());//input type=hidden으로 가져옴
+	  System.out.println(user.getUpw());
+	  
+	  service.modifypw(user);
+	  
+	  
+	  return "redirect:/user/login";	/* */
+	 
+ }
 
 }
 
