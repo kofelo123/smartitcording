@@ -30,10 +30,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="http://11st.com/xmlrpc.php" />
 	<link rel='stylesheet' id='_custom_fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&#038;subset=devanagari&#038;ver=4.6.1' type='text/css' media='all' />
-<!-- <link rel='stylesheet' id='_iconstyle-css'  href='http://11st.com/wp-content/plugins/maintenance/load/images/fonts-icon/icons.style.css?ver=4.6.1' type='text/css' media='all' /> -->
-<link href="/resources/bootstrap/css/11st.css" rel="stylesheet" type="text/css" media='all' />
-<!-- <link rel='stylesheet' id='_style-css'  href='http://11st.com/wp-content/plugins/maintenance/load/style.css?ver=4.6.1' type='text/css' media='all' /> -->
-<link href="/resources/bootstrap/css/11st2.css" rel="stylesheet" type="text/css" media='all' />
+<link rel='stylesheet' id='_iconstyle-css'  href='http://11st.com/wp-content/plugins/maintenance/load/images/fonts-icon/icons.style.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='_style-css'  href='http://11st.com/wp-content/plugins/maintenance/load/style.css?ver=4.6.1' type='text/css' media='all' />
 <style id='_style-inline-css' type='text/css'>
 body {background-color: #111111}.preloader {background-color: #111111}body {font-family: Open Sans; }.site-title, .preloader i, .login-form, .login-form a.lost-pass, .btn-open-login-form, .site-content, .user-content-wrapper, .user-content, footer, .maintenance a {color: #ffffff;} .ie7 .login-form input[type="text"], .ie7 .login-form input[type="password"], .ie7 .login-form input[type="submit"]  {color: #ffffff} a.close-user-content, #mailchimp-box form input[type="submit"], .login-form input#submit.button  {border-color:#ffffff} .ie7 .company-name {color: #ffffff} 
 </style>
@@ -68,14 +66,14 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
   <body class="login-page">
   	<div class="main-container">
 		<div class="preloader"><i></i></div>		<div id="wrapper">
-	
+
     <div class="login-box">
       <div class="login-logo">
         <a href="/sboard/list"><b>SmartItCording</b>Team</a>
-      </div><!-- /.login-logo -->
+      </div>
       <div class="login-box-body">
         <p class="login-box-msg"></p>
-
+ 
 <form action="/user/loginPost" method="post">
   <div class="form-group has-feedback">
     <input type="text" name="uid" class="form-control" placeholder="아이디입력"/>
@@ -92,10 +90,10 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
           <input type="checkbox" name="useCookie"> 로그인 상태 유지
         </label>
       </div>                        
-    </div><!-- /.col -->
+    </div>/.col
     <div class="col-xs-4" style="float:right">
       <button type="submit" class="btn btn-primary btn-block btn-flat" >로그인</button>
-    </div><!-- /.col -->
+    </div>/.col
   </div>
 </form>
 
@@ -103,18 +101,27 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
         <a href="/user/idfind">아이디-비밀번호 찾기</a><br>
         <a href="/user/join" class="text-center">회원가입</a>
 
-      </div><!-- /.login-box-body -->
-    </div><!-- /.login-box -->
+      </div>/.login-box-body
+    </div>/.login-box
 
-  
+    jQuery 2.1.4
+    
     </div>
-  
-		</div> <!-- end wrapper -->		
+    <div class="center logotype">
+							
+			</div>
 		
-    </div>
+			
+		
+		</div> end wrapper		
+		<!-- <footer role="contentinfo">
+			<div class="center">
+				© 11st.com 2016			</div>
+		</footer> -->
+    </div>  
 	<!--  로그인폼  -->	
 		<div class="login-form-container">
-			<form name="login-form" id="login-form" class="login-form" method="get" action="/admin/userlist"><label for="">관리자 로그인</label><span class="licon user-icon"><input type="text" name="log" id="log" value="" size="20"  class="input username" placeholder="관리자아이디"/></span><span class="picon pass-icon"><input type="password" name="pwd" id="login_password" value="" size="20"  class="input password" placeholder="관리자비밀번호" /></span><a class="lost-pass" href="#" >관리자 외 접근금지</a><input type="submit" class="button" name="submit" id="submit" value="로그인" tabindex="4" /><input type="hidden" name="is_custom_login" value="1" /></form>						<div id="btn-open-login-form" class="btn-open-login-form">
+			<form name="login-form" id="login-form" class="login-form" method="post"><label for="">User Login</label><span class="licon user-icon"><input type="text" name="log" id="log" value="" size="20"  class="input username" placeholder="Username"/></span><span class="picon pass-icon"><input type="password" name="pwd" id="login_password" value="" size="20"  class="input password" placeholder="Password" /></span><a class="lost-pass" href="http://11st.com/wp-login.php?action=lostpassword" title="Lost Password">Lost Password</a><input type="submit" class="button" name="submit" id="submit" value="Login" tabindex="4" /><input type="hidden" name="is_custom_login" value="1" /></form>						<div id="btn-open-login-form" class="btn-open-login-form">
 				<i class="foundicon-lock"></i>
 			</div>
 				</div>	

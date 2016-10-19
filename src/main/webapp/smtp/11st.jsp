@@ -6,9 +6,21 @@
 <html class="ie ie8" lang="en-US">
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en-US">
+<html >
 <!--<![endif]-->
 <head>
+
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.4 -->
+    <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- iCheck -->
+    <link href="/resources/plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
+    
+    
 	<meta charset="UTF-8" />
 	<title>Website is under construction</title>	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1, initial-scale=1, minimum-scale=1">
 	<meta name="description" content="Just another WordPress site"/>

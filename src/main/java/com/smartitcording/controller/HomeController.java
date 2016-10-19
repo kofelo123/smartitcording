@@ -25,7 +25,7 @@ public class HomeController {
  @RequestMapping(value = "/", method = RequestMethod.GET)
   public String home(Locale locale, Model model) {
    
-    return "redirect:/sboard/list";
+    return "home";
   }
   
   @RequestMapping(value = "/doA", method = RequestMethod.GET)
