@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="../include/header.jsp"%>
-
+<%@ include file="../include/analytics.jsp"%>	
 
 <style>
 .fileDrop {
@@ -174,7 +174,7 @@ $("#registerForm").submit(function(event){
 
 
 </script>
-
+<%@include file="../include/analytics.jsp" %>
  
 
 <%@include file="../include/footer.jsp"%>

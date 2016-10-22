@@ -21,7 +21,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<insert id="join">
 		insert into tbl_user(uid, upw, uname, zip_num,email,address,phone)
-		values(#{uid},#{upw},#{uname},#{zipNum},#{email},#{addr1},#{phone1})
+		values(#{uid},#{upw},#{uname},#{zipNum},#{email},#{addr1},#{phone})
 	
 	</insert>
 	

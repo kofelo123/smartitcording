@@ -5,5 +5,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="com.smartitcording.mapper.AdminMapper">
 
+	<select id="listuser" resultType="UserVO">
+		select * from tbl_user
+	</select>
  
 </mapper>

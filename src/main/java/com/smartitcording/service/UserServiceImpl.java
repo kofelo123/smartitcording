@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.ModelMap;
 
-import com.smartitcording.controller.mailSend;
 import com.smartitcording.domain.AddressVO;
 import com.smartitcording.domain.UserVO;
 import com.smartitcording.dto.LoginDTO;

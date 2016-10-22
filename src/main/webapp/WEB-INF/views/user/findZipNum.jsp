@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@ include file="../include/analytics.jsp"%>	
 <meta charset="UTF-8">
 <title>우편 번호 검색</title>
 <link href="CSS/subpage.css" rel="stylesheet">

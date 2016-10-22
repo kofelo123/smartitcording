@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="../include/header.jsp"%>
-
+<%@ include file="../include/analytics.jsp"%>	
 
 <style>
 .fileDrop {
@@ -245,5 +245,5 @@ $("#popup_img").on("click", function(){
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
+<%@include file="../include/analytics.jsp" %>
 <%@include file="../include/footer.jsp"%>

@@ -6,11 +6,52 @@
     <meta charset="UTF-8">
     <title>회원가입</title>
   
-  <script type="text/javascript" src="/resources/js/member.js"></script>
-  <link href="/resources/bootstrap/css/jeongwon.css" rel="stylesheet" type="text/css" />
+<!--   <script type="text/javascript" src="/resources/js/member.js"></script>
+  <link href="/resources/bootstrap/css/jeongwon.css" rel="stylesheet" type="text/css" /> -->
+ 
+        
+        <script src="../../../resources/js/jquery-2.1.3.min.js"></script>
+        <script src="../../../resources/js/jquery.backstretch.min.js"></script>
+		<style>			
+			#content {
+				position:relative; 	
+				margin-top:100px;
+				padding:30px 50px;
+			}
+			
+			body {
+				font-family:"맑은 고딕",돋움;
+				color:white;				
+			}
+			h1 {
+				font-size:2.5em;
+				text-shadow:1px 1px 2px black;
+			}
+			p {
+				padding-top:20px;
+				font-size:1.5em;
+				line-height:2em;
+			}
+			strong {
+				color:yellow;
+				text-shadow:1px 1px 1px black;
+			}		
+		</style>
   </head>
-  <div class="joinForm">
+  <%@include file="../include/analytics.jsp" %>
+ 
+  <body>
+     <script>
+			$(function(){
+				$.backstretch([
+					"bg1.jpg", "bg2.jpg", "bg3.jpg"
+				], {duration:3500, fade:750});			
+			});
+		</script>  	
+  <div class="joinForm" >
   
+
+		
   <article>
   <hr>
     <center><h2>회원가입</h2></center>
@@ -54,7 +95,7 @@
         <label>상세주소</label>
         <input type="text"        name="addr2"   size="40"  > <br>
         <label>휴대전화</label> 
-        <select name="phone1">
+        <select name="phone">
    				<option value="010" selected="selected">010</option>
     			<option value="011">011</option>
     			<option value="016" >016</option>
@@ -73,4 +114,6 @@
     </form>
    </article>
   </div>
+  </body>
 </html>
+

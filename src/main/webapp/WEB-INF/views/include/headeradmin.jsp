@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>스마트IT코딩단</title>
+    <title>관리자 페이지</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -46,7 +46,7 @@
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>AtoZ</b> PROJECT</span>
+          <span class="logo-lg"><b>Smart</b> IT</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -73,7 +73,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user7-128x128.jpg" class="img-circle" alt="User Image"/>
+                            <img src="/resources/dist/img/king.jpg" class="img-circle" alt="User Image"/>
                           </div>
                           <h4>
                             Support Team
@@ -85,10 +85,10 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/resources/dist/img/king.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
-                            AdminLTE Design Team
+                            SmartIT코딩 관리자
                             <small><i class="fa fa-clock-o"></i> 2 hours</small>
                           </h4>
                           <p>Why not buy a new awesome theme?</p>
@@ -250,8 +250,8 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="/resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                  <span class="hidden-xs">허정원</span>
+                  <img src="/resources/dist/img/king.jpg" class="user-image" alt="User Image"/>
+                  <span class="hidden-xs">관리자</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -301,31 +301,20 @@
           
           <!-- 현재작업  -->
           
-          <c:if test="${not empty login }">
+         
              <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
             <div class="pull-left image">
-              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/resources/dist/img/king.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>&nbsp;&nbsp;${login.uname }</p>
+              <p>&nbsp;&nbsp;관리자</p>
 
-              <a href="/user/logout"><i class="fa fa-circle text-success"></i> 로그인상태</a>
+              <a href="/user/login"><i class="fa fa-circle text-admin"></i> 관리자모드</a>
             </div>
           </div>
-          </c:if>
           
-          <c:if test="${empty login }">
-             <div class="user-panel">
-            <div class="pull-left image">
-              <img src="/resources/dist/img/notlogin.png" class="img-circle" alt="User Image" />
-            </div>
-            <div class="pull-left info">
-              <p>로그인 해주세요</p>
-
-              <a href="/user/login"><i class="fa fa-circle text-fail"></i> 비로그인상태</a>
-            </div>
-          </div>
-          </c:if>
+          
+         
       <!--     <div class="user-panel">
             <div class="pull-left image">
               <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
@@ -353,133 +342,58 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
+            
+             
             <li class="treeview">
-              <a href="#">
-                <i class="fa fa-dashboard"></i> <span>자유게시판*</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
+              <a href="userlist">
                 <i class="fa fa-files-o"></i>
-                <span>개발질문</span>
+                <span>사용자 목록</span>
                 <span class="label label-primary pull-right">4</span>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 임시 </a></li>
-              </ul>
-            </li>
+                 </li>
             <li>
               <a href="#">
-                <i class="fa fa-th"></i> <span>개발팁공유</span> <small class="label pull-right bg-green">new</small>
+                <i class="fa fa-th"></i> <span>게시판관리</span> <small class="label pull-right bg-green">new</small>
               </a>
             </li>
             <li class="treeview">
-              <a href="#">
+              <a href="chartpage">
                 <i class="fa fa-pie-chart"></i>
-                <span>불편사항</span>
+                <span>통계</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
+             
             </li>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>스터디해요</span>
+                <span>사용자권한</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 개</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 발</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 개</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 발</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 개</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 발</a></li>
-              </ul>
+             
             </li>
             <li class="treeview active">
               <a href="#">
-                <i class="fa fa-edit"></i> <span>취업고민</span>
+                <i class="fa fa-edit"></i> <span>게시판관리</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
+              
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-table"></i> <span>책나눔</span>
+                <i class="fa fa-table"></i> <span>관리자게시판</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
+              
             </li>
             <li>
               <a href="#">
-                <i class="fa fa-calendar"></i> <span>일정</span>
+                <i class="fa fa-calendar"></i> <span>일정관리</span>
                 <small class="label pull-right bg-red">3</small>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa fa-envelope"></i> <span>북마크</span>
-                <small class="label pull-right bg-yellow">12</small>
-              </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-folder"></i> <span>익명게시판</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>                
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-share"></i> <span>임시</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> 임시 <i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> 임시 <i class="fa fa-angle-left pull-right"></i></a>
-                      <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i>임시</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-              </ul>
-            </li>
-            <li><a href="#"><i class="fa fa-book"></i> <span>임시</span></a></li>
+              
             <li class="header">LABELS</li>
             <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-circle-o text-red"></i> <span>깃허브*</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>임시</span></a></li>

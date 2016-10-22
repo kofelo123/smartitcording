@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@ include file="../include/analytics.jsp"%>	
 <meta charset="UTF-8">
 <title>아이디 중복 체크</title>
 <link href="CSS/subpage.css" rel="stylesheet">

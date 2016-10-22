@@ -184,6 +184,15 @@ public class UserController {
 	  return "redirect:/user/login";	/* */
 	 
  }
+  
+  
+  @RequestMapping(value="/back", method = RequestMethod.GET)
+	public void back() throws Exception{
+  
+	
+  }
+  
+  
 
 }
 

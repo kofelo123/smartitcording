@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <%@ include file="../include/analytics.jsp"%>	
     <meta charset="UTF-8">
     <title>로그인</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -118,6 +119,6 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
 				<i class="foundicon-lock"></i>
 			</div>
 				</div>	
-				
+				<%@include file="../include/analytics.jsp" %>
   </body>
 </html>

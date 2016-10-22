@@ -118,6 +118,14 @@ public class SearchBoardController {
     
     return service.getAttach(bno);
   }  
+  
+
+  @RequestMapping(value = "/calendar", method = RequestMethod.GET)
+  public void calendar() throws Exception {
+
+    logger.info("calendar get ...........");
+  }
+  
 
   // @RequestMapping(value = "/list", method = RequestMethod.GET)
   // public void listPage(@ModelAttribute("cri") SearchCriteria cri,

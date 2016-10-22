@@ -1,9 +1,13 @@
 package com.smartitcording.persistence;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+
+import com.smartitcording.domain.UserVO;
 
 @Repository
 public class AdminDAOImpl implements AdminDAO{
@@ -14,9 +18,15 @@ public class AdminDAOImpl implements AdminDAO{
 	private static String namespace = "com.smartitcording.mapper.AdminMapper";
 
 	@Override
-	public void userlist() throws Exception {
+	public List<UserVO> listuser() throws Exception {
 		// TODO Auto-generated method stub
-		session.selectOne(namespace + ".userlist");
+		return session.selectList(namespace + ".listuser");
+	}
+
+	@Override
+	public void adminlogin(UserVO user) throws Exception {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

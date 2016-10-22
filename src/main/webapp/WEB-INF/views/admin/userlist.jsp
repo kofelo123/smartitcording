@@ -5,7 +5,7 @@
 
 
 <%@include file="../include/headeradmin.jsp"%>
-
+<%@ include file="../include/analytics.jsp"%>	
 <!-- Main content -->
 <section class="content">
 	<div class="row">
@@ -16,7 +16,7 @@
 			<!-- general form elements -->
 			<div class='box'>
 				<div class="box-header with-border">
-					<h3 class="box-title">Board List</h3>
+					<h3 class="box-title">사용자 검색</h3>
 				</div>
 
 
@@ -55,30 +55,26 @@
 
 			<div class="box">
 				<div class="box-header with-border">
-					<h3 class="box-title">LIST PAGING</h3>
+					<h3 class="box-title">사용자 목록</h3>
 				</div>
 				<div class="box-body">
 					<table class="table table-bordered">
 						<tr>
-							<th style="width: 10px">BNO</th>
-							<th>TITLE</th>
-							<th>WRITER</th>
-							<th>REGDATE</th>
-							<th style="width: 40px">VIEWCNT</th>
+							<th style="width: 180px">아이디</th>
+							<th style="width: 150px">이름</th>
+							<th>연락처</th>
+							<th>메일</th>
+							<th style="width: 120px">권한</th>
 						</tr>
 
-						<c:forEach items="${list}" var="boardVO">
+						<c:forEach items="${userVO}" var="userlist">
 
 							<tr>
-								<td>${boardVO.bno}</td>
-								<td><a
-									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}'>
-										${boardVO.title} <strong>[ ${boardVO.replycnt} ]</strong>
-								</a></td>
-								<td>${boardVO.writer}</td>
-								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
-										value="${boardVO.regdate}" /></td>
-								<td><span class="badge bg-red">${boardVO.viewcnt }</span></td>
+								<td>${userlist.uid}</td>
+								<td>${userlist.uname}</td>
+								<td>${userlist.phone2}</td>
+								<td>${userlist.email2 }</td>
+								<td>일반사용자</td>
 							</tr>
 
 						</c:forEach>
@@ -89,8 +85,7 @@
 
 
 				<div class="box-footer">
-				<!--  버튼 -->
- 				<button id='newBtn'>새 글 쓰기</button>
+				
 					<div class="text-center">
 						<ul class="pagination">
 

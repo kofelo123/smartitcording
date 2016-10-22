@@ -9,12 +9,16 @@
 
 <style>
 @CHARSET "UTF-8";
-html, body { margin: 0; }
+html, body { margin: 0;
+
+ }
 
 #visual {
-  position: relative;
-  height:838px;
-  
+/**/ /*  */  position: relative;
+  height:109%; 
+/*   position:absolute;
+  width:100%;
+  height:100%; */
   
   text-align: center;
   overflow: hidden;
@@ -171,6 +175,6 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
 				<i class="foundicon-lock"></i>
 			</div>
 				</div>	
-				
+<%@ include file="include/analytics.jsp"%>		
 </body>
 </html>

@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <%@ include file="../include/analytics.jsp"%>	
     <meta charset="UTF-8">
     <title>로그인</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -75,7 +76,7 @@
       });
     </script>
     
-    
+<%@include file="../include/analytics.jsp" %>    
 				
   </body>
 </html>

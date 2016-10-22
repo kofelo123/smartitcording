@@ -1,18 +1,30 @@
 package com.smartitcording.service;
 
+import java.util.List;
+
+import javax.inject.Inject;
+
 import org.springframework.stereotype.Service;
 
+import com.smartitcording.domain.UserVO;
 import com.smartitcording.persistence.AdminDAO;
 
 @Service
 public class AdminServiceImpl implements AdminService {
 	
+	@Inject
 	private AdminDAO dao;
 
 	@Override
-	public void userlist() throws Exception {
+	public List<UserVO> listuser() throws Exception {
 		// TODO Auto-generated method stub
-		dao.userlist();
+		return dao.listuser();
+	}
+
+	@Override
+	public void adminlogin(UserVO user) throws Exception {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

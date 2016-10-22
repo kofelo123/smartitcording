@@ -14,7 +14,7 @@ public class UserVO {
 	private String zipNum;
 	private String addr1;
 	private String addr2;
-	private String phone1;
+	private String phone;
 	private String phone2;
 	private String phone3;	
 	private Timestamp indate;
@@ -61,7 +61,7 @@ public class UserVO {
 	}
 
 	public String getEmail2() {
-		return email2;
+		return email;//email로 수정
 	}
 
 	public void setEmail2(String email2) {
@@ -88,16 +88,16 @@ public class UserVO {
 		this.addr2 = addr2;
 	}
 
-	public String getPhone1() {
-		return phone1+"-"+phone2+"-"+phone3;
+	public String getPhone() {
+		return phone+"-"+phone2+"-"+phone3;
 	}
 
-	public void setPhone1(String phone1) {
-		this.phone1 = phone1;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public String getPhone2() {
-		return phone2;
+		return phone;//phone으로 수정
 	}
 
 	public void setPhone2(String phone2) {

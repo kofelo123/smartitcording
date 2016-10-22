@@ -46,7 +46,7 @@
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>AtoZ</b> PROJECT</span>
+          <span class="logo-lg"><b>Smart</b> <b>IT</b> <b>Project</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -430,7 +430,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">
+              <a href="calendar">
                 <i class="fa fa-calendar"></i> <span>일정</span>
                 <small class="label pull-right bg-red">3</small>
               </a>

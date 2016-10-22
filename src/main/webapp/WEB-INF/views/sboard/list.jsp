@@ -5,7 +5,7 @@
 
 
 <%@include file="../include/header.jsp"%>
-
+<%@ include file="../include/analytics.jsp"%>	
 <!-- Main content -->
 <section class="content">
 	<div class="row">
@@ -160,5 +160,5 @@
 
 			});
 </script>
-
+<%@include file="../include/analytics.jsp" %>
 <%@include file="../include/footer.jsp"%>
