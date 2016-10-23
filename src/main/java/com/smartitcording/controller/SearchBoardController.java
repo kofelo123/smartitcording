@@ -126,6 +126,37 @@ public class SearchBoardController {
     logger.info("calendar get ...........");
   }
   
+  @RequestMapping(value = "/mainview", method = RequestMethod.GET)
+  public void mainview() throws Exception {
+
+    logger.info("mainview get ...........");
+  }
+  
+  @RequestMapping(value = "/mail/listmail", method = RequestMethod.GET)
+  public void listmail() throws Exception {
+
+    logger.info("listmail get ...........");
+  }
+  
+  @RequestMapping(value = "/mail/readmail", method = RequestMethod.GET)
+  public void readmail() throws Exception {
+
+    logger.info("readmail get ...........");
+  }
+  
+  @RequestMapping(value = "/mail/registermail", method = RequestMethod.GET)
+  public void registermail() throws Exception {
+
+    logger.info("registermail get ...........");
+  }
+  
+  @RequestMapping(value = "/chat", method = RequestMethod.GET)
+  public void chat() throws Exception {
+
+    logger.info("chat get ...........");
+  }
+  
+  
 
   // @RequestMapping(value = "/list", method = RequestMethod.GET)
   // public void listPage(@ModelAttribute("cri") SearchCriteria cri,

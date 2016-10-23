@@ -76,7 +76,6 @@
       });
     </script>
     
-<%@include file="../include/analytics.jsp" %>    
 				
   </body>
 </html>

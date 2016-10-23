@@ -83,17 +83,6 @@
 	 
 	
   });
-  
- /*  $(document).ready(function(){
-	  $('#summernote').summernote({
-		  toolbar: [
-		   
-		  ]
-	  
-		}); 
-	
-  }); */
-  
   </script>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Writer</label> <input type="text"
@@ -110,10 +99,10 @@
     <ul class="mailbox-attachments clearfix uploadedList">
     </ul>
  <c:if test="${login.uid == boardVO.writer}">
-    <button type="submit" class="btn btn-warning" id="modifyBtn">Modify</button>
-    <button type="submit" class="btn btn-danger" id="removeBtn">REMOVE</button>
+    <button type="submit" class="btn btn-warning" id="modifyBtn">수정</button>
+    <button type="submit" class="btn btn-danger" id="removeBtn">삭제</button>
  </c:if>
-    <button type="submit" class="btn btn-primary" id="goListBtn">GO LIST </button>
+    <button type="submit" class="btn btn-primary" id="goListBtn">목록</button>
   </div>
 
 			</div>
@@ -121,7 +110,7 @@
 		</div>
 		<!--/.col (left) -->
 
-	</div>
+
 	<!-- /.row -->
 
 
@@ -132,7 +121,7 @@
 
 <div class="box box-success">
   <div class="box-header">
-    <h3 class="box-title">ADD NEW REPLY</h3>
+    <h3 class="box-title">새 댓글달기</h3>
   </div>
   
   
@@ -140,21 +129,21 @@
 
   <c:if test="${not empty login}">  
   <div class="box-body">
-    <label for="exampleInputEmail1">Writer</label>
+    <label for="exampleInputEmail1">작성자</label>
     <input class="form-control" type="text" placeholder="USER ID" 
     	id="newReplyWriter" value="${login.uid }" readonly="readonly">     
-    <label for="exampleInputEmail1">Reply Text</label> 
-    <input class="form-control" type="text" placeholder="REPLY TEXT" id="newReplyText">
+    <label for="exampleInputEmail1">내용입력</label> 
+    <input class="form-control" type="text" placeholder="내용을 입력하세요" id="newReplyText">
     </div>
   
 		<div class="box-footer">
-		  <button type="submit" class="btn btn-primary" id="replyAddBtn">ADD REPLY</button>
+		  <button type="submit" class="btn btn-primary" id="replyAddBtn">댓글 등록</button>
 		</div>
   </c:if>
   
   <c:if test="${empty login}">
     <div class="box-body">
-      <div><a href="javascript:goLogin();" >Login Please</a></div>
+      <div><a href="javascript:goLogin();" >로그인 해주세요</a></div>
     </div>
   </c:if>				                 
 </div>            
@@ -166,7 +155,7 @@
 		  <!-- timeline time label -->
 		<li class="time-label" id="repliesDiv">
 		  <span class="bg-green">
-		    Replies List <small id='replycntSmall'> [ ${boardVO.replycnt} ] </small>
+		    댓글 목록 <small id='replycntSmall'> [ ${boardVO.replycnt} ] </small>
 		    </span>
 		  </li>
 		</ul>
@@ -197,9 +186,9 @@
         <p><input type="text" id="replytext" class="form-control"></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-info" id="replyModBtn">Modify</button>
-        <button type="button" class="btn btn-danger" id="replyDelBtn">DELETE</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info" id="replyModBtn">수정</button>
+        <button type="button" class="btn btn-danger" id="replyDelBtn">삭제</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
       </div>
     </div>
   </div>
@@ -535,7 +524,5 @@ function goLogin(){
 
 
 
-
-<%@include file="../include/analytics.jsp" %>
 
 <%@include file="../include/footer.jsp"%>

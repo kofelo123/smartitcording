@@ -46,7 +46,7 @@
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Smart</b> <b>IT</b> <b>Project</b></span>
+          <span class="logo-lg"><b>Smart</b> <b>IT</b> <b></b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -343,7 +343,7 @@
           <!-- search form -->
           <form action="http://www.google.com/search" method="get" class="sidebar-form">
             <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search..."/>
+              <input type="text" name="q" class="form-control" placeholder="구글은 모든것을 안다"/>
               <span class="input-group-btn">
                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
               </span>
@@ -354,13 +354,10 @@
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
-              <a href="#">
+              <a href="/sboard/list">
                 <i class="fa fa-dashboard"></i> <span>자유게시판*</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
+              
             </li>
             <li class="treeview">
               <a href="#">
@@ -368,12 +365,7 @@
                 <span>개발질문</span>
                 <span class="label label-primary pull-right">4</span>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> 임시 </a></li>
-              </ul>
+            
             </li>
             <li>
               <a href="#">
@@ -386,12 +378,7 @@
                 <span>불편사항</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
+             
             </li>
             <li class="treeview">
               <a href="#">
@@ -399,88 +386,50 @@
                 <span>스터디해요</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 개</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 발</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 개</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 발</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 개</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 발</a></li>
-              </ul>
+             
             </li>
             <li class="treeview active">
               <a href="#">
                 <i class="fa fa-edit"></i> <span>취업고민</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li class="active"><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
+             
             </li>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-table"></i> <span>책나눔</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-              </ul>
+              
             </li>
             <li>
-              <a href="calendar">
-                <i class="fa fa-calendar"></i> <span>일정</span>
+              <a href="/sboard/calendar">
+                <i class="fa fa-calendar"></i> <span>일정(개발중)</span>
                 <small class="label pull-right bg-red">3</small>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa fa-envelope"></i> <span>북마크</span>
+              <a href="/sboard/mail/listmail">
+                <i class="fa fa-envelope"></i> <span>쪽지함(개발중)</span>
                 <small class="label pull-right bg-yellow">12</small>
               </a>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-folder"></i> <span>익명게시판</span>
+                <i class="fa fa-folder"></i> <span>북마크</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>                
-              </ul>
+              
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-share"></i> <span>임시</span>
+                <i class="fa fa-share"></i> <span>익명게시판</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> 임시 <i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> 임시 <i class="fa fa-angle-left pull-right"></i></a>
-                      <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i>임시</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 임시</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-              </ul>
+          
             </li>
-            <li><a href="#"><i class="fa fa-book"></i> <span>임시</span></a></li>
-            <li class="header">LABELS</li>
+            <li><a href="#"><i class="fa fa-book"></i> <span>베스트</span></a></li>
+            <li class="header">링크</li>
             <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-circle-o text-red"></i> <span>깃허브*</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>임시</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>임시</span></a></li>

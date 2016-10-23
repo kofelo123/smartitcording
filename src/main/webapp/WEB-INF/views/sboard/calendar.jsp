@@ -109,6 +109,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <script src="../../../resources/plugins/fullcalendar/fullcalendar.min.js"></script>
 <!-- Page specific script -->
+
+
+
+
 <script>
   $(function () {
 
@@ -266,5 +270,6 @@
     });
   });
 </script>
+
 
 <%@include file="../include/footer.jsp"%>

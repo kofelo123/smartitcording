@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
 	<title>스마트IT코딩</title>
-	
+<%@ include file="include/analytics.jsp"%>			
 
 <style>
 @CHARSET "UTF-8";
@@ -175,6 +175,6 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
 				<i class="foundicon-lock"></i>
 			</div>
 				</div>	
-<%@ include file="include/analytics.jsp"%>		
+
 </body>
 </html>

@@ -245,5 +245,4 @@ $("#popup_img").on("click", function(){
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-<%@include file="../include/analytics.jsp" %>
 <%@include file="../include/footer.jsp"%>
