@@ -11,6 +11,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
+import com.smartitcording.domain.UserVO;
+
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 
   private static final String LOGIN = "login";
@@ -25,12 +27,12 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 
     ModelMap modelMap = modelAndView.getModelMap();
     Object userVO = modelMap.get("userVO");
-
+   
     if (userVO != null) {
 
       logger.info("new login success");
       session.setAttribute(LOGIN, userVO);
-
+  
       if (request.getParameter("useCookie") != null) {
 
         logger.info("remember me................");

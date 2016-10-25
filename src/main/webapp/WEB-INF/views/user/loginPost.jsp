@@ -17,8 +17,9 @@
 		</script>
 	</c:if>
 	<c:if test="${userVO != null }">
-		<c:redirect url="sboard/list"></c:redirect>
+		<c:redirect url="/sboard/list"></c:redirect>
 	</c:if>
+	
   <!-- <script type="text/javascript">
   var user = "${userVO.uid}";
   	if(user==null){

@@ -17,80 +17,22 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../../resources/dist/css/skins/_all-skins.min.css">
   
- 
-
 </head>
 <body>
-	<div class="col-md-3">
-	<div class="box box-primary direct-chat direct-chat-primary">
-	 <div class="box-header with-border">
-              <h3 class="box-title">Direct Chat</h3>
-
-              <div class="box-tools pull-right">
-                <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">^.^</span>
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
-                  <i class="fa fa-comments"></i></button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            
-             <div class="box-body">
-            <div class="direct-chat-messages">
+	
     <fieldset>
-        <textarea id="messageWindow" rows="12" cols="85" readonly="true" style="background-color:#3c8dbc;border-color: #3c8dbc;color: #fff;"></textarea>
-        <br/> </div>
-        
-                 <!-- Contacts are loaded here -->
-              <div class="direct-chat-contacts">
-                <ul class="contacts-list">
-                  <li>
-                    <a href="#">
-                      <img class="contacts-list-img" src="../../../resources/dist/img/king.jpg" alt="User Image">
-
-                      <div class="contacts-list-info">
-                            <span class="contacts-list-name">
-                              	관리자
-                              <small class="contacts-list-date pull-right">10/2016</small>
-                            </span>
-                        <span class="contacts-list-msg"><br/>Smart It 허정원-웹소켓을 사용한 채팅페이지 입니다.<br/><br/> 채팅로그를 따로 저장,기록하지 않습니다.<br/><br/> 
-                        로그인 후 자유롭게 사용해 주세요. <br/><br/> 향후 지속 업데이트 예정입니다.</span>
-                      </div>
-                      <!-- /.contacts-list-info -->
-                    </a>
-                  </li>
-                  <!-- End Contact Item -->
-                </ul>
-                <!-- /.contatcts-list -->
-              </div>
-              
-              
-        
-        
-        
-          <div class="box-footer">
-           <div class="input-group">
-        <input id="inputMessage" type="text" placeholder="내용을 입력하세요"  class="form-control"  onKeyDown="onKeyDown()">
-        <span class="input-group-btn">
-        <input type="submit" value="보내기" onclick="send()" class="btn btn-primary btn-flat" />
-        </span>
-        </div>
-        </div>
+        <textarea id="messageWindow" rows="10" cols="50" readonly="true"></textarea>
+        <br/>
+        <input id="inputMessage" type="text"/>
+        <input type="submit" value="send" onclick="send()" />
     </fieldset>
-   
-    </div>
-    </div>
-    </div>
 </body>
     <script type="text/javascript">
-        
         var textarea = document.getElementById("messageWindow");
         var webSocket = new WebSocket('ws://localhost:8181/broadcasting');
         var inputMessage = document.getElementById('inputMessage');
         var name = "${login.uname }: ";
-		var count;
-		
+	
     webSocket.onerror = function(event) {
       onError(event)
     };
@@ -104,8 +46,7 @@
         textarea.value += "" + event.data + "\n";
     }
     function onOpen(event) {
- 		count++;
-        textarea.value += name+"님 어서오세요. "+"현재접속 인원: "+count+"명\n";
+        textarea.value += "연결 성공\n";
     }
     function onError(event) {
       alert(event.data);
@@ -115,23 +56,12 @@
         webSocket.send(name+inputMessage.value);
         inputMessage.value = "";
     }
-    
-    /* 엔터키처리   */
-    function onKeyDown()
-    {
-    	 if(event.keyCode == 13)
-         {
-    		 send()
-         }
-         
-    }
-    
   </script>
-  <!-- 
-  Direct Chat
+  
+  <!-- Direct Chat -->
       <div class="row">
         <div class="col-md-3">
-          DIRECT CHAT PRIMARY
+          <!-- DIRECT CHAT PRIMARY -->
           <div class="box box-primary direct-chat direct-chat-primary">
             <div class="box-header with-border">
               <h3 class="box-title">Direct Chat</h3>
@@ -145,48 +75,43 @@
                 <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
               </div>
             </div>
-            
-            
-            
-            
-            
-            /.box-header
+            <!-- /.box-header -->
             <div class="box-body">
-              Conversations are loaded here
+              <!-- Conversations are loaded here -->
               <div class="direct-chat-messages">
-                Message. Default to the left
+                <!-- Message. Default to the left -->
                 <div class="direct-chat-msg">
                   <div class="direct-chat-info clearfix">
                     <span class="direct-chat-name pull-left">Alexander Pierce</span>
                     <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                   </div>
-                  /.direct-chat-info
-                  <img class="direct-chat-img" src="../../../resources/dist/img/user1-128x128.jpg" alt="Message User Image">/.direct-chat-img
+                  <!-- /.direct-chat-info -->
+                  <img class="direct-chat-img" src="../../../resources/dist/img/user1-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
                   <div class="direct-chat-text">
                     Is this template really for free? That's unbelievable!
                   </div>
-                  /.direct-chat-text
+                  <!-- /.direct-chat-text -->
                 </div>
-                /.direct-chat-msg
+                <!-- /.direct-chat-msg -->
 
-                Message to the right
+                <!-- Message to the right -->
                 <div class="direct-chat-msg right">
                   <div class="direct-chat-info clearfix">
                     <span class="direct-chat-name pull-right">Sarah Bullock</span>
                     <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                   </div>
-                  /.direct-chat-info
-                  <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image">/.direct-chat-img
+                  <!-- /.direct-chat-info -->
+                  <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
                   <div class="direct-chat-text">
                     You better believe it!
                   </div>
-                  /.direct-chat-text
+                  <!-- /.direct-chat-text -->
                 </div>
-                /.direct-chat-msg
+                <!-- /.direct-chat-msg -->
               </div>
-              /.direct-chat-messages
+              <!--/.direct-chat-messages-->
 
-              Contacts are loaded here
+              <!-- Contacts are loaded here -->
               <div class="direct-chat-contacts">
                 <ul class="contacts-list">
                   <li>
@@ -200,16 +125,16 @@
                             </span>
                         <span class="contacts-list-msg">How have you been? I was...</span>
                       </div>
-                      /.contacts-list-info
+                      <!-- /.contacts-list-info -->
                     </a>
                   </li>
-                  End Contact Item
+                  <!-- End Contact Item -->
                 </ul>
-                /.contatcts-list
+                <!-- /.contatcts-list -->
               </div>
-              /.direct-chat-pane
+              <!-- /.direct-chat-pane -->
             </div>
-            /.box-body
+            <!-- /.box-body -->
             <div class="box-footer">
               <form action="#" method="post">
                 <div class="input-group">
@@ -220,24 +145,10 @@
                 </div>
               </form>
             </div>
-            /.box-footer
+            <!-- /.box-footer-->
           </div>
-          /.direct-chat
+          <!--/.direct-chat -->
         </div>
-        /.col
+        <!-- /.col -->
         </div>
-      
-        jQuery 2.2.3
-          -->
-<script src="../../../resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
-<!-- Slimscroll -->
-<script src="../../../resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- FastClick -->
-<script src="../../../resources/plugins/fastclick/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../../../resources/dist/js/app.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../../resources/dist/js/demo.js"></script>
 </html>

@@ -431,7 +431,7 @@
             <li><a href="#"><i class="fa fa-book"></i> <span>베스트</span></a></li>
             <li class="header">링크</li>
             <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-circle-o text-red"></i> <span>깃허브*</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>임시</span></a></li>
+            <li><a href="/sboard/chat" onClick="window.open(this.href, '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅(구현중)</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>임시</span></a></li>
           </ul>
         </section>

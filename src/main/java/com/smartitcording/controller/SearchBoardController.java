@@ -18,6 +18,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.smartitcording.domain.BoardVO;
 import com.smartitcording.domain.PageMaker;
 import com.smartitcording.domain.SearchCriteria;
+import com.smartitcording.domain.UserVO;
 import com.smartitcording.service.BoardService;
 
 @Controller
@@ -151,9 +152,12 @@ public class SearchBoardController {
   }
   
   @RequestMapping(value = "/chat", method = RequestMethod.GET)
-  public void chat() throws Exception {
+  public void chat(UserVO user, Model model) throws Exception {
 
     logger.info("chat get ...........");
+    System.out.println(user.getUid());
+    model.addAttribute("user", user);
+    
   }
   
   
