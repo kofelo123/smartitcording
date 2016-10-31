@@ -8,5 +8,5 @@ public interface AdminDAO {
 
 	public List<UserVO> listuser()throws Exception;
 	
-	public void adminlogin(UserVO user) throws Exception;
+	public UserVO adminlogin(UserVO user) throws Exception;
 }

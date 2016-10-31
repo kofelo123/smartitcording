@@ -8,5 +8,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="listuser" resultType="UserVO">
 		select * from tbl_user
 	</select>
- 
+ 	
+ 	<select id="adminlogin" resultType="UserVO">
+ 		select uid,upw from tbl_user where uid=#{uid} and upw=#{upw}
+ 	</select>
 </mapper>

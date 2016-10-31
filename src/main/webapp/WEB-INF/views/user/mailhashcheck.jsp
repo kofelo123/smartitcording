@@ -37,6 +37,7 @@
 <div id='expression' style="padding-bottom:20px">
 <b>${user.uid }님 변경하실 비밀번호를 입력해 주세요.<br></b>
 <input type="hidden" name="uid" value="${user.uid }">
+
 </div>
   <div class="form-group has-feedback">
     <input type="password" name="upw" class="form-control" placeholder="비밀번호"/>

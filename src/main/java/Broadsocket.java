@@ -3,17 +3,20 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.inject.Inject;
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;	
+import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
+
+import com.smartitcording.persistence.MessageDAO;
 
 @ServerEndpoint("/broadcasting")
 public class Broadsocket {
 	
-	int count;
-
+	
+	
 	private static Set<Session> clients = Collections
 			.synchronizedSet(new HashSet<Session>());
 
@@ -32,12 +35,11 @@ public class Broadsocket {
 			}
 		}
 	}
-
 	@OnOpen
-	public void onOpen(Session session) {
+	public void onOpen(Session session){
 		// Add session to the connected sessions set
 		System.out.println(session);
-			
+	
 		clients.add(session);
 		
 	}

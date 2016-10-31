@@ -24,16 +24,20 @@ public class AdminController {
 	private AdminService service;
 	
 	
+	
+	
 	@RequestMapping(value="/userlist" , method= RequestMethod.GET)
 	public void userlist(Model model) throws Exception{
 		logger.info("userlist get...");
 		/**/model.addAttribute("userVO",service.listuser());
 	}
 	
-	@RequestMapping(value="/adminlogin" , method=RequestMethod.POST)
-	public void adminlogin(UserVO user) throws Exception{
+	@RequestMapping(value="/admLogPost" , method=RequestMethod.POST)
+	public void admLogPost(UserVO user,Model model) throws Exception{
 		logger.info("Admin Login Post..");
-		service.adminlogin(user);
+		UserVO vo=service.adminlogin(user);
+		model.addAttribute("vo", vo);
+		
 		
 	}
 	

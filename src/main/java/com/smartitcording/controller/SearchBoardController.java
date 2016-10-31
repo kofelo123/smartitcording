@@ -20,6 +20,7 @@ import com.smartitcording.domain.PageMaker;
 import com.smartitcording.domain.SearchCriteria;
 import com.smartitcording.domain.UserVO;
 import com.smartitcording.service.BoardService;
+import com.smartitcording.service.MessageService;
 
 @Controller
 @RequestMapping("/sboard/*")
@@ -29,6 +30,8 @@ public class SearchBoardController {
 
   @Inject
   private BoardService service;
+  
+
 
   @RequestMapping(value = "/list", method = RequestMethod.GET)
   public void listPage(@ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
@@ -36,8 +39,10 @@ public class SearchBoardController {
     logger.info(cri.toString());
 
     // model.addAttribute("list", service.listCriteria(cri));
-    model.addAttribute("list", service.listSearchCriteria(cri));
-
+    model.addAttribute("list", service.listSearchCriteria(cri));//페이지시작과 끝의 리스트정보를가져온다(if검색정보있을때는 정보에맞게)
+//  SearchCritera cri = 검색타입,키워드 속성 가짐. // xml= listsearch - pageStart, pageNum +search에 맞는 모든 리스트데이터 받음 
+    
+    
     PageMaker pageMaker = new PageMaker();
     pageMaker.setCri(cri);
 
@@ -50,8 +55,8 @@ public class SearchBoardController {
   @RequestMapping(value = "/readPage", method = RequestMethod.GET)
   public void read(@RequestParam("bno") int bno, @ModelAttribute("cri") SearchCriteria cri, Model model)
       throws Exception {
-
-    model.addAttribute(service.read(bno));
+	
+    model.addAttribute(service.read(bno)); //model.addAttribute의 파라미터 하나있는거라서 view에서 전달시 boardVO가 된다.
   }
 
   @RequestMapping(value = "/removePage", method = RequestMethod.POST)
@@ -133,24 +138,8 @@ public class SearchBoardController {
     logger.info("mainview get ...........");
   }
   
-  @RequestMapping(value = "/mail/listmail", method = RequestMethod.GET)
-  public void listmail() throws Exception {
 
-    logger.info("listmail get ...........");
-  }
-  
-  @RequestMapping(value = "/mail/readmail", method = RequestMethod.GET)
-  public void readmail() throws Exception {
 
-    logger.info("readmail get ...........");
-  }
-  
-  @RequestMapping(value = "/mail/registermail", method = RequestMethod.GET)
-  public void registermail() throws Exception {
-
-    logger.info("registermail get ...........");
-  }
-  
   @RequestMapping(value = "/chat", method = RequestMethod.GET)
   public void chat(UserVO user, Model model) throws Exception {
 
@@ -162,6 +151,10 @@ public class SearchBoardController {
   
   
 
+  
+  
+  
+  
   // @RequestMapping(value = "/list", method = RequestMethod.GET)
   // public void listPage(@ModelAttribute("cri") SearchCriteria cri,
   // Model model) throws Exception {

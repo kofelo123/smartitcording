@@ -43,7 +43,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
         
         if(userVO != null){
           session.setAttribute("login", userVO);
-        
+          
           return true;
         }
         

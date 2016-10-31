@@ -4,6 +4,14 @@
 <%@include file="../include/header.jsp"%>
 <%@ include file="../include/analytics.jsp"%>	
 
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+    
+    
+    
 <style>
 .fileDrop {
   width: 80%;
@@ -33,7 +41,7 @@
 			<label for="exampleInputEmail1">제목</label> <input type="text"
 				name='title' class="form-control" placeholder="제목을 입력해주세요">
 		</div>
-		<!-- <div class="form-group">
+		<!-- <div class="form-group"	>
 			<label for="exampleInputPassword1">Content</label>
 			<textarea class="form-control" name="content" rows="3"
 				placeholder="Enter ..."></textarea>

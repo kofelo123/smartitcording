@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,10 +22,12 @@
 
 </head>
 <body>
+
 	<div class="col-md-3">
 	<div class="box box-primary direct-chat direct-chat-primary">
+	
 	 <div class="box-header with-border">
-              <h3 class="box-title">Direct Chat</h3>
+              <h3 class="box-title">스마트 IT 채팅</h3>
 
               <div class="box-tools pull-right">
                 <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">^.^</span>
@@ -38,9 +41,11 @@
             
              <div class="box-body">
             <div class="direct-chat-messages">
-    <fieldset>
+    <fieldset >
         <textarea id="messageWindow" rows="12" cols="85" readonly="true" style="background-color:#3c8dbc;border-color: #3c8dbc;color: #fff;"></textarea>
         <br/> </div>
+        
+     
         
                  <!-- Contacts are loaded here -->
               <div class="direct-chat-contacts">
@@ -66,7 +71,7 @@
               </div>
               
               
-        
+     
         
         
           <div class="box-footer">
@@ -86,10 +91,12 @@
     <script type="text/javascript">
         
         var textarea = document.getElementById("messageWindow");
+      
         var webSocket = new WebSocket('ws://localhost:8181/broadcasting');
         var inputMessage = document.getElementById('inputMessage');
         var name = "${login.uname }: ";
-		var count;
+ 
+	
 		
     webSocket.onerror = function(event) {
       onError(event)
@@ -97,24 +104,34 @@
     webSocket.onopen = function(event) {
       onOpen(event)
     };
-    webSocket.onmessage = function(event,name) {
-      onMessage(event,name)
+    webSocket.onmessage = function(event) {
+      onMessage(event)
     };
+    //
+/*     webSocket.onclose = function(event){
+    	onClose(event)
+    };
+     */
     function onMessage(event) {
         textarea.value += "" + event.data + "\n";
     }
-    function onOpen(event) {
- 		count++;
-        textarea.value += name+"님 어서오세요. "+"현재접속 인원: "+count+"명\n";
+    function onOpen(event) { 		
+        textarea.value += name+"님 어서오세요.\n";
+        webSocket.send(name+"님이 입장하셨습니다.");
     }
     function onError(event) {
       alert(event.data);
+   		
     }
     function send() {
         textarea.value += name + inputMessage.value + "\n";
         webSocket.send(name+inputMessage.value);
         inputMessage.value = "";
     }
+    //
+/*     function onClose(event) {
+    	webSocket.send(name+"님이 퇴장하셨습니다.");
+    } */
     
     /* 엔터키처리   */
     function onKeyDown()
@@ -125,6 +142,8 @@
          }
          
     }
+  
+ 
     
   </script>
   <!-- 

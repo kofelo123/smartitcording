@@ -8,8 +8,30 @@ public class MessageVO {
 	private String targetid;
 	private String sender;
 	private String message;
+	private String title;
 	private Date opendate;	
-	private Date senddate;
+	private Date sendate; // db에 실수로 sendate라고 만들떄 만들었는데 다시 바꾸는거보다 VO고치는게 나을거같아서 바꿈
+	private String readcheck;
+	
+	public String getReadcheck() {
+		return readcheck;
+	}
+	public void setReadcheck(String readcheck) {
+		this.readcheck = readcheck;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public Date getSendate() {
+		return sendate;
+	}
+	public void setSendate(Date sendate) {
+		this.sendate = sendate;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
 	
 	public Integer getMid() {
 		return mid;
@@ -41,17 +63,12 @@ public class MessageVO {
 	public void setOpendate(Date opendate) {
 		this.opendate = opendate;
 	}
-	public Date getSenddate() {
-		return senddate;
-	}
-	public void setSenddate(Date senddate) {
-		this.senddate = senddate;
-	}
+
 	@Override
 	public String toString() {
 		return "MessageVO [mid=" + mid + ", targetid=" + targetid + ", sender="
 				+ sender + ", message=" + message + ", opendate=" + opendate
-				+ ", senddate=" + senddate + "]";
+				+ ", sendate=" + sendate + "]";
 	}
 }
 

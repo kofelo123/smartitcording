@@ -11,13 +11,14 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import com.smartitcording.domain.UserVO;
-
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 
   private static final String LOGIN = "login";
   private static final Logger logger = LoggerFactory.getLogger(LoginInterceptor.class);
 
+
+ 
+ 
   @Override
   public void postHandle(HttpServletRequest request, 
       HttpServletResponse response, Object handler,
@@ -32,7 +33,8 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 
       logger.info("new login success");
       session.setAttribute(LOGIN, userVO);
-  
+     
+           
       if (request.getParameter("useCookie") != null) {
 
         logger.info("remember me................");

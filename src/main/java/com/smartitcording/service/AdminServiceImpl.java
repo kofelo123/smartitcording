@@ -22,9 +22,9 @@ public class AdminServiceImpl implements AdminService {
 	}
 
 	@Override
-	public void adminlogin(UserVO user) throws Exception {
+	public UserVO adminlogin(UserVO user) throws Exception {
 		// TODO Auto-generated method stub
-		
+		return dao.adminlogin(user);
 	}
 
 }

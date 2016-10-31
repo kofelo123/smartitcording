@@ -35,6 +35,9 @@
   <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
     
+    
+    
+    
   </head>
       
   <body class="skin-blue sidebar-mini">
@@ -53,13 +56,18 @@
           <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar">   </span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
+          
+         
           <div class="navbar-custom-menu">
+          
             <ul class="nav navbar-nav">
+           
               <!-- Messages: style can be found in dropdown.less-->
+              
               <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-envelope-o"></i>
@@ -352,7 +360,7 @@
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header"> <%@include file="../include/naverparsing.jsp" %></li>
             <li class="treeview">
               <a href="/sboard/list">
                 <i class="fa fa-dashboard"></i> <span>자유게시판*</span> <i class="fa fa-angle-left pull-right"></i>
@@ -409,7 +417,7 @@
               </a>
             </li>
             <li>
-              <a href="/sboard/mail/listmail">
+              <a href="/sboard/mail/listmail?uid=${login.uid }"  onClick="window.open(this.href, '', 'width=475, height=490,left=1000, top=100'); return false;"> <!-- 파라미터로 uid를 넘겨줘야 리스트에 서 uid에 맞는 로직을 불러올수 있을거같아서 시도해봤는데 가능한것 같다.  -->
                 <i class="fa fa-envelope"></i> <span>쪽지함(개발중)</span>
                 <small class="label pull-right bg-yellow">12</small>
               </a>

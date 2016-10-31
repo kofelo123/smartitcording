@@ -171,7 +171,7 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
 </div>
 				</div>
 <div class="login-form-container">
-			<form name="login-form" id="login-form" class="login-form" method="get" action="/admin/userlist"><label for="">관리자 로그인</label><span class="licon user-icon"><input type="text" name="log" id="log" value="" size="20"  class="input username" placeholder="관리자아이디"/></span><span class="picon pass-icon"><input type="password" name="pwd" id="login_password" value="" size="20"  class="input password" placeholder="관리자비밀번호" /></span><a class="lost-pass" href="#" >관리자 외 접근금지</a><input type="submit" class="button" name="submit" id="submit" value="로그인" tabindex="4" /><input type="hidden" name="is_custom_login" value="1" /></form>						<div id="btn-open-login-form" class="btn-open-login-form">
+			<form name="login-form" id="login-form" class="login-form" method="post" action="/admin/admLogPost"><label for="">관리자 로그인</label><span class="licon user-icon"><input type="text" name="uid" id="log" value="" size="20"  class="input username" placeholder="관리자아이디"/></span><span class="picon pass-icon"><input type="password" name="upw" id="login_password" value="" size="20"  class="input password" placeholder="관리자비밀번호" /></span><a class="lost-pass" href="#" >관리자 외 접근금지</a><input type="submit" class="button" name="submit" id="submit" value="로그인" tabindex="4" /><input type="hidden" name="is_custom_login" value="1" /></form>						<div id="btn-open-login-form" class="btn-open-login-form">
 				<i class="foundicon-lock"></i>
 			</div>
 				</div>	

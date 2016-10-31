@@ -24,9 +24,11 @@ public class AdminDAOImpl implements AdminDAO{
 	}
 
 	@Override
-	public void adminlogin(UserVO user) throws Exception {
+	public UserVO adminlogin(UserVO user) throws Exception {
 		// TODO Auto-generated method stub
-		
+		return session.selectOne(namespace + ".adminlogin",user);
 	}
+	
+	
 	
 }
