@@ -6,6 +6,30 @@
 
 <%@include file="../include/header.jsp"%>
 <%@ include file="../include/analytics.jsp"%>	
+
+
+
+<link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- fullCalendar 2.2.5-->
+  <link rel="stylesheet" href="/resources/plugins/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="/resources/plugins/fullcalendar/fullcalendar.print.css" media="print">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/resources/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="/resources/dist/css/skins/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="/resources/plugins/iCheck/flat/blue.css">
+  
+
+
+
+
+
 <!-- Main content -->
 <section class="content">
 	<div class="row">
@@ -23,9 +47,7 @@
 				<div class='box-body'>
 
 					<select name="searchType">
-						<option value="n"
-							<c:out value="${cri.searchType == null?'selected':''}"/>>
-							---</option>
+							
 						<option value="t"
 							<c:out value="${cri.searchType eq 't'?'selected':''}"/>>
 							제목</option>
@@ -55,30 +77,31 @@
 
 			<div class="box">
 				<div class="box-header with-border">
-					<h3 class="box-title">LIST PAGING</h3>
+					<h3 class="box-title">리스트</h3>
 				</div>
-				<div class="box-body">
-					<table class="table table-bordered">
+				<div class="box-body" >
+					<table class="table table-hover table-striped">
 						<tr>
-							<th style="width: 10px">BNO</th>
-							<th>TITLE</th>
-							<th>WRITER</th>
-							<th>REGDATE</th>
-							<th style="width: 40px">VIEWCNT</th>
+							<th style="width: 50%;">제목</th>
+							<th>추천</th>
+							<th style="width:10%">작성일</th>
+							<th style="width:10%">조회수</th>
+							<th>작성자</th>
 						</tr>
 
 						<c:forEach items="${list}" var="boardVO">
 
 							<tr>
-								<td>${boardVO.bno}</td>
+								<%-- <td>${boardVO.bno}</td> --%>
 								<td><a
 									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}'>
 										${boardVO.title} <strong>[ ${boardVO.replycnt} ]</strong>
 								</a></td>
-								<td>${boardVO.writer}</td>
-								<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
+								<td></td>
+								<td class="mailbox-date"><fmt:formatDate pattern="MM-dd HH:mm"
 										value="${boardVO.regdate}" /></td>
-								<td><span class="badge bg-red">${boardVO.viewcnt }</span></td>
+								<td><span class="badge bg-aqua">${boardVO.viewcnt }</span></td>
+								<td class="mailbox-subject">${boardVO.writer}</td>
 							</tr>
 
 						</c:forEach>

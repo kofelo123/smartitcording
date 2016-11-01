@@ -87,7 +87,7 @@
 								<c:if test="${MessageVO.readcheck=='n' }">
 								 <td class="mailbox-attachment"></td>
 								</c:if>
-								<td class="mailbox-date"><fmt:formatDate pattern="yyyy-MM-dd HH:mm"
+								<td class="mailbox-date"><fmt:formatDate pattern="MM-dd HH:mm"
 										value="${MessageVO.sendate}" /></td>
 								
 								
@@ -250,7 +250,7 @@
 	var result = '${msg}';
 
 	if (result == 'SUCCESS') {
-		alert("처리가 완료되었습니다.");
+		alert("전송이 완료되었습니다.");
 		location.replace(self.location);
 	}
 </script>

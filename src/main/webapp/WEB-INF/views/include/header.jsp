@@ -37,7 +37,8 @@
     
     
     
-    
+     <link rel="icon" type="image/png"  href="/resources/bootstrap/image/favicon.ico"/>
+ 	 
   </head>
       
   <body class="skin-blue sidebar-mini">

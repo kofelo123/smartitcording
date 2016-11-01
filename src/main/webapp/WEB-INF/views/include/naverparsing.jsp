@@ -22,7 +22,9 @@
 			<link rel="stylesheet" type="text/css" href="/resources/rolling/css/nojs.css" />
 		</noscript>
 	  <!-- 롤링 소스  끝 -->
-
+	 
+ 
+ 
 <% 
 NaverTest navertest = new NaverTest();
 Map<Integer,String> map = navertest.naver();
@@ -84,9 +86,13 @@ while(keys2.hasNext()){
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/resources/rolling/js/jquery.cslider.js"></script>
 		<script type="text/javascript">
-			$(function() {
+		
+		var $s = jQuery.noConflict();
+		
+		
+		$s(function() {
 				
-				$('#da-slider').cslider({
+			$s('#da-slider').cslider({
 					autoplay	: true,
 					bgincrement	: 450
 				});

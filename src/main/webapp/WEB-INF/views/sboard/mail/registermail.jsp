@@ -58,7 +58,7 @@
               <div class="pull-right">
                   <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> 보내기</button>
                 </form> 
-                <button type="submit" class="btn btn-default" id="goListBtn"><i class="glyphicon glyphicon-arrow-left"></i> 취소</button>
+                <button  class="btn btn-default" id="goListBtn"><i class="glyphicon glyphicon-arrow-left"></i> 취소</button>
             
               </div>
               <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> 리셋</button>
@@ -98,19 +98,19 @@
   });
   
   
-  $(document).ready(function(){
-	  
-	  var formObj = $("form[role='form']"); 
 
-  $("#goListBtn ").on("click", function(){
-		formObj.attr("method", "get");
-		formObj.attr("action", "/sboard/mail/listmail?uid="+${login.uid});
-		formObj.submit();
-	});
-  
-   });
-  
+</script>
+<script>
+	$(document).ready(
+			function() {
+	
+				$('#goListBtn').on("click", function() {
 
+					self.location = history.back(); 
+
+				});
+
+			});
 </script>
 
 

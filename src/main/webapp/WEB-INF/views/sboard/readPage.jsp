@@ -71,7 +71,12 @@
 							readonly="readonly">${boardVO.content}</textarea>
 					</div>
 					 --%>
-					<textarea div id="summernote" name="content" readonly="readonly">${boardVO.content }</textarea></div>
+					 <div class="mailbox-read-message">
+               	${boardVO.content}
+              
+                
+              </div>
+					<%-- <textarea div id="summernote" name="content" readonly="readonly">${boardVO.content }</textarea></div>
   <script>
   $(document).ready(function(){
 	  $('#summernote').summernote({
@@ -92,7 +97,7 @@
 	 
 	
   });
-  </script>
+  </script> --%>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Writer</label> <input type="text"
 							name="writer" class="form-control" value="${boardVO.writer}"
