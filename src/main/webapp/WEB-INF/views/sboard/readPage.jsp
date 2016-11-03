@@ -44,9 +44,7 @@
 		<div class="col-md-12">
 			<!-- general form elements -->
 			<div class="box box-primary">
-				<div class="box-header">
-					<h3 class="box-title">READ BOARD</h3>
-				</div>
+				
 				<!-- /.box-header -->
 
 				<form role="form" action="modifyPage" method="post">
@@ -60,10 +58,20 @@
 				</form>
 
 				<div class="box-body">
-					<div class="form-group">
-						<label for="exampleInputEmail1">Title</label> <input type="text"
-							name='title' class="form-control" value="${boardVO.title}"
-							readonly="readonly">
+				<div class="mailbox-read-info">
+				 <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
+            <div class="pull-left image">
+              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+            </div>
+            <h4>&nbsp;&nbsp;${boardVO.writer}</h4>
+         &nbsp;&nbsp;&nbsp;<fmt:formatDate pattern="MM-dd HH:mm" value="${boardVO.regdate}" />
+          </div>
+						
+						
+					</div>
+					<div class="mailbox-read-info">
+						<h2>${boardVO.title }</h2>
+						
 					</div>
 					<%-- <div class="form-group">
 						<label for="exampleInputPassword1">Content</label>
@@ -98,11 +106,7 @@
 	
   });
   </script> --%>
-					<div class="form-group">
-						<label for="exampleInputEmail1">Writer</label> <input type="text"
-							name="writer" class="form-control" value="${boardVO.writer}"
-							readonly="readonly">
-					</div>
+					
 				</div>
 				<!-- /.box-body -->
 				
@@ -129,7 +133,7 @@
 
 
 
-	<div class="row">
+
 		<div class="col-md-12">
 
 
@@ -143,10 +147,14 @@
 
   <c:if test="${not empty login}">  
   <div class="box-body">
-    <label for="exampleInputEmail1">작성자</label>
-    <input class="form-control" type="text" placeholder="USER ID" 
-    	id="newReplyWriter" value="${login.uid }" readonly="readonly">     
-    <label for="exampleInputEmail1">내용입력</label> 
+  <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
+            <div class="pull-left image">
+              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+            </div>
+            <h4>&nbsp;&nbsp;${boardVO.writer}</h4>
+         &nbsp;&nbsp;&nbsp;<fmt:formatDate pattern="MM-dd HH:mm" value="${boardVO.regdate}" />
+          </div>
+     <label for="exampleInputEmail1">내용입력</label> 
     <input class="form-control" type="text" placeholder="내용을 입력하세요" id="newReplyText">
     </div>
   

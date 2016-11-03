@@ -39,6 +39,8 @@
     
      <link rel="icon" type="image/png"  href="/resources/bootstrap/image/favicon.ico"/>
  	 
+ 	 
+ 	 
   </head>
       
   <body class="skin-blue sidebar-mini">
@@ -68,7 +70,8 @@
             <ul class="nav navbar-nav">
            
               <!-- Messages: style can be found in dropdown.less-->
-              
+            <li style="padding-top:10px;padding-right:20px;"><audio controls> <source src="/resources/music/임창정 - 내가 저지른 사랑.mp3" type="audio/mp3"/></audio></li>
+  
               <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-envelope-o"></i>
@@ -453,7 +456,7 @@
         <section class="content-header">
           <h1>
             자유게시판
-            <small>Preview   </small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/kofelo123/smartitcording">프로젝트 깃허브연결</a>
+            <small>Preview   </small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>

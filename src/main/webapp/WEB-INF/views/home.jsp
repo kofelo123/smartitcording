@@ -15,7 +15,7 @@ html, body { margin: 0;
 
 #visual {
 /**/ /*  */  position: relative;
-  height:109%; 
+  height:110%; 
 /*   position:absolute;
   width:100%;
   height:100%; */

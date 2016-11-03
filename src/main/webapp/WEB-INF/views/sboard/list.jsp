@@ -80,9 +80,9 @@
 					<h3 class="box-title">리스트</h3>
 				</div>
 				<div class="box-body" >
-					<table class="table table-hover table-striped">
+					<table class="table table-hover table-striped" >
 						<tr>
-							<th style="width: 50%;">제목</th>
+							<th style="width: 50%;padding-left:20px">제목</th>
 							<th>추천</th>
 							<th style="width:10%">작성일</th>
 							<th style="width:10%">조회수</th>
@@ -93,7 +93,7 @@
 
 							<tr>
 								<%-- <td>${boardVO.bno}</td> --%>
-								<td><a
+								<td style="padding-left:20px"><a
 									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}'>
 										${boardVO.title} <strong>[ ${boardVO.replycnt} ]</strong>
 								</a></td>
@@ -101,7 +101,7 @@
 								<td class="mailbox-date"><fmt:formatDate pattern="MM-dd HH:mm"
 										value="${boardVO.regdate}" /></td>
 								<td><span class="badge bg-aqua">${boardVO.viewcnt }</span></td>
-								<td class="mailbox-subject">${boardVO.writer}</td>
+								<td class="mailbox-subject">${boardVO.writer} </td>
 							</tr>
 
 						</c:forEach>
@@ -143,6 +143,29 @@
 			</div>
 		</div>
 		<!--/.col (left) -->
+	<div class="banner">
+		<img src="/resources/bootstrap/image/banner.jpg" />
+		
+		
+	</div>
+	<div id="mlink" class="mbx">
+			<ul>
+			<li class="ico7"><a href="http://sgsso.dhu.ac.kr" target="_blank" title="새창으로 학생종합정보 홈페이지 연결">학생종합정보</a></li>
+            <li class="ico5"><a href="http://library.dhu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지 연결">도서관</a></li>	
+            <li class="ico6"><a href="http://job.dhu.ac.kr/" target="_blank" title="새창으로 취창업지원센터 홈페이지 연결">취창업지원팀</a></li>		
+
+			
+			
+			<li class="ico9"><a href="https://mail.dhu.ac.kr/" target="_blank" title="새창으로 웹메일 홈페이지 연결">웹메일</a></li>
+			<li class="ico11"><a href="http://lifelong.dhu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지 연결">평생교육원</a></li>
+
+			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
+			</ul>
+		</div>
+
+    
+    
+    
 
 	</div>
 	<!-- /.row -->

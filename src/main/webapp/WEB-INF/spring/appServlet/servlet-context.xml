@@ -55,6 +55,7 @@
 	    <mapping path="/sboard/modifyPage"/>
 	    <mapping path="/sboard/removePage"/>
 	    <mapping path="/sboard/chat"/>
+	    <mapping path="/sboard/mail/listmail"/>
 	    <beans:ref bean="authInterceptor"/>
 	  </interceptor>	
 	  		
