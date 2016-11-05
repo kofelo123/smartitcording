@@ -30,5 +30,6 @@ public interface BoardService {
   
   public List<String> getAttach(Integer bno)throws Exception;
   
+  public void addlike(int bno)throws Exception;
 
 }

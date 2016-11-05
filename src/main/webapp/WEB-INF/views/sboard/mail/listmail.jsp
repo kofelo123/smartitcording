@@ -23,6 +23,10 @@
   <!-- iCheck -->
   <link rel="stylesheet" href="/resources/plugins/iCheck/flat/blue.css">
   
+ 
+  
+  
+  
   <!-- Main content -->
     <section class="content">
       <div class="row">

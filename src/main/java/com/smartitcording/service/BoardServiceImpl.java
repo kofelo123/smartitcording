@@ -125,6 +125,12 @@ public class BoardServiceImpl implements BoardService {
   public List<String> getAttach(Integer bno) throws Exception {
     
     return dao.getAttach(bno);
-  }   
+  }
+
+@Override
+public void addlike(int bno) throws Exception {
+	// TODO Auto-generated method stub
+	 dao.addlike(bno);
+}   
 
 }

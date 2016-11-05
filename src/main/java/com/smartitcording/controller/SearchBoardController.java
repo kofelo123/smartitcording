@@ -148,9 +148,26 @@ public class SearchBoardController {
     model.addAttribute("user", user);
     
   }
+  @RequestMapping(value = "/music", method = RequestMethod.GET)
+  public void chat() throws Exception {
+
+    logger.info("music get ...........");
+   
+  }
   
+  @RequestMapping(value = "/readPage/like", method = RequestMethod.GET)
+  public String like(@RequestParam("bno") int bno,BoardVO board) throws Exception {
+
+    logger.info("like add ...........");
+    System.out.println("bno 테스트:"+bno);
+   
+    service.addlike(bno);
+    return "redirect:/sboard/readPage?bno="+bno; // 리턴이 되어도 uri 자체가 바뀌진 않는다 그래서 애초에 요청이었던 /sboard/readPage/like?bno=~~~ 이런식으로 된다.
+    
+  }
   
 
+  /*return "redirect:/sboard/mail/listmail?uid="+message.getSender();*/
   
   
   

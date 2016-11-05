@@ -12,7 +12,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<select id="read" resultType="com.smartitcording.domain.BoardVO">
 		select
-		bno, title, content, writer, regdate, viewcnt , replycnt
+		bno, title, content, writer, regdate, viewcnt , replycnt,countlike
 		from
 		tbl_board
 		where bno = #{bno}
@@ -163,5 +163,9 @@ delete from tbl_attach where bno = #{bno}
 insert into tbl_attach(fullname, bno) values (#{fullName}, #{bno})
 </insert>
   
+  
+  <update id="addlike">
+  	update tbl_board set countlike = countlike + 1 where bno = #{bno}
+  </update>
  
 </mapper>

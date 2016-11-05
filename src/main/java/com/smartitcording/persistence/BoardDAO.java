@@ -44,4 +44,7 @@ public interface BoardDAO {
   
   public void replaceAttach(String fullName, Integer bno)throws Exception;
   
+  
+  public void addlike(int bno)throws Exception;
+  
 }

@@ -17,6 +17,9 @@
     
 <script type="text/javascript" src="/resources/js/upload.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+
+
+<link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css">
 <!-- Main content -->
     <style type="text/css">
     .popup {position: absolute;}
@@ -30,6 +33,8 @@
        max-height: 800px; 
        overflow: auto;       
      } 
+     
+     
   	
     </style>
 
@@ -37,6 +42,7 @@
     <div id="popup_front" class='popup front' style="display:none;">
      <img id="popup_img">
     </div>
+        
 
 <section class="content">
 	<div class="row">
@@ -70,8 +76,13 @@
 						
 					</div>
 					<div class="mailbox-read-info">
-						<h2>${boardVO.title }</h2>
+						<h2 style="float:left;">${boardVO.title }</h2>
 						
+						<div class="iconlike">
+						<a href="/sboard/readPage/like?bno=${boardVO.bno}" style="color:gray"><i class="fa fa-thumbs-o-up" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						
+ 
+						</div>
 					</div>
 					<%-- <div class="form-group">
 						<label for="exampleInputPassword1">Content</label>
@@ -125,7 +136,7 @@
 
 			</div>
 			<!-- /.box -->
-		</div>
+		
 		<!--/.col (left) -->
 
 
@@ -134,15 +145,13 @@
 
 
 
-		<div class="col-md-12">
+		
 
 
 <div class="box box-success">
   <div class="box-header">
     <h3 class="box-title">새 댓글달기</h3>
   </div>
-  
-  
 
 
   <c:if test="${not empty login}">  
@@ -154,8 +163,9 @@
             <h4>&nbsp;&nbsp;${boardVO.writer}</h4>
          &nbsp;&nbsp;&nbsp;<fmt:formatDate pattern="MM-dd HH:mm" value="${boardVO.regdate}" />
           </div>
+          <input type="hidden" id="newReplyWriter" value="${login.uid }">
      <label for="exampleInputEmail1">내용입력</label> 
-    <input class="form-control" type="text" placeholder="내용을 입력하세요" id="newReplyText">
+    <input class="form-control"  placeholder="내용을 입력하세요" id="newReplyText">
     </div>
   
 		<div class="box-footer">
@@ -190,6 +200,21 @@
 
 		</div>
 		<!-- /.col -->
+		<div class="banner">
+		<img src="/resources/bootstrap/image/banner.jpg" />
+		
+		
+	</div>
+	<div id="mlink" class="mbx">
+			<ul>
+			<li class="ico7"><a href="http://sgsso.dhu.ac.kr" target="_blank" title="새창으로 학생종합정보 홈페이지 연결">학생종합정보</a></li>
+            <li class="ico5"><a href="http://library.dhu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지 연결">도서관</a></li>	
+            <li class="ico6"><a href="http://bis.gbgs.go.kr/bs/businfo/sub03_03.jsp" target="_blank" title="경산버스">경산버스</a></li>					
+			<li class="ico9"><a href="https://mail.dhu.ac.kr/" target="_blank" title="새창으로 웹메일 홈페이지 연결">웹메일</a></li>
+			<li class="ico11"><a href="http://lifelong.dhu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지 연결">평생교육원</a></li>
+			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
+			</ul>
+		</div>
 	</div>
 	<!-- /.row -->
 

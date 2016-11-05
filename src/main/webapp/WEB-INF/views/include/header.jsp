@@ -39,11 +39,15 @@
     
      <link rel="icon" type="image/png"  href="/resources/bootstrap/image/favicon.ico"/>
  	 
- 	 
+
  	 
   </head>
+  
+
       
-  <body class="skin-blue sidebar-mini">
+  <body class="skin-blue-light sidebar-mini">
+
+  
     <div class="wrapper">
       
       <header class="main-header">
@@ -70,7 +74,7 @@
             <ul class="nav navbar-nav">
            
               <!-- Messages: style can be found in dropdown.less-->
-            <li style="padding-top:10px;padding-right:20px;"><audio controls> <source src="/resources/music/임창정 - 내가 저지른 사랑.mp3" type="audio/mp3"/></audio></li>
+          
   
               <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -355,7 +359,7 @@
           <!-- search form -->
           <form action="http://www.google.com/search" method="get" class="sidebar-form">
             <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="구글은 모든것을 안다"/>
+              <input type="text" name="q" class="form-control" placeholder="검색어를 입력하세요"/>
               <span class="input-group-btn">
                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
               </span>
@@ -367,7 +371,7 @@
             <li class="header"> <%@include file="../include/naverparsing.jsp" %></li>
             <li class="treeview">
               <a href="/sboard/list">
-                <i class="fa fa-dashboard"></i> <span>자유게시판*</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-dashboard"></i> <span>자유게시판</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               
             </li>
@@ -416,13 +420,13 @@
             </li>
             <li>
               <a href="/sboard/calendar">
-                <i class="fa fa-calendar"></i> <span>일정(개발중)</span>
+                <i class="fa fa-calendar"></i> <span>일정</span>
                 <small class="label pull-right bg-red">3</small>
               </a>
             </li>
             <li>
-              <a href="/sboard/mail/listmail?uid=${login.uid }"  onClick="window.open(this.href, '', 'width=475, height=490,left=1000, top=100'); return false;"> <!-- 파라미터로 uid를 넘겨줘야 리스트에 서 uid에 맞는 로직을 불러올수 있을거같아서 시도해봤는데 가능한것 같다.  -->
-                <i class="fa fa-envelope"></i> <span>쪽지함(개발중)</span>
+              <a href="#"  onClick="window.open('/sboard/mail/listmail?uid=${login.uid }', '', 'width=475, height=490,left=1000, top=100'); return false;"> <!-- 파라미터로 uid를 넘겨줘야 리스트에 서 uid에 맞는 로직을 불러올수 있을거같아서 시도해봤는데 가능한것 같다.  -->
+                <i class="fa fa-envelope"></i> <span>쪽지함</span>
                 <small class="label pull-right bg-yellow">12</small>
               </a>
             </li>
@@ -442,9 +446,9 @@
             </li>
             <li><a href="#"><i class="fa fa-book"></i> <span>베스트</span></a></li>
             <li class="header">링크</li>
-            <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-circle-o text-red"></i> <span>깃허브*</span></a></li>
-            <li><a href="/sboard/chat" onClick="window.open(this.href, '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅(구현중)</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>임시</span></a></li>
+            <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-circle-o text-red"></i> <span>깃허브</span></a></li>
+            <li><a href="#" onClick="window.open('/sboard/chat', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅</span></a></li>
+            <li><a href="#" onClick="window.open('/sboard/music', '', 'width=600, height=400,left=900, top=350'); return false;"><i class="fa fa-circle-o text-aqua"></i> <span>뮤직플레이어</span></a></li>
           </ul>
         </section>
         <!-- /.sidebar -->
@@ -464,3 +468,11 @@
             <li class="active">임시</li>
           </ol>
         </section>
+        
+       
+<!-- SCM Music Player http://scmplayer.net -->
+<script type="text/javascript" src="http://scmplayer.net/script.js" 
+data-config="{'skin':'http://static.tumblr.com/nd9hip4/HaJmqlv6r/askin.css','volume':50,'autoplay':true,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title': '내 옆에 그대인 걸- 다비치','url':'https://youtu.be/7TBIPd0zt1I'} ,{'title':'TT - %uD2B8%uC640%uC774%uC2A4','url':'https://youtu.be/ePpPVE-GGJw'},{'title':'%uB0A8%uC544%uC788%uC5B4 - %uB85C%uAF2C','url':'https://youtu.be/YolFoPo55Ac'},{'title':'11 : 11 - %uD0DC%uC5F0','url':'https://youtu.be/ulr0muQKjk0'},{'title':'IOI - %uB108%uBB34%uB108%uBB34%uB108%uBB34','url':'https://youtu.be/l1hxg1rY17I'},{'title':'%uC6B0%uC8FC%uB97C %uC904%uAC8C  - %uBCFC%uBE68%uAC04%uC0AC%uCD98%uAE30','url':'https://youtu.be/9U8uA702xrE'},{'title': '불장난 - BLACKPINK','url':'https://youtu.be/M-1vTs_uFRI'},{'title': '숨 - 박효신','url':'https://youtu.be/oBKpJiVEcnU'} ,{'title': '이 소설의 끝을 다시 써보려 해 - 한동근','url':'https://youtu.be/-XzHgS77QOI'} ,{'title': '이별을 배웠어  - 슬옹&조이','url':'https://youtu.be/ITZeTl5SjBo'} ,{'title': '어떻게 지내  - 크러쉬','url':'https://youtu.be/Jpb6m8jqa1o'} , {'title': '그대라는 사치 - 한동근','url':'https://youtu.be/07OEr-ptzdA'} ,{'title': '나만 안되는 연애 - 볼빨간사춘기','url':'https://youtu.be/airQW5Rp7Gc'}]}" ></script>
+
+<!--{'title': '나만 안되는 연애 - 볼빨간사춘기','url':'https://youtu.be/airQW5Rp7Gc'} ,-->
+<!-- SCM Music Player script end -->

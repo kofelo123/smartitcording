@@ -12,7 +12,14 @@ public class BoardVO {
 	private Date regdate;
 	private int viewcnt;
 	private int replycnt;
+	private int countlike;
 	
+	public int getCountlike() {
+		return countlike;
+	}
+	public void setCountlike(int countlike) {
+		this.countlike = countlike;
+	}
 	private String[] files;
 	
 		

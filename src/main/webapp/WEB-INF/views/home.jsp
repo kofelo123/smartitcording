@@ -134,16 +134,19 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
    
 	 </head>
 <body>
+
+
+
  	<div class="main-container">
 		<div class="preloader"><i></i></div>		<div id="wrapper">
 <div id="visual">
   <div id="video-bg">
-    <iframe src="https://www.youtube.com/embed/tS3_8UBmBFk?autoplay=1&controls=0&showinfo=0&wmode=opaque&autohide=1&loop=1&start=50&playlist=cZcsko5a9lE">
+    <iframe src="https://www.youtube.com/embed/nqW8vJTiN8I?autoplay=1&controls=0&showinfo=0&wmode=opaque&autohide=1&loop=1&start=71&playlist=cZcsko5a9lE">
     </iframe>
   </div>
   
    <div id="visual-content">
-    <h1>Smart It Coding</h1>
+    <h1>Created by Smart It</h1>
     <form action="sboard/list" method="get" id="nextpage">
     <input type="hidden" name="a" value="a">	
     

@@ -25,9 +25,12 @@
   <!-- iCheck -->
   <link rel="stylesheet" href="/resources/plugins/iCheck/flat/blue.css">
   
-
-
-
+<style>
+@font-face {
+    font-family: 'Typo_DecoVariety';
+    src: url(/resources/bootstrap/fonts/HoonWhitecatR.ttf) format('truetype');
+}
+</style>
 
 
 <!-- Main content -->
@@ -81,26 +84,24 @@
 				</div>
 				<div class="box-body" >
 					<table class="table table-hover table-striped" >
-						<tr>
-							<th style="width: 50%;padding-left:20px">제목</th>
-							<th>추천</th>
-							<th style="width:10%">작성일</th>
-							<th style="width:10%">조회수</th>
-							<th>작성자</th>
-						</tr>
-
+					
 						<c:forEach items="${list}" var="boardVO">
 
-							<tr>
+							<tr style="font-family:Typo_DecoVariety; font-size:20px">
 								<%-- <td>${boardVO.bno}</td> --%>
-								<td style="padding-left:20px"><a
-									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}'>
-										${boardVO.title} <strong>[ ${boardVO.replycnt} ]</strong>
+								<td style="width: 40%;padding-left:20px;"><a
+									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}' style="color:#3eb37e">
+										${boardVO.title} <%-- <strong>[${boardVO.replycnt}  ]</strong> --%>
 								</a></td>
-								<td></td>
-								<td class="mailbox-date"><fmt:formatDate pattern="MM-dd HH:mm"
+								<td>
+								<i class="fa fa-comment-o" title="댓글">&nbsp;&nbsp;&nbsp;&nbsp;${boardVO.replycnt}</i>&nbsp;&nbsp;&nbsp;&nbsp;
+								<i class="fa fa-thumbs-o-up" title="좋아요">&nbsp;&nbsp;&nbsp;&nbsp;${boardVO.countlike }</i>&nbsp;&nbsp;&nbsp;&nbsp;
+								<i class="glyphicon glyphicon-eye-open" title="조회수">&nbsp;${boardVO.viewcnt  }</i>
+								
+								</td>
+								<td class="mailbox-date" style="width:15%"><fmt:formatDate pattern="MM-dd HH:mm"
 										value="${boardVO.regdate}" /></td>
-								<td><span class="badge bg-aqua">${boardVO.viewcnt }</span></td>
+								<%-- <td><span class="badge bg-aqua">${boardVO.viewcnt }</span></td> --%>
 								<td class="mailbox-subject">${boardVO.writer} </td>
 							</tr>
 
@@ -152,13 +153,9 @@
 			<ul>
 			<li class="ico7"><a href="http://sgsso.dhu.ac.kr" target="_blank" title="새창으로 학생종합정보 홈페이지 연결">학생종합정보</a></li>
             <li class="ico5"><a href="http://library.dhu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지 연결">도서관</a></li>	
-            <li class="ico6"><a href="http://job.dhu.ac.kr/" target="_blank" title="새창으로 취창업지원센터 홈페이지 연결">취창업지원팀</a></li>		
-
-			
-			
+            <li class="ico6"><a href="http://job.dhu.ac.kr/" target="_blank" title="새창으로 취창업지원센터 홈페이지 연결">취창업지원팀</a></li>					
 			<li class="ico9"><a href="https://mail.dhu.ac.kr/" target="_blank" title="새창으로 웹메일 홈페이지 연결">웹메일</a></li>
 			<li class="ico11"><a href="http://lifelong.dhu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지 연결">평생교육원</a></li>
-
 			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
 			</ul>
 		</div>

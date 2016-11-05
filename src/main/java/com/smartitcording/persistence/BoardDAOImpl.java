@@ -133,4 +133,11 @@ public class BoardDAOImpl implements BoardDAO {
     
   }
 
+@Override
+public void addlike(int bno) throws Exception {
+	// TODO Auto-generated method stub
+	 session.update(namespace+".addlike",bno);
+}
+
+
 }
