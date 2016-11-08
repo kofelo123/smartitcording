@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.smartitcording.domain.BoardVO;
 import com.smartitcording.domain.Criteria;
+import com.smartitcording.domain.LikeVO;
 import com.smartitcording.domain.SearchCriteria;
 
 public interface BoardService {
@@ -31,5 +32,19 @@ public interface BoardService {
   public List<String> getAttach(Integer bno)throws Exception;
   
   public void addlike(int bno)throws Exception;
+  
+  public void sublike(int bno)throws Exception;
+  
+  public LikeVO checklike(String uid,int bno)throws Exception;
+  
+  public void insertlikedefault(String uid,int bno)throws Exception;
+  
+  public void updatelikey(String uid,int bno)throws Exception;
 
+  
+  
+  public void updateliken(String uid,int bno)throws Exception;
+  
+  
+  
 }

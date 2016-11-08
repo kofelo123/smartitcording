@@ -8,8 +8,10 @@ import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
+
 import com.smartitcording.domain.BoardVO;
 import com.smartitcording.domain.Criteria;
+import com.smartitcording.domain.LikeVO;
 import com.smartitcording.domain.SearchCriteria;
 
 @Repository
@@ -137,6 +139,60 @@ public class BoardDAOImpl implements BoardDAO {
 public void addlike(int bno) throws Exception {
 	// TODO Auto-generated method stub
 	 session.update(namespace+".addlike",bno);
+}
+
+@Override
+public void sublike(int bno) throws Exception {
+	// TODO Auto-generated method stub
+	session.update(namespace+".sublike",bno);
+}
+
+
+
+@Override
+public LikeVO checklike(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	Map<String, Object> paramMap = new HashMap<String,Object>();
+	
+	paramMap.put("uid", uid);
+	paramMap.put("bno", bno);
+	return session.selectOne(namespace+".checklike",paramMap);
+}
+
+@Override
+public void insertlikedefault(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	Map<String,Object> paramMap = new HashMap<String,Object>();
+	
+	paramMap.put("uid", uid);
+	paramMap.put("bno", bno);
+	
+	session.insert(namespace+".insertlikedefault",paramMap);
+}
+
+@Override
+public void updatelikey(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	Map<String,Object> paramMap = new HashMap<String,Object>();
+	
+	paramMap.put("uid", uid);
+	paramMap.put("bno", bno);
+	
+	session.update(namespace+".updatelikey",paramMap);
+}
+
+
+
+@Override
+public void updateliken(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	
+	Map<String,Object> paramMap = new HashMap<String,Object>();
+	
+	paramMap.put("uid", uid);
+	paramMap.put("bno", bno);
+	
+	session.update(namespace+".updateliken",paramMap);
 }
 
 

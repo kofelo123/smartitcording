@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 import com.smartitcording.domain.BoardVO;
 import com.smartitcording.domain.Criteria;
+import com.smartitcording.domain.LikeVO;
 import com.smartitcording.domain.SearchCriteria;
 import com.smartitcording.persistence.BoardDAO;
 
@@ -131,6 +132,40 @@ public class BoardServiceImpl implements BoardService {
 public void addlike(int bno) throws Exception {
 	// TODO Auto-generated method stub
 	 dao.addlike(bno);
+}
+
+@Override
+public void sublike(int bno) throws Exception{
+	dao.sublike(bno);
+}
+
+@Override
+public LikeVO checklike(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	return dao.checklike(uid,bno);
+}
+
+@Override
+public void insertlikedefault(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	dao.insertlikedefault(uid,bno);
+}
+
+@Override
+public void updatelikey(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	dao.updatelikey(uid,bno);
+}
+
+@Override
+public void updateliken(String uid, int bno) throws Exception {
+	// TODO Auto-generated method stub
+	dao.updateliken(uid,bno);
 }   
+
+
+
+
+
 
 }

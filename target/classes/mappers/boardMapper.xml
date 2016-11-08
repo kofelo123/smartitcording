@@ -167,5 +167,27 @@ insert into tbl_attach(fullname, bno) values (#{fullName}, #{bno})
   <update id="addlike">
   	update tbl_board set countlike = countlike + 1 where bno = #{bno}
   </update>
+ 	
+  <update id="sublike">
+  	update tbl_board set countlike = countlike - 1 where bno = #{bno}
+  </update>
+ 
+ <select id="checklike" resultType="LikeVO">
+ 	select * from tbl_check where uid=#{uid} and bno=#{bno}
+ </select>
+ 
+ <insert id="insertlikedefault">
+ 	insert into tbl_check(uid,bno) values (#{uid}, #{bno})
+ </insert>
+ 
+ <update id="updatelikey">
+ 	update tbl_check set likecheck='y' where uid=#{uid} and bno=#{bno}
+ </update>
+ 
+ <update id="updateliken">
+ 	update tbl_check set likecheck='n' where uid=#{uid} and bno=#{bno}
+ </update>
+ 
+ 
  
 </mapper>

@@ -16,9 +16,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.smartitcording.domain.BoardVO;
+import com.smartitcording.domain.LikeVO;
 import com.smartitcording.domain.PageMaker;
 import com.smartitcording.domain.SearchCriteria;
 import com.smartitcording.domain.UserVO;
+import com.smartitcording.dto.LoginDTO;
 import com.smartitcording.service.BoardService;
 import com.smartitcording.service.MessageService;
 
@@ -53,10 +55,19 @@ public class SearchBoardController {
   }
 
   @RequestMapping(value = "/readPage", method = RequestMethod.GET)
-  public void read(@RequestParam("bno") int bno, @ModelAttribute("cri") SearchCriteria cri, Model model)
+  public void read(@RequestParam("bno") int bno, @ModelAttribute("cri") SearchCriteria cri, Model model,@RequestParam("uid") String uid)
       throws Exception {
-	
+	System.out.println("user테스트:"+uid);
     model.addAttribute(service.read(bno)); //model.addAttribute의 파라미터 하나있는거라서 view에서 전달시 boardVO가 된다.
+    
+    LikeVO likevo = service.checklike(uid,bno); //
+    System.out.println("likevo테스트:"+likevo); // likevo.get~이 안된다 null 일경우 java nullpoint exception이된다. 그래서 그냥 likevo.tostring식으로 접근한다.
+    if(likevo==null) // null일경우 넣기위한 로직이다( 왜냐하면 null 인상태로 model.addAttribute가 에러가 났었다. 모델에 객체내용없이 뷰에 전달이 안된다. 
+    	service.insertlikedefault(uid, bno); // uid,bno만 넣어주기 떄문에 'n'상태가 된다.
+    model.addAttribute(service.checklike(uid,bno));//추천여부체크
+    
+   
+  
   }
 
   @RequestMapping(value = "/removePage", method = RequestMethod.POST)
@@ -156,16 +167,47 @@ public class SearchBoardController {
   }
   
   @RequestMapping(value = "/readPage/like", method = RequestMethod.GET)
+  public String like(@RequestParam("bno") int bno,@RequestParam("uid") String uid,BoardVO board) throws Exception {
+
+    logger.info("like add ...........");
+    System.out.println("bno 테스트:"+bno);
+    System.out.println("uid 테스트"+uid);
+    service.addlike(bno);
+    service.updatelikey(uid,bno);
+    return "redirect:/sboard/readPage?bno="+bno+"&uid="+uid; // 리턴이 되어도 uri 자체가 바뀌진 않는다 그래서 애초에 요청이었던 /sboard/readPage/like?bno=~~~ 이런식으로 된다. -> scm 플레이어에 의한 redirect 충돌에 의한것이었음.
+    
+  }
+  @RequestMapping(value = "/readPage/dislike", method = RequestMethod.GET)
+  public String dislike(@RequestParam("bno") int bno,@RequestParam("uid") String uid,BoardVO board) throws Exception {
+
+    logger.info("like substraction ...........");
+    System.out.println("bno 테스트:"+bno);
+    System.out.println("uid 테스트"+uid);
+    service.sublike(bno);	
+    service.updateliken(uid,bno);
+    return "redirect:/sboard/readPage?bno="+bno+"&uid="+uid; // 리턴이 되어도 uri 자체가 바뀌진 않는다 그래서 애초에 요청이었던 /sboard/readPage/like?bno=~~~ 이런식으로 된다. -> scm 플레이어에 의한 redirect 충돌에 의한것이었음.
+    
+  }
+  
+  
+  @RequestMapping(value="/fbshare", method = RequestMethod.GET)
+  public void fbshare(@RequestParam("bno") int bno)throws Exception{
+	  
+  }
+  
+  /*
+   * @RequestMapping(value = "/readPage/like", method = RequestMethod.GET)
   public String like(@RequestParam("bno") int bno,BoardVO board) throws Exception {
 
     logger.info("like add ...........");
     System.out.println("bno 테스트:"+bno);
    
     service.addlike(bno);
-    return "redirect:/sboard/readPage?bno="+bno; // 리턴이 되어도 uri 자체가 바뀌진 않는다 그래서 애초에 요청이었던 /sboard/readPage/like?bno=~~~ 이런식으로 된다.
+    return "redirect:/sboard/readPage?bno="+bno; // 리턴이 되어도 uri 자체가 바뀌진 않는다 그래서 애초에 요청이었던 /sboard/readPage/like?bno=~~~ 이런식으로 된다. -> scm 플레이어에 의한 redirect 충돌에 의한것이었음.
     
   }
-  
+   * 
+   */
 
   /*return "redirect:/sboard/mail/listmail?uid="+message.getSender();*/
   

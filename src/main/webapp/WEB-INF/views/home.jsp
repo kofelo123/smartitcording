@@ -141,7 +141,7 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
 		<div class="preloader"><i></i></div>		<div id="wrapper">
 <div id="visual">
   <div id="video-bg">
-    <iframe src="https://www.youtube.com/embed/nqW8vJTiN8I?autoplay=1&controls=0&showinfo=0&wmode=opaque&autohide=1&loop=1&start=71&playlist=cZcsko5a9lE">
+    <iframe src="https://www.youtube.com/embed/nqW8vJTiN8I?autoplay=1&controls=0&showinfo=0&wmode=opaque&autohide=1&loop=1&start=91&playlist=cZcsko5a9lE">
     </iframe>
   </div>
   

@@ -37,6 +37,7 @@
      
   	
     </style>
+      
 
     <div class='popup back' style="display:none;"></div>
     <div id="popup_front" class='popup front' style="display:none;">
@@ -76,12 +77,26 @@
 						
 					</div>
 					<div class="mailbox-read-info">
+					
 						<h2 style="float:left;">${boardVO.title }</h2>
+						<div class="optionbox">
 						
+						<c:if test="${likeVO.likecheck=='n' }">
 						<div class="iconlike">
-						<a href="/sboard/readPage/like?bno=${boardVO.bno}" style="color:gray"><i class="fa fa-thumbs-o-up" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						<a href="/sboard/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:gray"><i class="fa fa-thumbs-o-up" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						</div>
+						</c:if>
 						
- 
+						<c:if test="${likeVO.likecheck=='y' }">
+						<div class="iconlike">
+						<a href="/sboard/readPage/dislike?bno=${boardVO.bno}&uid=${login.uid}" style="color:#64a3f3"><i class="fa fa-thumbs-up" title="좋아요 취소"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						</div>
+							</c:if>
+						<div class="fbshare">
+						<a href="#" onClick="window.open('http://www.facebook.com/sharer/sharer.php?u=http://www.smartitcording.com/sboard/readPage?bno=201', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" title="페이스북 공유" ></i></a>
+						</div>
+					
+						
 						</div>
 					</div>
 					<%-- <div class="form-group">

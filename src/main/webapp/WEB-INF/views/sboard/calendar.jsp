@@ -211,6 +211,35 @@
           borderColor: "pink" //Success (green)
         },
         {
+            title: '혼나는날',
+            start: new Date(y, m, 7, 10, 0),
+            allDay: false,
+            backgroundColor: "gold", //Success (green)
+            borderColor: "pink" //Success (green)
+          },
+          {
+              title: '혼나는날2',
+              start: new Date(y, m, 10, 10, 0),
+              allDay: false,
+              backgroundColor: "gold", //Success (green)
+              borderColor: "pink" //Success (green)
+            },
+            {
+                title: '혼나는날3',
+                start: new Date(y, m, 14, 10, 0),
+                allDay: false,
+                backgroundColor: "gold", //Success (green)
+                borderColor: "pink" //Success (green)
+              },
+              {
+                  title: '혼나는날4',
+                  start: new Date(y, m, 17, 10, 0),
+                  allDay: false,
+                  backgroundColor: "gold", //Success (green)
+                  borderColor: "pink" //Success (green)
+                },
+            
+        {
           title: 'Click for Google',
           start: new Date(y, m, 28),
           end: new Date(y, m, 29),

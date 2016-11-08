@@ -43,13 +43,13 @@
 			<!-- general form elements -->
 			<div class='box'>
 				<div class="box-header with-border">
-					<h3 class="box-title">게시글 검색</h3>
+					<h3 class="box-title" >게시글 검색</h3>
 				</div>
 
 
 				<div class='box-body'>
 
-					<select name="searchType">
+					<select name="searchType"  style="background-color:#e8faf1">
 							
 						<option value="t"
 							<c:out value="${cri.searchType eq 't'?'selected':''}"/>>
@@ -69,14 +69,14 @@
 						<option value="tcw"
 							<c:out value="${cri.searchType eq 'tcw'?'selected':''}"/>>
 							제목+내용+작성자</option>
-					</select> <input type="text" name='keyword' id="keywordInput"
+					</select> <input type="text" name='keyword' id="keywordInput"  style="background-color:#e8faf1"
 						value='${cri.keyword }'>
-					<button id='searchBtn'>검색</button>
+					<button id='searchBtn'  style="background-color:#e8faf1">검색</button>
 					
 
 				</div>
 			</div>
-
+			
 
 			<div class="box">
 				<div class="box-header with-border">
@@ -90,7 +90,7 @@
 							<tr style="font-family:Typo_DecoVariety; font-size:20px">
 								<%-- <td>${boardVO.bno}</td> --%>
 								<td style="width: 40%;padding-left:20px;"><a
-									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}' style="color:#3eb37e">
+									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}&uid=${login.uid}' style="color:#3eb37e">
 										${boardVO.title} <%-- <strong>[${boardVO.replycnt}  ]</strong> --%>
 								</a></td>
 								<td>
@@ -153,7 +153,7 @@
 			<ul>
 			<li class="ico7"><a href="http://sgsso.dhu.ac.kr" target="_blank" title="새창으로 학생종합정보 홈페이지 연결">학생종합정보</a></li>
             <li class="ico5"><a href="http://library.dhu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지 연결">도서관</a></li>	
-            <li class="ico6"><a href="http://job.dhu.ac.kr/" target="_blank" title="새창으로 취창업지원센터 홈페이지 연결">취창업지원팀</a></li>					
+            <li class="ico6"><a href="http://bis.gbgs.go.kr/bs/businfo/sub03_03.jsp" target="_blank" title="새창으로 경산버스 홈페이지 연결">경산버스</a></li>					
 			<li class="ico9"><a href="https://mail.dhu.ac.kr/" target="_blank" title="새창으로 웹메일 홈페이지 연결">웹메일</a></li>
 			<li class="ico11"><a href="http://lifelong.dhu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지 연결">평생교육원</a></li>
 			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
