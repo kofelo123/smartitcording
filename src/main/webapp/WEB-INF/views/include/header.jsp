@@ -4,6 +4,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="When Great Minds Don’t Think Alike" />
+<meta property="og:description"        content="How much does culture influence creative thinking?" />
+<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+     
+     
     <meta charset="UTF-8">
     <title>스마트IT코딩단</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -39,17 +46,13 @@
     
      <link rel="icon" type="image/png"  href="/resources/bootstrap/image/favicon.ico"/>
  	 
- 	 
-
-<meta property="og:type"		content="article">
-      <meta property="og:site_name" content="스마트IT코딩">
-        <meta property="og:url" content="http://www.smartitcording.com/sboard/readPage?bno=197">
-        <meta property="og:image" content="/resources/bootstrap/image/okky.png">
-        <meta property="og:description" content="테스트 테스트">
-        <meta property="og:title" content="스마트IT /  제목">
-        
- 
- 	 
+ 	 <meta property="og:url"                content="http://www.smartitcording.com/sboard/readPage?bno=201&uid=kofelo123" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="smartit TITLE" />
+<meta property="og:description"        content="smartit descripttion" />
+<meta property="og:image"              content="https://www.48hourslogo.com/48hourslogo_data/2016/09/19/54184_1474239812.png" />
+   
+   
   </head>
   
 

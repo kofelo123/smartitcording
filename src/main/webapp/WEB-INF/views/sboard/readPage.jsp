@@ -37,13 +37,13 @@
      
   	
     </style>
-      
+       
 
     <div class='popup back' style="display:none;"></div>
     <div id="popup_front" class='popup front' style="display:none;">
      <img id="popup_img">
     </div>
-        
+     
 
 <section class="content">
 	<div class="row">
@@ -81,22 +81,40 @@
 						<h2 style="float:left;">${boardVO.title }</h2>
 						<div class="optionbox">
 						
-						<c:if test="${likeVO.likecheck=='n' }">
+					
+						<!-- <div class="fbshare">
+						<a href="#" onClick="window.open('http://www.facebook.com/sharer/sharer.php?u=http://www.smartitcording.com/sboard/readPage?bno=201&uid=kofelo123', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" title="페이스북 공유" ></i></a>
+						</div> -->
+					
+						<div class="fbshare">
+						<a href="#" onClick="window.open('http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>
+						<!-- <a href="http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123" class="btn-facebook-share"><i class="fa fa-facebook-square fa-fw" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a> -->
+                         </div><!--www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123  -->
+					
+						<!-- 	<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.smartitcording.com/sboard/readPage?bno=201&uid=kofelo123" class="btn-facebook-share"><i class="fa fa-facebook-square fa-fw" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>  -->
+						<div class="twitter">
+						<a href="#" onClick="window.open('https://twitter.com/intent/tweet?text=스마트IT 코딩단 - 트위터공유내용&url=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123 ', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="left" title="트위터 공유"></i></a>
+						
+                         </div>
+                         
+                         <div class="bookmark" >
+                         <a href="/sboard/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:#3c763d"><i class="fa fa-bookmark-o"  data-toggle="tooltip" data-placement="left" title="스크랩"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+                         
+                         </div>
+                         
+						
+							<c:if test="${likeVO.likecheck=='n' }">
 						<div class="iconlike">
-						<a href="/sboard/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:gray"><i class="fa fa-thumbs-o-up" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						<a href="/sboard/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:gray"><i class="fa fa-thumbs-o-up" data-toggle="tooltip" data-placement="left" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
 						</div>
 						</c:if>
 						
 						<c:if test="${likeVO.likecheck=='y' }">
 						<div class="iconlike">
-						<a href="/sboard/readPage/dislike?bno=${boardVO.bno}&uid=${login.uid}" style="color:#64a3f3"><i class="fa fa-thumbs-up" title="좋아요 취소"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						<a href="/sboard/readPage/dislike?bno=${boardVO.bno}&uid=${login.uid}" style="color:#64a3f3"><i class="fa fa-thumbs-up" data-toggle="tooltip" data-placement="left" title="좋아요 취소"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
 						</div>
 							</c:if>
-						<div class="fbshare">
-						<a href="#" onClick="window.open('http://www.facebook.com/sharer/sharer.php?u=http://www.smartitcording.com/sboard/readPage?bno=201', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" title="페이스북 공유" ></i></a>
-						</div>
-					
-						
+							
 						</div>
 					</div>
 					<%-- <div class="form-group">

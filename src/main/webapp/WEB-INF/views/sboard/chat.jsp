@@ -24,13 +24,13 @@
 <body>
 
 	<div class="col-md-3">
-	<div class="box box-primary direct-chat direct-chat-primary">
+	<div class="box box-primary direct-chat direct-chat-primary" style="border-top-color:#f39c12;">
 	
 	 <div class="box-header with-border">
               <h3 class="box-title">스마트 IT 채팅</h3>
 
               <div class="box-tools pull-right">
-                <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">^.^</span>
+                <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">^.^</span>
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
@@ -42,7 +42,7 @@
              <div class="box-body">
             <div class="direct-chat-messages">
     <fieldset >
-        <textarea id="messageWindow" rows="12" cols="85" readonly="true" style="background-color:#3c8dbc;border-color: #3c8dbc;color: #fff;"></textarea>
+        <textarea id="messageWindow" rows="12" cols="85" readonly="true" style="background-color:#faffe7;border-color: #ffcf84;color: #6b3130;"></textarea>
         <br/> </div>
         
      
@@ -76,9 +76,9 @@
         
           <div class="box-footer">
            <div class="input-group">
-        <input id="inputMessage" type="text" placeholder="내용을 입력하세요"  class="form-control"  onKeyDown="onKeyDown()">
+        <input id="inputMessage" type="text" placeholder="내용을 입력하세요"  class="form-control"  onKeyDown="onKeyDown()" style="border-color:#fedea5;color:#6b3130">
         <span class="input-group-btn">
-        <input type="submit" value="보내기" onclick="send()" class="btn btn-primary btn-flat" />
+        <input type="submit" value="전송" onclick="send()" class="btn btn-primary btn-flat" style="background-color:#cdf3c4;border-color:#89efc0;color:green" />
         </span>
         </div>
         </div>
