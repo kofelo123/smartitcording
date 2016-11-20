@@ -86,32 +86,32 @@
 						<a href="#" onClick="window.open('http://www.facebook.com/sharer/sharer.php?u=http://www.smartitcording.com/sboard/readPage?bno=201&uid=kofelo123', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" title="페이스북 공유" ></i></a>
 						</div> -->
 					
-						<div class="fbshare">
-						<a href="#" onClick="window.open('http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>
+						<div class="fbshare" >
+						<a href="#" onClick="window.open('http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard${sboardNum }%2FreadPage%3Fbno%3D${boardVO.bno}%26uid%3D', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>
 						<!-- <a href="http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123" class="btn-facebook-share"><i class="fa fa-facebook-square fa-fw" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a> -->
                          </div><!--www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123  -->
 					
 						<!-- 	<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.smartitcording.com/sboard/readPage?bno=201&uid=kofelo123" class="btn-facebook-share"><i class="fa fa-facebook-square fa-fw" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>  -->
 						<div class="twitter">
-						<a href="#" onClick="window.open('https://twitter.com/intent/tweet?text=스마트IT 코딩단 - 트위터공유내용&url=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123 ', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="left" title="트위터 공유"></i></a>
+						<a href="#" onClick="window.open('https://twitter.com/intent/tweet?text=스마트IT 코딩단 - ${boardVO.title }&url=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D${boardVO.bno}%26uid%3D', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="left" title="트위터 공유"></i></a>
 						
                          </div>
                          
-                         <div class="bookmark" >
-                         <a href="/sboard/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:#3c763d"><i class="fa fa-bookmark-o"  data-toggle="tooltip" data-placement="left" title="스크랩"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+                        <%--  <div class="bookmark" >
+                         <a href="/sboard${sboardNum }/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:#3c763d"><i class="fa fa-bookmark-o"  data-toggle="tooltip" data-placement="left" title="스크랩"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
                          
-                         </div>
+                         </div> --%>
                          
 						
 							<c:if test="${likeVO.likecheck=='n' }">
 						<div class="iconlike">
-						<a href="/sboard/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:gray"><i class="fa fa-thumbs-o-up" data-toggle="tooltip" data-placement="left" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						<a href="/sboard${sboardNum }/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:gray"><i class="fa fa-thumbs-o-up" data-toggle="tooltip" data-placement="left" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
 						</div>
 						</c:if>
 						
 						<c:if test="${likeVO.likecheck=='y' }">
 						<div class="iconlike">
-						<a href="/sboard/readPage/dislike?bno=${boardVO.bno}&uid=${login.uid}" style="color:#64a3f3"><i class="fa fa-thumbs-up" data-toggle="tooltip" data-placement="left" title="좋아요 취소"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						<a href="/sboard${sboardNum }/readPage/dislike?bno=${boardVO.bno}&uid=${login.uid}" style="color:#64a3f3"><i class="fa fa-thumbs-up" data-toggle="tooltip" data-placement="left" title="좋아요 취소"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
 						</div>
 							</c:if>
 							
@@ -194,7 +194,7 @@
               <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <h4>&nbsp;&nbsp;${boardVO.writer}</h4>
-         &nbsp;&nbsp;&nbsp;<fmt:formatDate pattern="MM-dd HH:mm" value="${boardVO.regdate}" />
+      
           </div>
           <input type="hidden" id="newReplyWriter" value="${login.uid }">
      <label for="exampleInputEmail1">내용입력</label> 
@@ -233,7 +233,8 @@
 
 		</div>
 		<!-- /.col -->
-		<div class="banner">
+			<div class="bannerlink">
+	<div class="banner">
 		<img src="/resources/bootstrap/image/banner.jpg" />
 		
 		
@@ -242,12 +243,13 @@
 			<ul>
 			<li class="ico7"><a href="http://sgsso.dhu.ac.kr" target="_blank" title="새창으로 학생종합정보 홈페이지 연결">학생종합정보</a></li>
             <li class="ico5"><a href="http://library.dhu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지 연결">도서관</a></li>	
-            <li class="ico6"><a href="http://bis.gbgs.go.kr/bs/businfo/sub03_03.jsp" target="_blank" title="경산버스">경산버스</a></li>					
+            <li class="ico6"><a href="http://bis.gbgs.go.kr/bs/businfo/sub03_03.jsp" target="_blank" title="새창으로 경산버스 홈페이지 연결">경산버스</a></li>					
 			<li class="ico9"><a href="https://mail.dhu.ac.kr/" target="_blank" title="새창으로 웹메일 홈페이지 연결">웹메일</a></li>
 			<li class="ico11"><a href="http://lifelong.dhu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지 연결">평생교육원</a></li>
 			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
 			</ul>
 		</div>
+	</div>
 	</div>
 	<!-- /.row -->
 
@@ -299,7 +301,7 @@
                 <span class="time">
                   <i class="fa fa-clock-o"></i>{{prettifyDate regdate}}
                 </span>
-                <h3 class="timeline-header"><strong>{{rno}}</strong> -{{replyer}}</h3>
+                <h3 class="timeline-header"><strong>{{replyer}}</strong></h3>
                 <div class="timeline-body">{{replytext}} </div>
 								<div class="timeline-footer">
 								{{#eqReplyer replyer }}
@@ -384,7 +386,7 @@
 		if ($(".timeline li").size() > 1) {
 			return;
 		}
-		getPage("/replies/" + bno + "/1");
+		getPage("/replies${sboardNum}/" + bno + "/1");
 
 	});
 
@@ -394,7 +396,7 @@
 
 		replyPage = $(this).attr("href");
 
-		getPage("/replies/" + bno + "/" + replyPage);
+		getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
 
 	});
 
@@ -407,7 +409,7 @@
 
 		$.ajax({
 			type : 'post',
-			url : '/replies/',
+			url : '/replies${sboardNum}/',
 			headers : {
 				"Content-Type" : "application/json",
 				"X-HTTP-Method-Override" : "POST"
@@ -423,7 +425,7 @@
 				if (result == 'SUCCESS') {
 					alert("등록 되었습니다.");
 					replyPage = 1;
-					getPage("/replies/" + bno + "/" + replyPage);
+					getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
 					//replyerObj.val("");
 					replytextObj.val("");
 				}
@@ -447,7 +449,7 @@
 
 		$.ajax({
 			type : 'put',
-			url : '/replies/' + rno,
+			url : '/replies${sboardNum}/' + rno,
 			headers : {
 				"Content-Type" : "application/json",
 				"X-HTTP-Method-Override" : "PUT"
@@ -460,7 +462,7 @@
 				console.log("result: " + result);
 				if (result == 'SUCCESS') {
 					alert("수정 되었습니다.");
-					getPage("/replies/" + bno + "/" + replyPage);
+					getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
 				}
 			}
 		});
@@ -473,7 +475,7 @@
 
 		$.ajax({
 			type : 'delete',
-			url : '/replies/' + rno,
+			url : '/replies${sboardNum}/' + rno,
 			headers : {
 				"Content-Type" : "application/json",
 				"X-HTTP-Method-Override" : "DELETE"
@@ -483,7 +485,7 @@
 				console.log("result: " + result);
 				if (result == 'SUCCESS') {
 					alert("삭제 되었습니다.");
-					getPage("/replies/" + bno + "/" + replyPage);
+					getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
 				}
 			}
 		});
@@ -499,7 +501,7 @@ $(document).ready(function(){
 	console.log(formObj);
 	
 	$("#modifyBtn").on("click", function(){
-		formObj.attr("action", "/sboard/modifyPage");
+		formObj.attr("action", "/sboard${sboardNum}/modifyPage");
 		formObj.attr("method", "get");		
 		formObj.submit();
 	});
@@ -528,13 +530,13 @@ $(document).ready(function(){
 	 	if(arr.length > 0){
 			$.post("/deleteAllFiles",{files:arr}, function(){
 				
-				formObj.attr("action", "/sboard/removePage");
+				formObj.attr("action", "/sboard${sboardNum}/removePage");
 				formObj.submit();
 				
 			});
 		}else{
 			
-			formObj.attr("action", "/sboard/removePage");
+			formObj.attr("action", "/sboard${sboardNum}/removePage");
 			formObj.submit();
 		}
 		
@@ -546,14 +548,14 @@ $(document).ready(function(){
 	
 	$("#goListBtn ").on("click", function(){
 		formObj.attr("method", "get");
-		formObj.attr("action", "/sboard/list");
+		formObj.attr("action", "/sboard${sboardNum}/list");
 		formObj.submit();
 	});
 	
 	var bno = ${boardVO.bno};
 	var template = Handlebars.compile($("#templateAttach").html());
 	
-	$.getJSON("/sboard/getAttach/"+bno,function(list){
+	$.getJSON("/sboard${sboardNum}/getAttach/"+bno,function(list){
 		$(list).each(function(){
 			
 			var fileInfo = getFileInfo(this);

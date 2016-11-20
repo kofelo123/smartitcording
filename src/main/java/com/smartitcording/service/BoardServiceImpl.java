@@ -7,6 +7,8 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.smartitcording.controller.board2.BoardDAO2;
 import com.smartitcording.domain.BoardVO;
 import com.smartitcording.domain.Criteria;
 import com.smartitcording.domain.LikeVO;
@@ -18,6 +20,8 @@ public class BoardServiceImpl implements BoardService {
 
   @Inject
   private BoardDAO dao;
+  
+
 
   
   @Transactional
@@ -161,11 +165,12 @@ public void updatelikey(String uid, int bno) throws Exception {
 public void updateliken(String uid, int bno) throws Exception {
 	// TODO Auto-generated method stub
 	dao.updateliken(uid,bno);
-}   
-
-
-
-
+}
 
 
 }
+
+
+
+
+

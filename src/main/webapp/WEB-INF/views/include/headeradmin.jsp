@@ -37,7 +37,7 @@
     
   </head>
       
-  <body class="skin-blue sidebar-mini">
+  <body class="skin-blue-light sidebar-mini">
     <div class="wrapper">
       
       <header class="main-header">
@@ -341,22 +341,28 @@
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">Admin Link</li>
             
-             
-            <li class="treeview">
+             <c:if test="${sboardNum=='userlist'}">
+            <li class="treeview active">
+              </c:if>
+                <c:if test="${sboardNum!='userlist'}">
+                     <li class="treeview">
+                </c:if>
               <a href="userlist">
                 <i class="fa fa-files-o"></i>
                 <span>사용자 목록</span>
                 <span class="label label-primary pull-right">4</span>
               </a>
                  </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-th"></i> <span>게시판관리</span> <small class="label pull-right bg-green">new</small>
-              </a>
-            </li>
-            <li class="treeview">
+            
+            
+            <c:if test="${sboardNum=='chartpage'}">
+            <li class="treeview active">
+            </c:if>
+            <c:if test="${sboardNum!='chartpage'}">
+              <li class="treeview">
+            </c:if>
               <a href="chartpage">
                 <i class="fa fa-pie-chart"></i>
                 <span>통계</span>
@@ -364,6 +370,18 @@
               </a>
              
             </li>
+                          <li class="header" style="background-color:#ddf5f8;"></li>
+                                        <li class="header" style="background-color:#ddf5f8;"></li>
+                                        
+            <li class="header">Dev Soon</li>
+            
+            
+            
+            
+            
+        
+            
+            
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
@@ -372,7 +390,7 @@
               </a>
              
             </li>
-            <li class="treeview active">
+            <li class="treeview">
               <a href="#">
                 <i class="fa fa-edit"></i> <span>게시판관리</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -389,16 +407,20 @@
             <li>
               <a href="#">
                 <i class="fa fa-calendar"></i> <span>일정관리</span>
-                <small class="label pull-right bg-red">3</small>
+                <!-- <small class="label pull-right bg-red">3</small> -->
               </a>
             </li>
             <li>
               
-            <li class="header">LABELS</li>
-            <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-circle-o text-red"></i> <span>깃허브*</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>임시</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>임시</span></a></li>
-          </ul>
+            <li class="header" style="background-color:#ddf5f8;"></li>
+            <li class="header" style="background-color:#ddf5f8;"></li>
+            <li class="header" style="background-color:#ddf5f8;"></li>
+            <li class="header" style="background-color:#ddf5f8;"></li>
+            
+              <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-github "></i> <span>깃허브</span></a></li>
+            <li><a href="#" onClick="window.open('/sboard/chat', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅</span></a></li>
+            <li><a href="#" onClick="window.open('/sboard/music', '', 'width=600, height=400,left=900, top=350'); return false;"><i class="glyphicon glyphicon-music" style="color:#25c1ef"></i> <span>뮤직플레이어</span></a></li>
+           </ul>
         </section>
         <!-- /.sidebar -->
       </aside>
@@ -407,13 +429,33 @@
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
+        
+        <c:if test="${sboardNum=='userlist'}">
+       
           <h1>
-            자유게시판
-            <small>Preview   </small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/kofelo123/smartitcording">프로젝트 깃허브연결</a>
+         	   사용자명단
+            <small>사용자 명단입니다.  </small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">자유게시판</a></li>
-            <li class="active">임시</li>
+            <li><a href="#">사용자명단</a></li>
+           <!--  <li class="active">기본</li> -->
           </ol>
+          </c:if>
+          
+          <c:if test="${sboardNum=='chartpage'}">
+       
+          <h1>
+         	   통계
+            <small>방문자 통계입니다.  </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">방문자통계</a></li>
+           <!--  <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+          
+          
+         
         </section>

@@ -33,6 +33,7 @@
 </style>
 
 
+        
 <!-- Main content -->
 <section class="content">
 	<div class="row">
@@ -90,16 +91,19 @@
 							<tr style="font-family:Typo_DecoVariety; font-size:20px">
 								<%-- <td>${boardVO.bno}</td> --%>
 								<td style="width: 40%;padding-left:20px;"><a
-									href='/sboard/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}&uid=${login.uid}' style="color:#3eb37e">
+									href='/sboard${sboardNum }/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}&uid=${login.uid}' style="color:#3eb37e">
 										${boardVO.title} <%-- <strong>[${boardVO.replycnt}  ]</strong> --%>
 								</a></td>
-								<td>
-								<i class="fa fa-comment-o" title="댓글">&nbsp;&nbsp;&nbsp;&nbsp;${boardVO.replycnt}</i>&nbsp;&nbsp;&nbsp;&nbsp;
-								<i class="fa fa-thumbs-o-up" title="좋아요">&nbsp;&nbsp;&nbsp;&nbsp;${boardVO.countlike }</i>&nbsp;&nbsp;&nbsp;&nbsp;
-								<i class="glyphicon glyphicon-eye-open" title="조회수">&nbsp;${boardVO.viewcnt  }</i>
-								
+								<td style="width:7%">
+									<i class="fa fa-comment-o"  title="댓글">&nbsp;&nbsp;&nbsp;&nbsp;${boardVO.replycnt}</i>
 								</td>
-								<td class="mailbox-date" style="width:15%"><fmt:formatDate pattern="MM-dd HH:mm"
+								<td style="width:7%">								
+									<i class="fa fa-thumbs-o-up" title="좋아요" >&nbsp;&nbsp;&nbsp;&nbsp;${boardVO.countlike }</i>
+								</td>
+								<td style="width:25%">
+								<i class="glyphicon glyphicon-eye-open" title="조회수">&nbsp;${boardVO.viewcnt  }</i>
+								</td>
+								<td class="mailbox-date" style="width:10%"><fmt:formatDate pattern="MM-dd HH:mm"
 										value="${boardVO.regdate}" /></td>
 								<%-- <td><span class="badge bg-aqua">${boardVO.viewcnt }</span></td> --%>
 								<td class="mailbox-subject">${boardVO.writer} </td>
@@ -144,6 +148,7 @@
 			</div>
 		</div>
 		<!--/.col (left) -->
+		<div class="bannerlink">
 	<div class="banner">
 		<img src="/resources/bootstrap/image/banner.jpg" />
 		
@@ -159,7 +164,7 @@
 			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
 			</ul>
 		</div>
-
+	</div>
     
     
     

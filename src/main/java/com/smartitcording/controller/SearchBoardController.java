@@ -1,4 +1,4 @@
-package com.smartitcording.controller;
+	package com.smartitcording.controller;
 
 import java.util.List;
 
@@ -52,6 +52,7 @@ public class SearchBoardController {
     pageMaker.setTotalCount(service.listSearchCount(cri));
 
     model.addAttribute("pageMaker", pageMaker);
+   
   }
 
   @RequestMapping(value = "/readPage", method = RequestMethod.GET)
@@ -138,15 +139,18 @@ public class SearchBoardController {
   
 
   @RequestMapping(value = "/calendar", method = RequestMethod.GET)
-  public void calendar() throws Exception {
+  public void calendar(Model model) throws Exception {
 
     logger.info("calendar get ...........");
+    
+    model.addAttribute("sboardNum", "calendar");
   }
   
   @RequestMapping(value = "/mainview", method = RequestMethod.GET)
-  public void mainview() throws Exception {
+  public void mainview(Model model) throws Exception {
 
     logger.info("mainview get ...........");
+    model.addAttribute("sboardNum", "mainview");
   }
   
 

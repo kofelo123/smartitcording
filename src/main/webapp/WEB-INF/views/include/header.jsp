@@ -4,12 +4,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content="When Great Minds Don’t Think Alike" />
-<meta property="og:description"        content="How much does culture influence creative thinking?" />
-<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-     
+
      
     <meta charset="UTF-8">
     <title>스마트IT코딩단</title>
@@ -46,11 +41,12 @@
     
      <link rel="icon" type="image/png"  href="/resources/bootstrap/image/favicon.ico"/>
  	 
- 	 <meta property="og:url"                content="http://www.smartitcording.com/sboard/readPage?bno=201&uid=kofelo123" />
+<meta property="og:url"                content="http://www.smartitcording.com/sboard/readPage?bno=${boardVO.bno }&uid=" />
 <meta property="og:type"               content="article" />
-<meta property="og:title"              content="smartit TITLE" />
-<meta property="og:description"        content="smartit descripttion" />
+<meta property="og:title"              content="${boardVO.title }" />
+<meta property="og:description"        content="${boardVO.content }" />
 <meta property="og:image"              content="https://www.48hourslogo.com/48hourslogo_data/2016/09/19/54184_1474239812.png" />
+   
    
    
   </head>
@@ -278,8 +274,16 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             
+         	 <c:if test="${not empty login }">
                   <img src="/resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                  <span class="hidden-xs">허정원</span>
+                  <span class="hidden-xs">${login.uid }</span>
+             </c:if>
+             
+             <c:if test="${empty login }">
+              <img src="/resources/dist/img/notlogin.jpg" class="user-image" alt="User Image" />
+              <span class="hidden-xs">비로그인</span>
+              </c:if>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
@@ -287,7 +291,7 @@
                     <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
                       허정원 - 웹 개발자
-                      <small>Member since 2010</small>
+                      <small>Member since 2016</small>
                     </p>
                   </li>
                   <!-- Menu Body -->
@@ -335,9 +339,10 @@
               <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>&nbsp;&nbsp;${login.uname }</p>
+              <p>&nbsp;&nbsp;${login.uid }</p>
 
-              <a href="/user/logout"><i class="fa fa-circle text-success"></i> 로그인상태</a>
+              <a href="/user/logout"><i class="fa fa-circle text-success"></i> 로그인상태 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="/user/logout" style="color:#64a3f3;font-size:10px"><i class="fa fa-sign-out" style="color:#64a3f3;font-size:14px;"></i>로그아웃</a>
             </div>
           </div>
           </c:if>
@@ -348,9 +353,10 @@
               <img src="/resources/dist/img/notlogin.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>로그인 해주세요</p>
+            <p>  로그인 해주세요 </p>
 
-              <a href="/user/login"><i class="fa fa-circle text-fail"></i> 비로그인상태</a>
+              <a href="/user/login"><i class="fa fa-circle text-fail"></i> 비로그인상태 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="/user/login" style="color:#64a3f3;font-size:10px"><i class="fa fa-sign-out" style="color:#64a3f3;font-size:14px;"></i>로그인</a>
             </div>
           </div>
           </c:if>
@@ -381,83 +387,139 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header"> <%@include file="../include/naverparsing.jsp" %></li>
-            <li class="treeview">
+            
+            
+               <li class="header" style="background-color:#ddf5f8;"></li>
+               
+                <c:if test="${sboardNum=='6'}">
+          <li class="treeview active">
+             </c:if>
+              <c:if test="${sboardNum!='6'}">
+     		 <li class="treeview">
+             </c:if>
+              <a href="/sboard6/list">
+                <i class="fa fa-edit"></i> <span>공지사항</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+             
+            </li>
+            
+            
+               <c:if test="${sboardNum==null}">
+          <li class="treeview active">
+             </c:if>
+              <c:if test="${sboardNum!=null}">
+     		 <li class="treeview">
+             </c:if>
               <a href="/sboard/list">
                 <i class="fa fa-dashboard"></i> <span>자유게시판</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               
             </li>
-            <li class="treeview">
-              <a href="#">
+           
+             
+                <c:if test="${sboardNum=='2'}">
+          <li class="treeview active">
+             </c:if>
+              <c:if test="${sboardNum!='2'}">
+     		 <li class="treeview">
+             </c:if>
+              <a href="/sboard2/list">
                 <i class="fa fa-files-o"></i>
                 <span>개발질문</span>
-                <span class="label label-primary pull-right">4</span>
+                <!-- <span class="label label-primary pull-right">4</span> --><i class="fa fa-angle-left pull-right"></i>
               </a>
             
             </li>
-            <li>
-              <a href="#">
+            
+            
+                <c:if test="${sboardNum=='3'}">
+          <li class="treeview active">
+             </c:if>
+              <c:if test="${sboardNum!='3'}">
+     		 <li class="treeview">
+             </c:if>
+              <a href="/sboard3/list">
                 <i class="fa fa-th"></i> <span>개발팁공유</span> <small class="label pull-right bg-green">new</small>
               </a>
             </li>
-            <li class="treeview">
-              <a href="#">
+            
+            
+           
+                <c:if test="${sboardNum=='4'}">
+          <li class="treeview active">
+             </c:if>
+              <c:if test="${sboardNum!='4'}">
+     		 <li class="treeview">
+             </c:if>
+              <a href="/sboard4/list">
                 <i class="fa fa-pie-chart"></i>
-                <span>불편사항</span>
+                <span>건의사항</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
              
             </li>
-            <li class="treeview">
-              <a href="#">
+            
+            
+            
+                <c:if test="${sboardNum=='5'}">
+          <li class="treeview active">
+             </c:if>
+              <c:if test="${sboardNum!='5'}">
+     		 <li class="treeview">
+             </c:if>
+              <a href="/sboard5/list">
                 <i class="fa fa-laptop"></i>
                 <span>스터디해요</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
              
             </li>
-            <li class="treeview active">
-              <a href="#">
-                <i class="fa fa-edit"></i> <span>취업고민</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-             
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-table"></i> <span>책나눔</span>
+            
+            
+            
+               
+            
+            
+            
+                <c:if test="${sboardNum=='7'}">
+          <li class="treeview active">
+             </c:if>
+              <c:if test="${sboardNum!='7'}">
+     		 <li class="treeview">
+             </c:if>
+              <a href="/sboard7/list">
+                <i class="fa fa-table"></i> <span>프로젝트</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               
             </li>
-            <li>
+        
+      <!--       <li><a href="#"><i class="fa fa-book" ></i> <span>베스트</span></a></li> -->
+            <li class="header" style="background-color:#ddf5f8;"></li>
+             <li class="header" style="background-color:#ddf5f8;"></li>
+              <li class="header" style="background-color:#ddf5f8;"></li>
+              
+              <li>
               <a href="/sboard/calendar">
-                <i class="fa fa-calendar"></i> <span>일정</span>
+                <i class="fa fa-calendar"></i> <span>학과일정</span>
                 <small class="label pull-right bg-red">3</small>
               </a>
             </li>
             <li>
               <a href="#"  onClick="window.open('/sboard/mail/listmail?uid=${login.uid }', '', 'width=475, height=490,left=1000, top=100'); return false;"> <!-- 파라미터로 uid를 넘겨줘야 리스트에 서 uid에 맞는 로직을 불러올수 있을거같아서 시도해봤는데 가능한것 같다.  -->
                 <i class="fa fa-envelope"></i> <span>쪽지함</span>
-                <small class="label pull-right bg-yellow">12</small>
+               <!--  <small class="label pull-right bg-yellow">12</small> -->
               </a>
             </li>
-            <li class="treeview">
+          <!--   <li class="treeview">
               <a href="#">
                 <i class="fa fa-folder"></i> <span>북마크</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-share"></i> <span>익명게시판</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-          
-            </li>
-            <li><a href="#"><i class="fa fa-book"></i> <span>베스트</span></a></li>
-            <li class="header">링크</li>
+            </li> -->
+              <li class="header" style="background-color:#ddf5f8;"></li>
             <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-github "></i> <span>깃허브</span></a></li>
             <li><a href="#" onClick="window.open('/sboard/chat', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅</span></a></li>
             <li><a href="#" onClick="window.open('/sboard/music', '', 'width=600, height=400,left=900, top=350'); return false;"><i class="glyphicon glyphicon-music" style="color:#25c1ef"></i> <span>뮤직플레이어</span></a></li>
@@ -466,19 +528,117 @@
         <!-- /.sidebar -->
       </aside>
 
-      <!-- Content Wrapper. Contains page content -->
+     
+
+ <!-- 게시판 윗부분에 게시판이름   -->
+   <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
+       		<c:if test="${sboardNum==null}">
+       
           <h1>
-            자유게시판
-            <small>Preview   </small>
+         	   자유게시판
+            <small>자유롭게 작성해주세요  </small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
             <li><a href="#">자유게시판</a></li>
-            <li class="active">임시</li>
+           <!--  <li class="active">기본</li> -->
           </ol>
+          </c:if>
+          <c:if test="${sboardNum=='2'}">
+           <h1>
+         	   개발질문
+            <small> 개발중 궁금한 점에 대해 질문해보세요   </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">개발질문</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+           <c:if test="${sboardNum=='3'}">
+           <h1>
+         	  팁공유
+            <small> 좋은 정보와 지식을 공유해요   </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">팁공유</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+            <c:if test="${sboardNum=='4'}">
+           <h1>
+         	건의사항
+            <small> 개선되었으면 하는 사항을 토의해 봅시다. </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">건의사항</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+            <c:if test="${sboardNum=='5'}">
+           <h1>
+         	 스터디해요
+            <small> 더 이상 혼자 하지마세요. 함께 배워봐요   </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">스터디</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+            <c:if test="${sboardNum=='6'}">
+           <h1>
+         	  공지사항
+            <small> 공지사항 입니다. 필독해주세요 </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">공지</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+            <c:if test="${sboardNum=='7'}">
+           <h1>
+         	 프로젝트
+            <small> 만들어진 작품들을 구경하는 곳입니다.   </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">프로젝트</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+          
+            <c:if test="${sboardNum=='calendar'}">
+           <h1>
+         	  학과일정
+            <small> 학과 스케줄 입니다.</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">일정</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+          
+            <c:if test="${sboardNum=='mainview'}">
+           <h1>
+         	 주요게시판
+            <small> 주요게시판의 최신내용입니다. </small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">공지</a></li>
+            <!-- <li class="active">기본</li> -->
+          </ol>
+          </c:if>
+          
+          
         </section>
         
-
+        

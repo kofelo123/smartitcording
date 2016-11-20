@@ -9,6 +9,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		insert into tbl_board (title, content, writer)
 		values(#{title},#{content}, #{writer})
 	</insert>
+	<insert id="create2">
+		insert into tbl_board2 (title, content, writer)
+		values(#{title},#{content}, #{writer})
+	</insert>
 
 	<select id="read" resultType="com.smartitcording.domain.BoardVO">
 		select
@@ -147,6 +151,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  
 <insert id="addAttach">
 insert into tbl_attach(fullname, bno) values (#{fullName}, LAST_INSERT_ID())
+</insert> 
+<insert id="addAttach2">
+insert into tbl_attach2(fullname, bno) values (#{fullName}, LAST_INSERT_ID())
 </insert> 
 
 

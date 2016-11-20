@@ -12,7 +12,7 @@
 		<!-- left column -->
 
 
-		<div class="col-md-12">
+		<div class="col-md-12" style="width:80%">
 			<!-- general form elements -->
 			<div class='box'>
 				<div class="box-header with-border">
@@ -55,10 +55,10 @@
 
 			<div class="box">
 				<div class="box-header with-border">
-					<h3 class="box-title">사용자 목록</h3>
+					<h3 class="box-title">사용자 명단</h3>
 				</div>
 				<div class="box-body">
-					<table class="table table-bordered">
+					<table class="table table-hover table-striped" >
 						<tr>
 							<th style="width: 180px">아이디</th>
 							<th style="width: 150px">이름</th>
@@ -115,7 +115,14 @@
 			</div>
 		</div>
 		<!--/.col (left) -->
-
+<div class="bannerlink">
+	<div class="banner">
+		<img src="/resources/bootstrap/image/banner.jpg" />
+		
+		
+	</div>
+	
+	</div>
 	</div>
 	<!-- /.row -->
 </section>

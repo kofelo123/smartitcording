@@ -72,7 +72,7 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
 	
     <div class="login-box">
       <div class="login-logo">
-        <a href="/sboard/list"><b>SmartItCording</b>Team</a>
+        <a href="/sboard/list"><b>SMART IT CODING</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg"></p>

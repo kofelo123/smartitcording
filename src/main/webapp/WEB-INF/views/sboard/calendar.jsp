@@ -16,13 +16,13 @@
      <!-- Main content -->
     <section class="content">
       <div class="row">
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
           <div class="box box-solid">
             <div class="box-header with-border">
               <h4 class="box-title">드래그 아이콘</h4>
             </div>
             <div class="box-body">
-              <!-- the events -->
+              the events
               <div id="external-events">
                 <div class="external-event bg-green">수업</div>
                 <div class="external-event bg-yellow">팀 회의</div>
@@ -37,16 +37,16 @@
                 </div>
               </div>
             </div>
-            <!-- /.box-body -->
+            /.box-body
           </div>
-          <!-- /. box -->
+          /. box
           <div class="box box-solid">
             <div class="box-header with-border">
               <h3 class="box-title">드래그 아이콘 생성</h3>
             </div>
             <div class="box-body">
               <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-                <!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
+                <button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>
                 <ul class="fc-color-picker" id="color-chooser">
                   <li><a class="text-aqua" href="#"><i class="fa fa-square"></i></a></li>
                   <li><a class="text-blue" href="#"><i class="fa fa-square"></i></a></li>
@@ -63,32 +63,54 @@
                   <li><a class="text-navy" href="#"><i class="fa fa-square"></i></a></li>
                 </ul>
               </div>
-              <!-- /btn-group -->
+              /btn-group
               <div class="input-group">
                 <input id="new-event" type="text" class="form-control" placeholder="이벤트 이름">
 
                 <div class="input-group-btn">
                   <button id="add-new-event" type="button" class="btn btn-primary btn-flat">추가</button>
                 </div>
-                <!-- /btn-group -->
+                /btn-group
               </div>
-              <!-- /input-group -->
+              /input-group
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- /.col -->
-        <div class="col-md-9">
+        <div class="col-md-12" style="width:75%;padding-left:7%;">
           <div class="box box-primary">
             <div class="box-body no-padding">
               <!-- THE CALENDAR -->
               <div id="calendar"></div>
+              
             </div>
             <!-- /.box-body -->
+          
           </div>
+          
           <!-- /. box -->
+          
         </div>
         <!-- /.col -->
+             <div class="bannerlink">
+	<div class="banner">
+		<img src="/resources/bootstrap/image/banner.jpg" />
+		
+		
+	</div>
+	<div id="mlink" class="mbx">
+			<ul>
+			<li class="ico7"><a href="http://sgsso.dhu.ac.kr" target="_blank" title="새창으로 학생종합정보 홈페이지 연결">학생종합정보</a></li>
+            <li class="ico5"><a href="http://library.dhu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지 연결">도서관</a></li>	
+            <li class="ico6"><a href="http://bis.gbgs.go.kr/bs/businfo/sub03_03.jsp" target="_blank" title="새창으로 경산버스 홈페이지 연결">경산버스</a></li>					
+			<li class="ico9"><a href="https://mail.dhu.ac.kr/" target="_blank" title="새창으로 웹메일 홈페이지 연결">웹메일</a></li>
+			<li class="ico11"><a href="http://lifelong.dhu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지 연결">평생교육원</a></li>
+			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
+			</ul>
+		</div>
+	</div>
       </div>
+   
       <!-- /.row -->
     </section>
     <!-- /.content -->
@@ -172,72 +194,80 @@
           backgroundColor: "#f56954", //red
           borderColor: "#f56954" //red
         },
-       /*  {
-          title: 'Long Event',
-          start: new Date(y, m, d - 5),
-          end: new Date(y, m, d - 2),
-          backgroundColor: "#f39c12", //yellow
-          borderColor: "#f39c12" //yellow
-        }, */
         {
-          title: '회의',
-          start: new Date(y, m, d, 10, 30),
-          allDay: false,
-          backgroundColor: "#0073b7", //Blue
-          borderColor: "#0073b7" //Blue
-        },
-        {
-          title: '맛없는 점심',
-          start: new Date(y, m, d, 12, 0),
-          end: new Date(y, m, d, 14, 0),
-          allDay: false,
-          backgroundColor: "#00c0ef", //Info (aqua)
-          borderColor: "#00c0ef" //Info (aqua)
-        },
-        {
-            title: '수업발표',
-            start: new Date(y, m, 3, 14, 0),
-            end: new Date(y, m, 3, 15, 0),
+            title: '졸업작품 회의',
+            start: new Date(y, m, 	3, 10, 0),
             allDay: false,
-            backgroundColor: "red", //Info (aqua)
-            borderColor: "red" //Info (aqua)
-          },
-        {
-          title: '엄마 생일',
-          start: new Date(y, m, 4, 19, 0),
-          end: new Date(y, m, 4, 22, 30),
-          allDay: false,
-          backgroundColor: "pink", //Success (green)
-          borderColor: "pink" //Success (green)
-        },
-        {
-            title: '혼나는날',
-            start: new Date(y, m, 7, 10, 0),
-            allDay: false,
-            backgroundColor: "gold", //Success (green)
+            backgroundColor: "lightblue", //Success (green)
             borderColor: "pink" //Success (green)
           },
           {
-              title: '혼나는날2',
-              start: new Date(y, m, 10, 10, 0),
+              title: '국가장학금 신청기간',
+              start: new Date(y, m, 	17, 10, 0),
               allDay: false,
-              backgroundColor: "gold", //Success (green)
+              backgroundColor: "lightblue", //Success (green)
+              borderColor: "pink" //Success (green)
+             
+            },
+          {
+              title: 'G-Star 2016',
+              start: new Date(y, m,17, 10, 0),
+              allDay: false,
+              backgroundColor: "purple", //Success (green)
               borderColor: "pink" //Success (green)
             },
             {
-                title: '혼나는날3',
-                start: new Date(y, m, 14, 10, 0),
+                title: 'G-Star 2016',
+                start: new Date(y, m,18, 10, 0),
                 allDay: false,
-                backgroundColor: "gold", //Success (green)
+                backgroundColor: "purple", //Success (green)
                 borderColor: "pink" //Success (green)
               },
               {
-                  title: '혼나는날4',
-                  start: new Date(y, m, 17, 10, 0),
+                  title: 'G-Star 2016',
+                  start: new Date(y, m,19, 10, 0),
                   allDay: false,
-                  backgroundColor: "gold", //Success (green)
+                  backgroundColor: "purple", //Success (green)
                   borderColor: "pink" //Success (green)
                 },
+                {
+                    title: 'G-Star 2016',
+                    start: new Date(y, m,20, 10, 0),
+                    allDay: false,
+                    backgroundColor: "purple", //Success (green)
+                    borderColor: "pink" //Success (green)
+                  },
+            
+          {
+              title: '졸업작품 리허설',
+              start: new Date(y, m, 21, 10, 0),
+              allDay: false,
+              backgroundColor: "gold", //Success (green)
+              borderColor: "pink" //Success (green)
+              
+            },
+            {
+                title: '작품전시',
+                start: new Date(y, m, 23, 10, 0),
+                allDay: false,
+                backgroundColor: "orange", //Success (green)
+                borderColor: "pink" //Success (green)
+              },
+              {
+                  title: '졸업작품 발표회',
+                  start: new Date(y, m, 24, 10, 12),
+                  allDay: false,
+                  backgroundColor: "gold", //Success (green)
+                  borderColor: "white" //Success (green)
+                
+                }, 
+                {
+                    title: '수업평가(기말평가)기간',
+                    start: new Date(y, m, 30, 10, 0),
+                    allDay: false,
+                    backgroundColor: "pink", //Success (green)
+                    borderColor: "pink" //Success (green)
+                  }, 
             
         {
           title: 'Click for Google',

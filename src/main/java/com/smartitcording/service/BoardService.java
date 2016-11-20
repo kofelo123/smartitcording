@@ -10,6 +10,7 @@ import com.smartitcording.domain.SearchCriteria;
 public interface BoardService {
 
   public void regist(BoardVO board) throws Exception;
+  
 
   public BoardVO read(Integer bno) throws Exception;
 

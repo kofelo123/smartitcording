@@ -18,8 +18,8 @@
 .fileDrop {
   width: 80%;
   height: 100px;
-  border: 1px dotted gray;
-  background-color: lightslategrey;
+  border: 1px dotted #ecb775;
+  background-color: #effecb;
   margin: auto;
   
 }
@@ -29,12 +29,13 @@
 <section class="content">
 	<div class="row">
 		<!-- left column -->
-		<div class="col-md-12">
+		<div class="col-md-12" style="width:80%;padding-left:2%">
 			<!-- general form elements -->
 			<div class="box box-primary">
-				<div class="box-header">
-					<h3 class="box-title"></h3>
+			<div class="box-header">
+					<h3 class="box-title">글 작성</h3>
 				</div>
+				
 				<!-- /.box-header -->
 
 <form id='registerForm' role="form" method="post">
@@ -73,7 +74,7 @@
 		</div>
 
 		<div class="form-group">
-			<label for="exampleInputEmail1">업로드 파일을 이곳에 드래그&드롭 해주세요</label>
+			<label for="exampleInputEmail1">업로드할 파일을 아래에 드래그&드롭 해주세요</label>
 			<div class="fileDrop"></div>
 		</div>
 	</div>
@@ -96,6 +97,24 @@
 
 			</div>
 			<!-- /.box -->
+			<div class="bannerlink">
+	<div class="banner">
+		<img src="/resources/bootstrap/image/banner.jpg" />
+		
+		
+	</div>
+	<div id="mlink" class="mbx">
+			<ul>
+			<li class="ico7"><a href="http://sgsso.dhu.ac.kr" target="_blank" title="새창으로 학생종합정보 홈페이지 연결">학생종합정보</a></li>
+            <li class="ico5"><a href="http://library.dhu.ac.kr/" target="_blank" title="새창으로 도서관 홈페이지 연결">도서관</a></li>	
+            <li class="ico6"><a href="http://bis.gbgs.go.kr/bs/businfo/sub03_03.jsp" target="_blank" title="새창으로 경산버스 홈페이지 연결">경산버스</a></li>					
+			<li class="ico9"><a href="https://mail.dhu.ac.kr/" target="_blank" title="새창으로 웹메일 홈페이지 연결">웹메일</a></li>
+			<li class="ico11"><a href="http://lifelong.dhu.ac.kr/" target="_blank" title="새창으로 평생교육원 홈페이지 연결">평생교육원</a></li>
+			<li class="ico4"><a href="http://www.jaan.co.kr/" target="_blank" title="새창으로 자안쇼핑몰 홈페이지 연결">자안쇼핑몰</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
 		</div>
 		<!--/.col (left) -->
 

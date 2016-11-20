@@ -10,6 +10,7 @@ import com.smartitcording.domain.SearchCriteria;
 public interface BoardDAO {
 
   public void create(BoardVO vo) throws Exception;
+  public void create2(BoardVO vo) throws Exception;
 
   public BoardVO read(Integer bno) throws Exception;
 
@@ -38,6 +39,7 @@ public interface BoardDAO {
   public void updateViewCnt(Integer bno)throws Exception;
   
   public void addAttach(String fullName)throws Exception;
+  public void addAttach2(String fullName)throws Exception;
   
   public List<String> getAttach(Integer bno)throws Exception;  
    

@@ -195,5 +195,15 @@ public void updateliken(String uid, int bno) throws Exception {
 	session.update(namespace+".updateliken",paramMap);
 }
 
+@Override
+public void create2(BoardVO vo) throws Exception {
+  session.insert(namespace + ".create2", vo);
+}
+@Override
+public void addAttach2(String fullName) throws Exception {
+  
+  session.insert(namespace+".addAttach2", fullName);
+  
+}
 
 }

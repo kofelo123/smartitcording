@@ -30,6 +30,8 @@ public class AdminController {
 	public void userlist(Model model) throws Exception{
 		logger.info("userlist get...");
 		/**/model.addAttribute("userVO",service.listuser());
+		
+		model.addAttribute("sboardNum","userlist");
 	}
 	
 	@RequestMapping(value="/admLogPost" , method=RequestMethod.POST)
@@ -42,8 +44,9 @@ public class AdminController {
 	}
 	
 	@RequestMapping(value="/chartpage" , method=RequestMethod.GET)
-	public void charts()throws Exception{
+	public void charts(Model model)throws Exception{
 		logger.info("charts by admin get ..");
+		model.addAttribute("sboardNum","chartpage");
 	}
 	
 }

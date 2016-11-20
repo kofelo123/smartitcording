@@ -7,13 +7,13 @@
 <%@include file="../include/headeradmin.jsp"%>
 <%@ include file="../include/analytics.jsp"%>	
     <!-- Main content -->
-    <section class="content">
+    <section class="content" style="width:90%">
       <div class="row">
         <div class="col-md-6">
           <!-- AREA CHART -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Area Chart</h3>
+              <h3 class="box-title">일일 사용자 방문 통계</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -33,7 +33,7 @@
           <!-- DONUT CHART -->
           <div class="box box-danger">
             <div class="box-header with-border">
-              <h3 class="box-title">Donut Chart</h3>
+              <h3 class="box-title">사용 브라우저 통계</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -54,7 +54,7 @@
           <!-- LINE CHART -->
           <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Line Chart</h3>
+              <h3 class="box-title">일일 사용자 통계-선형</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -74,7 +74,7 @@
           <!-- BAR CHART -->
           <div class="box box-success">
             <div class="box-header with-border">
-              <h3 class="box-title">Bar Chart</h3>
+              <h3 class="box-title">동시접속자 통계</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -129,7 +129,7 @@
     var areaChart = new Chart(areaChartCanvas);
 
     var areaChartData = {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      labels: ["8일", "9일", "10일", "11일", "12일", "13일", "14일"],
       datasets: [
         {
           label: "Electronics",
@@ -216,37 +216,37 @@
         value: 700,
         color: "#f56954",
         highlight: "#f56954",
-        label: "Chrome"
+        label: "크롬"
       },
       {
         value: 500,
         color: "#00a65a",
         highlight: "#00a65a",
-        label: "IE"
+        label: "익스플로어"
       },
       {
         value: 400,
         color: "#f39c12",
         highlight: "#f39c12",
-        label: "FireFox"
+        label: "파이어폭스"
       },
       {
         value: 600,
         color: "#00c0ef",
         highlight: "#00c0ef",
-        label: "Safari"
+        label: "사파리"
       },
       {
         value: 300,
         color: "#3c8dbc",
         highlight: "#3c8dbc",
-        label: "Opera"
+        label: "오페라"
       },
       {
         value: 100,
         color: "#d2d6de",
         highlight: "#d2d6de",
-        label: "Navigator"
+        label: "네비게이터"
       }
     ];
     var pieOptions = {
