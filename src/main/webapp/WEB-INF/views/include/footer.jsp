@@ -9,16 +9,16 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> 10.01	
         </div>
-        <strong>Copyright &copy; 2016 <a href="https://github.com/kofelo123">HeoJeongWon</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2016 <a href="https://github.com/kofelo123" target="_blank">HeoJeongWon</a>.</strong> All rights reserved.
       </footer>
      </div> 
       <!-- Control Sidebar -->      
       <aside class="control-sidebar control-sidebar-dark">                
         <!-- Create the tabs -->
         <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-          <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+          <li><a href="/smartit#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
           
-          <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+          <li><a href="/smartit#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
@@ -182,12 +182,12 @@
 
 
      <!-- Bootstrap 3.3.2 JS -->
-     <script src="/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+     <script src="/smartit/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
   <!---->
-    <script src='/resources/plugins/fastclick/fastclick.min.js'></script>
+    <script src='/smartit/resources/plugins/fastclick/fastclick.min.js'></script>
    
-    <script src="/resources/dist/js/app.min.js" type="text/javascript"></script>
+    <script src="/smartit/resources/dist/js/app.min.js" type="text/javascript"></script>
    
-    <script src="/resources/dist/js/demo.js" type="text/javascript"></script> 
+    <script src="/smartit/resources/dist/js/demo.js" type="text/javascript"></script> 
   </body>
 </html>

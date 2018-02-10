@@ -10,14 +10,14 @@
     <title>회원가입</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
-    <link href="/resources/plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
-     <script src="/resources/js/member.js"></script>
+    <link href="/smartit/resources/plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
+     <script src="/smartit/resources/js/member.js"></script>
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +30,7 @@
   <body class="login-page">
     <div class="login-box2">
       <div class="login-logo">
-        <a href="/sboard/list"><b>회원가입</b></a>
+        <a href="/smartit/sboard/list"><b>회원가입</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg"></p>
@@ -46,7 +46,7 @@
   </div> -->
     <div class="joinForm" >
   
-    <form id="join" action="/user/joinPost" method="post" name="formm">
+    <form id="join" action="/smartit/user/joinPost" method="post" name="formm">
 
       <fieldset>
         <legend>기본정보</legend><br>

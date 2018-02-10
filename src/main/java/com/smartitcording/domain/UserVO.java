@@ -129,6 +129,7 @@ public class UserVO {
 	    this.indate = indate;
 	}
 
+	///후에 보건데 이녀석도 바꿔줘야할것.. 일단 냅두는데 .. 초기예제버전의 UserVO 라서 테스트할떄 안찎히니까..
 	@Override
 	public String toString() {
 		return "UserVO [uid=" + uid + ", upw=" + upw + ", uname=" + uname + ", upoint=" + upoint + "]";

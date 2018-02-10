@@ -7,16 +7,16 @@
 	<meta charset="UTF-8">
     <title>채팅</title>
     
-     <link rel="stylesheet" href="../../../resources/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../../../smartit/resources/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../../resources/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../../smartit/resources/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../../resources/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../../../smartit/resources/dist/css/skins/_all-skins.min.css">
   
  
 
@@ -52,7 +52,7 @@
                 <ul class="contacts-list">
                   <li>
                     <a href="#">
-                      <img class="contacts-list-img" src="../../../resources/dist/img/king.jpg" alt="User Image">
+                      <img class="contacts-list-img" src="../../../smartit/resources/dist/img/king.jpg" alt="User Image">
 
                       <div class="contacts-list-info">
                             <span class="contacts-list-name">
@@ -92,7 +92,7 @@
         
         var textarea = document.getElementById("messageWindow");
       
-        var webSocket = new WebSocket('ws://localhost:8181/broadcasting');
+        var webSocket = new WebSocket('ws://localhost:8080/broadcasting');
         var inputMessage = document.getElementById('inputMessage');
         var name = "${login.uname }: ";
  
@@ -180,7 +180,7 @@
                     <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                   </div>
                   /.direct-chat-info
-                  <img class="direct-chat-img" src="../../../resources/dist/img/user1-128x128.jpg" alt="Message User Image">/.direct-chat-img
+                  <img class="direct-chat-img" src="../../../smartit/resources/dist/img/user1-128x128.jpg" alt="Message User Image">/.direct-chat-img
                   <div class="direct-chat-text">
                     Is this template really for free? That's unbelievable!
                   </div>
@@ -210,7 +210,7 @@
                 <ul class="contacts-list">
                   <li>
                     <a href="#">
-                      <img class="contacts-list-img" src="../../../resources/dist/img/user1-128x128.jpg" alt="User Image">
+                      <img class="contacts-list-img" src="../../../smartit/resources/dist/img/user1-128x128.jpg" alt="User Image">
 
                       <div class="contacts-list-info">
                             <span class="contacts-list-name">
@@ -230,7 +230,7 @@
             </div>
             /.box-body
             <div class="box-footer">
-              <form action="#" method="post">
+              <form action="/smartit#" method="post">
                 <div class="input-group">
                   <input type="text" name="message" placeholder="Type Message ..." class="form-control">
                       <span class="input-group-btn">
@@ -248,15 +248,15 @@
       
         jQuery 2.2.3
           -->
-<script src="../../../resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../../smartit/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../smartit/resources/bootstrap/js/bootstrap.min.js"></script>
 <!-- Slimscroll -->
-<script src="../../../resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="../../../smartit/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="../../../resources/plugins/fastclick/fastclick.js"></script>
+<script src="../../../smartit/resources/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../../../resources/dist/js/app.min.js"></script>
+<script src="../../../smartit/resources/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../../resources/dist/js/demo.js"></script>
+<script src="../../../smartit/resources/dist/js/demo.js"></script>
 </html>

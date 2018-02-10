@@ -10,16 +10,16 @@
     <title>스마트IT코딩단</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="/resources/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,20 +28,23 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery 2.1.4 -->
-    <script src="/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="/smartit/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     
      
      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <!-- thearc 프로젝트하면서 수많은 에러테스트 과정에서 댓글 modal 수정페이지 멈춤 현상의 원인으로 찾은 아래 js 인데 일단 주석처리한다. 원래는 readPage에있는건데 header에도 있길래 이것도..  -->
+  <!-- 다시 헤더에있는 녀석은 살린다.(modify에서 에디터가 꺠지는현상..)  --> 
+  <!-- 다시 주석처리한다(modal에서 수정처리후 어둠현상)  -->
+  <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> --> 
   <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
     
     
     
-     <link rel="icon" type="image/png"  href="/resources/bootstrap/image/favicon.ico"/>
+     <link rel="icon" type="image/png"  href="/smartit/resources/bootstrap/image/favicon.ico"/>
  	 
-<meta property="og:url"                content="http://www.smartitcording.com/sboard/readPage?bno=${boardVO.bno }&uid=" />
+<meta property="og:url"                content="http://www.smartitcording.com/smartit/sboard/readPage?bno=${boardVO.bno }&uid=" />
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="${boardVO.title }" />
 <meta property="og:description"        content="${boardVO.content }" />
@@ -60,7 +63,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="/sboard/list" class="logo">
+        <a href="/smartit/sboard/list" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
@@ -97,7 +100,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user7-128x128.jpg" class="img-circle" alt="User Image"/>
+                            <img src="/smartit/resources/dist/img/user7-128x128.jpg" class="img-circle" alt="User Image"/>
                           </div>
                           <h4>
                             Support Team
@@ -109,7 +112,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             AdminLTE Design Team
@@ -121,7 +124,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Developers
@@ -133,7 +136,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Sales Department
@@ -145,7 +148,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Reviewers
@@ -276,19 +279,19 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
              
          	 <c:if test="${not empty login }">
-                  <img src="/resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                  <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
                   <span class="hidden-xs">${login.uid }</span>
              </c:if>
              
              <c:if test="${empty login }">
-              <img src="/resources/dist/img/notlogin.jpg" class="user-image" alt="User Image" />
+              <img src="/smartit/resources/dist/img/notlogin.jpg" class="user-image" alt="User Image" />
               <span class="hidden-xs">비로그인</span>
               </c:if>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
                       허정원 - 웹 개발자
                       <small>Member since 2016</small>
@@ -336,13 +339,13 @@
           <c:if test="${not empty login }">
              <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
             <div class="pull-left image">
-              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>&nbsp;&nbsp;${login.uid }</p>
 
-              <a href="/user/logout"><i class="fa fa-circle text-success"></i> 로그인상태 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-              <a href="/user/logout" style="color:#64a3f3;font-size:10px"><i class="fa fa-sign-out" style="color:#64a3f3;font-size:14px;"></i>로그아웃</a>
+              <a href="/smartit/user/logout"><i class="fa fa-circle text-success"></i> 로그인상태 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="/smartit/user/logout" style="color:#64a3f3;font-size:10px"><i class="fa fa-sign-out" style="color:#64a3f3;font-size:14px;"></i>로그아웃</a>
             </div>
           </div>
           </c:if>
@@ -350,19 +353,19 @@
           <c:if test="${empty login }">
              <div class="user-panel">
             <div class="pull-left image">
-              <img src="/resources/dist/img/notlogin.jpg" class="img-circle" alt="User Image" />
+              <img src="/smartit/resources/dist/img/notlogin.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
             <p>  로그인 해주세요 </p>
 
-              <a href="/user/login"><i class="fa fa-circle text-fail"></i> 비로그인상태 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-              <a href="/user/login" style="color:#64a3f3;font-size:10px"><i class="fa fa-sign-out" style="color:#64a3f3;font-size:14px;"></i>로그인</a>
+              <a href="/smartit/user/login"><i class="fa fa-circle text-fail"></i> 비로그인상태 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="/smartit/user/login" style="color:#64a3f3;font-size:10px"><i class="fa fa-sign-out" style="color:#64a3f3;font-size:14px;"></i>로그인</a>
             </div>
           </div>
           </c:if>
       <!--     <div class="user-panel">
             <div class="pull-left image">
-              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>허정원</p>
@@ -386,7 +389,7 @@
           <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header"> <%@include file="../include/naverparsing.jsp" %></li>
+            <li class="header"> <%-- <%@include file="../include/naverparsing.jsp" %> --%></li>
             
             
                <li class="header" style="background-color:#ddf5f8;"></li>
@@ -397,7 +400,7 @@
               <c:if test="${sboardNum!='6'}">
      		 <li class="treeview">
              </c:if>
-              <a href="/sboard6/list">
+              <a href="/smartit/sboard6/list">
                 <i class="fa fa-edit"></i> <span>공지사항</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
@@ -411,7 +414,7 @@
               <c:if test="${sboardNum!=null}">
      		 <li class="treeview">
              </c:if>
-              <a href="/sboard/list">
+              <a href="/smartit/sboard/list">
                 <i class="fa fa-dashboard"></i> <span>자유게시판</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               
@@ -424,7 +427,7 @@
               <c:if test="${sboardNum!='2'}">
      		 <li class="treeview">
              </c:if>
-              <a href="/sboard2/list">
+              <a href="/smartit/sboard2/list">
                 <i class="fa fa-files-o"></i>
                 <span>개발질문</span>
                 <!-- <span class="label label-primary pull-right">4</span> --><i class="fa fa-angle-left pull-right"></i>
@@ -439,7 +442,7 @@
               <c:if test="${sboardNum!='3'}">
      		 <li class="treeview">
              </c:if>
-              <a href="/sboard3/list">
+              <a href="/smartit/sboard3/list">
                 <i class="fa fa-th"></i> <span>개발팁공유</span> <small class="label pull-right bg-green">new</small>
               </a>
             </li>
@@ -452,7 +455,7 @@
               <c:if test="${sboardNum!='4'}">
      		 <li class="treeview">
              </c:if>
-              <a href="/sboard4/list">
+              <a href="/smartit/sboard4/list">
                 <i class="fa fa-pie-chart"></i>
                 <span>건의사항</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -468,7 +471,7 @@
               <c:if test="${sboardNum!='5'}">
      		 <li class="treeview">
              </c:if>
-              <a href="/sboard5/list">
+              <a href="/smartit/sboard5/list">
                 <i class="fa fa-laptop"></i>
                 <span>스터디해요</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -488,7 +491,7 @@
               <c:if test="${sboardNum!='7'}">
      		 <li class="treeview">
              </c:if>
-              <a href="/sboard7/list">
+              <a href="/smartit/sboard7/list">
                 <i class="fa fa-table"></i> <span>프로젝트</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
@@ -501,13 +504,13 @@
               <li class="header" style="background-color:#ddf5f8;"></li>
               
               <li>
-              <a href="/sboard/calendar">
+              <a href="/smartit/sboard/calendar">
                 <i class="fa fa-calendar"></i> <span>학과일정</span>
                 <small class="label pull-right bg-red">3</small>
               </a>
             </li>
             <li>
-              <a href="#"  onClick="window.open('/sboard/mail/listmail?uid=${login.uid }', '', 'width=475, height=490,left=1000, top=100'); return false;"> <!-- 파라미터로 uid를 넘겨줘야 리스트에 서 uid에 맞는 로직을 불러올수 있을거같아서 시도해봤는데 가능한것 같다.  -->
+              <a href="#"  onClick="window.open('/smartit/sboard/mail/listmail?uid=${login.uid }', '', 'width=475, height=490,left=1000, top=100'); return false;"> <!-- 파라미터로 uid를 넘겨줘야 리스트에 서 uid에 맞는 로직을 불러올수 있을거같아서 시도해봤는데 가능한것 같다.  -->
                 <i class="fa fa-envelope"></i> <span>쪽지함</span>
                <!--  <small class="label pull-right bg-yellow">12</small> -->
               </a>
@@ -520,9 +523,9 @@
               
             </li> -->
               <li class="header" style="background-color:#ddf5f8;"></li>
-            <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-github "></i> <span>깃허브</span></a></li>
-            <li><a href="#" onClick="window.open('/sboard/chat', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅</span></a></li>
-            <li><a href="#" onClick="window.open('/sboard/music', '', 'width=600, height=400,left=900, top=350'); return false;"><i class="glyphicon glyphicon-music" style="color:#25c1ef"></i> <span>뮤직플레이어</span></a></li>
+            <li><a href="https://github.com/kofelo123/smartitcording" target="_blank"><i class="fa fa-github "></i> <span>깃허브</span></a></li>
+            <li><a href="#" onClick="window.open('/smartit/sboard/chat', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅</span></a></li>
+            <li><a href="#" onClick="window.open('/smartit/sboard/music', '', 'width=600, height=400,left=900, top=350'); return false;"><i class="glyphicon glyphicon-music" style="color:#25c1ef"></i> <span>뮤직플레이어</span></a></li>
           </ul>
         </section>
         <!-- /.sidebar -->

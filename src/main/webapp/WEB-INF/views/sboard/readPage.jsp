@@ -8,18 +8,19 @@
 <%@ include file="../include/analytics.jsp"%>	
 
 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <!-- thearc 프로젝트하면서 수많은 에러테스트 과정에서 댓글 modal 수정페이지 멈춤 현상의 원인으로 찾은 아래 js 인데 일단 주석처리한다.  --> 
+  <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>  -->
   <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
     
     
     
-<script type="text/javascript" src="/resources/js/upload.js"></script>
+<script type="text/javascript" src="/smartit/resources/js/upload.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
 
-<link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/smartit/resources/bootstrap/css/bootstrap.min.css">
 <!-- Main content -->
     <style type="text/css">
     .popup {position: absolute;}
@@ -68,7 +69,7 @@
 				<div class="mailbox-read-info">
 				 <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
             <div class="pull-left image">
-              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <h4>&nbsp;&nbsp;${boardVO.writer}</h4>
          &nbsp;&nbsp;&nbsp;<fmt:formatDate pattern="MM-dd HH:mm" value="${boardVO.regdate}" />
@@ -87,31 +88,31 @@
 						</div> -->
 					
 						<div class="fbshare" >
-						<a href="#" onClick="window.open('http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard${sboardNum }%2FreadPage%3Fbno%3D${boardVO.bno}%26uid%3D', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>
+						<a href="#" onClick="window.open('http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsmartit%2Fsboard${sboardNum }%2FreadPage%3Fbno%3D${boardVO.bno}%26uid%3D', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-facebook-official" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>
 						<!-- <a href="http://www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123" class="btn-facebook-share"><i class="fa fa-facebook-square fa-fw" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a> -->
                          </div><!--www.facebook.com/dialog/share?app_id=966242223397117&display=popup&href=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D201%26uid%3Dkofelo123  -->
 					
 						<!-- 	<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.smartitcording.com/sboard/readPage?bno=201&uid=kofelo123" class="btn-facebook-share"><i class="fa fa-facebook-square fa-fw" data-toggle="tooltip" data-placement="left" title="페이스북 공유"></i></a>  -->
 						<div class="twitter">
-						<a href="#" onClick="window.open('https://twitter.com/intent/tweet?text=스마트IT 코딩단 - ${boardVO.title }&url=http%3A%2F%2Fwww.smartitcording.com%2Fsboard%2FreadPage%3Fbno%3D${boardVO.bno}%26uid%3D', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="left" title="트위터 공유"></i></a>
+						<a href="#" onClick="window.open('https://twitter.com/intent/tweet?text=스마트IT 코딩단 - ${boardVO.title }&url=http%3A%2F%2Fwww.smartitcording.com%2Fsmartit%2Fsboard%2FreadPage%3Fbno%3D${boardVO.bno}%26uid%3D', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-twitter-square" data-toggle="tooltip" data-placement="left" title="트위터 공유"></i></a>
 						
                          </div>
                          
                         <%--  <div class="bookmark" >
-                         <a href="/sboard${sboardNum }/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:#3c763d"><i class="fa fa-bookmark-o"  data-toggle="tooltip" data-placement="left" title="스크랩"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+                         <a href="/smartit/sboard${sboardNum }/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:#3c763d"><i class="fa fa-bookmark-o"  data-toggle="tooltip" data-placement="left" title="스크랩"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
                          
                          </div> --%>
                          
 						
 							<c:if test="${likeVO.likecheck=='n' }">
 						<div class="iconlike">
-						<a href="/sboard${sboardNum }/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:gray"><i class="fa fa-thumbs-o-up" data-toggle="tooltip" data-placement="left" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						<a href="/smartit/sboard${sboardNum }/readPage/like?bno=${boardVO.bno}&uid=${login.uid}" style="color:gray"><i class="fa fa-thumbs-o-up" data-toggle="tooltip" data-placement="left" title="좋아요"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
 						</div>
 						</c:if>
 						
 						<c:if test="${likeVO.likecheck=='y' }">
 						<div class="iconlike">
-						<a href="/sboard${sboardNum }/readPage/dislike?bno=${boardVO.bno}&uid=${login.uid}" style="color:#64a3f3"><i class="fa fa-thumbs-up" data-toggle="tooltip" data-placement="left" title="좋아요 취소"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
+						<a href="/smartit/sboard${sboardNum }/readPage/dislike?bno=${boardVO.bno}&uid=${login.uid}" style="color:#64a3f3"><i class="fa fa-thumbs-up" data-toggle="tooltip" data-placement="left" title="좋아요 취소"><div id="countvote" class="content-count">${boardVO.countlike }</div></i></a>
 						</div>
 							</c:if>
 							
@@ -191,7 +192,7 @@
   <div class="box-body">
   <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
             <div class="pull-left image">
-              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <h4>&nbsp;&nbsp;${boardVO.writer}</h4>
       
@@ -235,7 +236,7 @@
 		<!-- /.col -->
 			<div class="bannerlink">
 	<div class="banner">
-		<img src="/resources/bootstrap/image/banner.jpg" />
+		<img src="/smartit/resources/bootstrap/image/banner.jpg" />
 		
 		
 	</div>
@@ -285,7 +286,7 @@
 <li data-src='{{fullName}}'>
   <span class="mailbox-attachment-icon has-img"><img src="{{imgsrc}}" alt="Attachment"></span>
   <div class="mailbox-attachment-info">
-	<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
+	<a href="/smartit{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
 	</span>
   </div>
 </li>                
@@ -386,7 +387,7 @@
 		if ($(".timeline li").size() > 1) {
 			return;
 		}
-		getPage("/replies${sboardNum}/" + bno + "/1");
+		getPage("/smartit/replies${sboardNum}/" + bno + "/1");
 
 	});
 
@@ -396,7 +397,7 @@
 
 		replyPage = $(this).attr("href");
 
-		getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
+		getPage("/smartit/replies${sboardNum}/" + bno + "/" + replyPage);
 
 	});
 
@@ -409,7 +410,7 @@
 
 		$.ajax({
 			type : 'post',
-			url : '/replies${sboardNum}/',
+			url : '/smartit/replies${sboardNum}/',
 			headers : {
 				"Content-Type" : "application/json",
 				"X-HTTP-Method-Override" : "POST"
@@ -425,7 +426,7 @@
 				if (result == 'SUCCESS') {
 					alert("등록 되었습니다.");
 					replyPage = 1;
-					getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
+					getPage("/smartit/replies${sboardNum}/" + bno + "/" + replyPage);
 					//replyerObj.val("");
 					replytextObj.val("");
 				}
@@ -449,7 +450,7 @@
 
 		$.ajax({
 			type : 'put',
-			url : '/replies${sboardNum}/' + rno,
+			url : '/smartit/replies${sboardNum}/' + rno,
 			headers : {
 				"Content-Type" : "application/json",
 				"X-HTTP-Method-Override" : "PUT"
@@ -462,7 +463,7 @@
 				console.log("result: " + result);
 				if (result == 'SUCCESS') {
 					alert("수정 되었습니다.");
-					getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
+					getPage("/smartit/replies${sboardNum}/" + bno + "/" + replyPage);
 				}
 			}
 		});
@@ -475,7 +476,7 @@
 
 		$.ajax({
 			type : 'delete',
-			url : '/replies${sboardNum}/' + rno,
+			url : '/smartit/replies${sboardNum}/' + rno,
 			headers : {
 				"Content-Type" : "application/json",
 				"X-HTTP-Method-Override" : "DELETE"
@@ -485,7 +486,7 @@
 				console.log("result: " + result);
 				if (result == 'SUCCESS') {
 					alert("삭제 되었습니다.");
-					getPage("/replies${sboardNum}/" + bno + "/" + replyPage);
+					getPage("/smartit/replies${sboardNum}/" + bno + "/" + replyPage);
 				}
 			}
 		});
@@ -501,7 +502,7 @@ $(document).ready(function(){
 	console.log(formObj);
 	
 	$("#modifyBtn").on("click", function(){
-		formObj.attr("action", "/sboard${sboardNum}/modifyPage");
+		formObj.attr("action", "/smartit/sboard${sboardNum}/modifyPage");
 		formObj.attr("method", "get");		
 		formObj.submit();
 	});
@@ -528,15 +529,15 @@ $(document).ready(function(){
 		
 		console.log(arr);
 	 	if(arr.length > 0){
-			$.post("/deleteAllFiles",{files:arr}, function(){
+			$.post("/smartit/deleteAllFiles",{files:arr}, function(){
 				
-				formObj.attr("action", "/sboard${sboardNum}/removePage");
+				formObj.attr("action", "/smartit/sboard${sboardNum}/removePage");
 				formObj.submit();
 				
 			});
 		}else{
 			
-			formObj.attr("action", "/sboard${sboardNum}/removePage");
+			formObj.attr("action", "/smartit/sboard${sboardNum}/removePage");
 			formObj.submit();
 		}
 		
@@ -548,14 +549,14 @@ $(document).ready(function(){
 	
 	$("#goListBtn ").on("click", function(){
 		formObj.attr("method", "get");
-		formObj.attr("action", "/sboard${sboardNum}/list");
+		formObj.attr("action", "/smartit/sboard${sboardNum}/list");
 		formObj.submit();
 	});
 	
 	var bno = ${boardVO.bno};
 	var template = Handlebars.compile($("#templateAttach").html());
 	
-	$.getJSON("/sboard${sboardNum}/getAttach/"+bno,function(list){
+	$.getJSON("/smartit/sboard${sboardNum}/getAttach/"+bno,function(list){
 		$(list).each(function(){
 			
 			var fileInfo = getFileInfo(this);
@@ -599,7 +600,7 @@ $(document).ready(function(){
 
 
 function goLogin(){
-	self.location ="/user/login";
+	self.location ="/smartit/user/login";
 }
 
 </script>

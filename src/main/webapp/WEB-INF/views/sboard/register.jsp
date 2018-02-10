@@ -99,7 +99,7 @@
 			<!-- /.box -->
 			<div class="bannerlink">
 	<div class="banner">
-		<img src="/resources/bootstrap/image/banner.jpg" />
+		<img src="/smartit/resources/bootstrap/image/banner.jpg" />
 		
 		
 	</div>
@@ -125,7 +125,7 @@
 </div>
 <!-- /.content-wrapper -->
 
-<script type="text/javascript" src="/resources/js/upload.js"></script>
+<script type="text/javascript" src="/smartit/resources/js/upload.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
 <script id="template" type="text/x-handlebars-template">
@@ -135,7 +135,7 @@
 	<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
 	<a href="{{fullName}}" 
      class="btn btn-default btn-xs pull-right delbtn"><i class="fa fa-fw fa-remove"></i></a>
-	</span>
+	</span>	
   </div>
 </li>                
 </script>    
@@ -143,7 +143,7 @@
 <script>
 
 function goLogin(){
-	self.location ="/user/login";
+	self.location ="/smartit/user/login";
 }
 
 
@@ -167,7 +167,7 @@ $(".fileDrop").on("drop", function(event){
 	
 	
 	$.ajax({
-		  url: '/uploadAjax',
+		  url: '/smartit/uploadAjax',
 		  data: formData,
 		  dataType:'text',
 		  processData: false,

@@ -49,7 +49,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
         
       }
 
-      response.sendRedirect("/user/login");
+      response.sendRedirect("/smartit/user/login");
       return false;
     }
     return true;

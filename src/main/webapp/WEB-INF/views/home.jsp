@@ -99,9 +99,9 @@ if ($(window).width()>500) {
 	<link rel="pingback" href="http://11st.com/xmlrpc.php" />
 	<link rel='stylesheet' id='_custom_fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800%2C300italic%2C400italic%2C600italic%2C700italic%2C800italic&#038;subset=devanagari&#038;ver=4.6.1' type='text/css' media='all' />
 <!-- <link rel='stylesheet' id='_iconstyle-css'  href='http://11st.com/wp-content/plugins/maintenance/load/images/fonts-icon/icons.style.css?ver=4.6.1' type='text/css' media='all' /> -->
-<link href="/resources/bootstrap/css/11st.css" rel="stylesheet" type="text/css" media='all' />
+<link href="/smartit/resources/bootstrap/css/11st.css" rel="stylesheet" type="text/css" media='all' />
 <!-- <link rel='stylesheet' id='_style-css'  href='http://11st.com/wp-content/plugins/maintenance/load/style.css?ver=4.6.1' type='text/css' media='all' /> -->
-<link href="/resources/bootstrap/css/11st2.css" rel="stylesheet" type="text/css" media='all' />
+<link href="/smartit/resources/bootstrap/css/11st2.css" rel="stylesheet" type="text/css" media='all' />
 <style id='_style-inline-css' type='text/css'>
 body {background-color: #111111}.preloader {background-color: #111111}body {font-family: Open Sans; }.site-title, .preloader i, .login-form, .login-form a.lost-pass, .btn-open-login-form, .site-content, .user-content-wrapper, .user-content, footer, .maintenance a {color: #ffffff;} .ie7 .login-form input[type="text"], .ie7 .login-form input[type="password"], .ie7 .login-form input[type="submit"]  {color: #ffffff} a.close-user-content, #mailchimp-box form input[type="submit"], .login-form input#submit.button  {border-color:#ffffff} .ie7 .company-name {color: #ffffff} 
 </style>
@@ -147,7 +147,7 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
   
    <div id="visual-content">
     <h1>Created by Smart It</h1>
-    <form action="sboard/list" method="get" id="nextpage">
+    <form action="/smartit/sboard/list" method="get" id="nextpage">
     <input type="hidden" name="a" value="a">	
     
    <button id="visual-btn" >입장하기</button>
@@ -156,14 +156,14 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
   </div>
 </div>
 
-<script>
+<script>/*///현재 이녀석 말고 위에 form action으로 구동된다.  */
 	$(document).ready(
 			function(){
 				
 				$('#visual-btn').on(
 					"click",
 					function(event){
-						self.location="sboard/list"
+						self.location="/smartit/sboard/list"
 					});
 			});
 
@@ -174,7 +174,7 @@ jQuery(".main-container").backstretch("http://11st.com/wp-content/uploads/2016/0
 </div>
 				</div>
 <div class="login-form-container">
-			<form name="login-form" id="login-form" class="login-form" method="post" action="/admin/admLogPost"><label for="">관리자 로그인</label><span class="licon user-icon"><input type="text" name="uid" id="log" value="" size="20"  class="input username" placeholder="관리자아이디"/></span><span class="picon pass-icon"><input type="password" name="upw" id="login_password" value="" size="20"  class="input password" placeholder="관리자비밀번호" /></span><a class="lost-pass" href="#" >관리자 외 접근금지</a><input type="submit" class="button" name="submit" id="submit" value="로그인" tabindex="4" /><input type="hidden" name="is_custom_login" value="1" /></form>						<div id="btn-open-login-form" class="btn-open-login-form">
+			<form name="login-form" id="login-form" class="login-form" method="post" action="admin/admLogPost"><label for="">관리자 로그인</label><span class="licon user-icon"><input type="text" name="uid" id="log" value="" size="20"  class="input username" placeholder="관리자아이디"/></span><span class="picon pass-icon"><input type="password" name="upw" id="login_password" value="" size="20"  class="input password" placeholder="관리자비밀번호" /></span><a class="lost-pass" href="#" >관리자 외 접근금지</a><input type="submit" class="button" name="submit" id="submit" value="로그인" tabindex="4" /><input type="hidden" name="is_custom_login" value="1" /></form>						<div id="btn-open-login-form" class="btn-open-login-form">
 				<i class="foundicon-lock"></i>
 			</div>
 				</div>	

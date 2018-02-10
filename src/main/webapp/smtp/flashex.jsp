@@ -9,7 +9,7 @@
 	<meta property="og:type"          content="website" />
 	<meta property="og:title"         content="스마트 IT 코딩단" />
 	<meta property="og:description"   content="description 내용인지.." />
-	<meta property="og:image"         content="http://www.smartitcording.com/resources/dist/img/notlogin.jpg" />
+	<meta property="og:image"         content="http://www.smartitcording.com/smartit/resources/dist/img/notlogin.jpg" />
 
 </head>
 <body>

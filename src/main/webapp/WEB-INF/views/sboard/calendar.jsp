@@ -7,8 +7,8 @@
 <%@include file="../include/header.jsp"%>
 <%@ include file="../include/analytics.jsp"%>	
 
- <link rel="stylesheet" href="../../../resources/plugins/fullcalendar/fullcalendar.min.css">
-  <link rel="stylesheet" href="../../../resources/plugins/fullcalendar/fullcalendar.print.css" media="print">
+ <link rel="stylesheet" href="../../../smartit/resources/plugins/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="../../../smartit/resources/plugins/fullcalendar/fullcalendar.print.css" media="print">
 
 
  
@@ -94,7 +94,7 @@
         <!-- /.col -->
              <div class="bannerlink">
 	<div class="banner">
-		<img src="/resources/bootstrap/image/banner.jpg" />
+		<img src="/smartit/resources/bootstrap/image/banner.jpg" />
 		
 		
 	</div>
@@ -117,22 +117,22 @@
     
     
     <!-- jQuery 2.2.3 -->
-<script src="../../../resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../../smartit/resources/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../smartit/resources/bootstrap/js/bootstrap.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <!-- Slimscroll -->
-<script src="../../../resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="../../../smartit/resources/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="../../../resources/plugins/fastclick/fastclick.js"></script>
+<script src="../../../smartit/resources/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../../../resources/dist/js/app.min.js"></script>
+<script src="../../../smartit/resources/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../../resources/dist/js/demo.js"></script>
+<script src="../../../smartit/resources/dist/js/demo.js"></script>
 <!-- fullCalendar 2.2.5 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<script src="../../../resources/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="../../../smartit/resources/plugins/fullcalendar/fullcalendar.min.js"></script>
 <!-- Page specific script -->
 
 

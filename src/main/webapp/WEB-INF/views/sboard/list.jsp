@@ -9,26 +9,26 @@
 
 
 
-<link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/smartit/resources/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- fullCalendar 2.2.5-->
-  <link rel="stylesheet" href="/resources/plugins/fullcalendar/fullcalendar.min.css">
-  <link rel="stylesheet" href="/resources/plugins/fullcalendar/fullcalendar.print.css" media="print">
+  <link rel="stylesheet" href="/smartit/resources/plugins/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="/smartit/resources/plugins/fullcalendar/fullcalendar.print.css" media="print">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/resources/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="/smartit/resources/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="/resources/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/smartit/resources/dist/css/skins/_all-skins.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="/resources/plugins/iCheck/flat/blue.css">
+  <link rel="stylesheet" href="/smartit/resources/plugins/iCheck/flat/blue.css">
   
 <style>
 @font-face {
     font-family: 'Typo_DecoVariety';
-    src: url(/resources/bootstrap/fonts/HoonWhitecatR.ttf) format('truetype');
+    src: url(/smartit/resources/bootstrap/fonts/HoonWhitecatR.ttf) format('truetype');
 }
 </style>
 
@@ -91,7 +91,7 @@
 							<tr style="font-family:Typo_DecoVariety; font-size:20px">
 								<%-- <td>${boardVO.bno}</td> --%>
 								<td style="width: 40%;padding-left:20px;"><a
-									href='/sboard${sboardNum }/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}&uid=${login.uid}' style="color:#3eb37e">
+									href='/smartit/sboard${sboardNum }/readPage${pageMaker.makeSearch(pageMaker.cri.page) }&bno=${boardVO.bno}&uid=${login.uid}' style="color:#3eb37e">
 										${boardVO.title} <%-- <strong>[${boardVO.replycnt}  ]</strong> --%>
 								</a></td>
 								<td style="width:7%">
@@ -124,20 +124,20 @@
 
 							<c:if test="${pageMaker.prev}">
 								<li><a
-									href="list${pageMaker.makeSearch(pageMaker.startPage - 1) }">&laquo;</a></li>
+									href="/smartit/sboard/list${pageMaker.makeSearch(pageMaker.startPage - 1) }">&laquo;</a></li>
 							</c:if>
 
 							<c:forEach begin="${pageMaker.startPage }"
 								end="${pageMaker.endPage }" var="idx">
 								<li
 									<c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
-									<a href="list${pageMaker.makeSearch(idx)}">${idx}</a>
+									<a href="/smartit/sboard/list${pageMaker.makeSearch(idx)}">${idx}</a>
 								</li>
 							</c:forEach>
 
 							<c:if test="${pageMaker.next && pageMaker.endPage > 0}">
 								<li><a
-									href="list${pageMaker.makeSearch(pageMaker.endPage +1) }">&raquo;</a></li>
+									href="/smartit/sboard/list${pageMaker.makeSearch(pageMaker.endPage +1) }">&raquo;</a></li>
 							</c:if>
 
 						</ul>
@@ -150,7 +150,7 @@
 		<!--/.col (left) -->
 		<div class="bannerlink">
 	<div class="banner">
-		<img src="/resources/bootstrap/image/banner.jpg" />
+		<img src="/smartit/resources/bootstrap/image/banner.jpg" />
 		
 		
 	</div>

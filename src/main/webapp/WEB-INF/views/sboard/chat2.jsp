@@ -6,16 +6,16 @@
 	<meta charset="UTF-8">
     <title>채팅</title>
     
-     <link rel="stylesheet" href="../../../resources/bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../../../smartit/resources/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../../resources/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../../smartit/resources/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../../resources/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../../../smartit/resources/dist/css/skins/_all-skins.min.css">
   
 </head>
 <body>
@@ -86,7 +86,7 @@
                     <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                   </div>
                   <!-- /.direct-chat-info -->
-                  <img class="direct-chat-img" src="../../../resources/dist/img/user1-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+                  <img class="direct-chat-img" src="../../../smartit/resources/dist/img/user1-128x128.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
                   <div class="direct-chat-text">
                     Is this template really for free? That's unbelievable!
                   </div>
@@ -116,7 +116,7 @@
                 <ul class="contacts-list">
                   <li>
                     <a href="#">
-                      <img class="contacts-list-img" src="../../../resources/dist/img/user1-128x128.jpg" alt="User Image">
+                      <img class="contacts-list-img" src="../../../smartit/resources/dist/img/user1-128x128.jpg" alt="User Image">
 
                       <div class="contacts-list-info">
                             <span class="contacts-list-name">
@@ -136,7 +136,7 @@
             </div>
             <!-- /.box-body -->
             <div class="box-footer">
-              <form action="#" method="post">
+              <form action="/smartit#" method="post">
                 <div class="input-group">
                   <input type="text" name="message" placeholder="Type Message ..." class="form-control">
                       <span class="input-group-btn">

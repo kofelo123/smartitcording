@@ -8,14 +8,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
   <!-- Syntax Highlighter -->
-  <link href="/resources/rolling/FlexSlider/demo/css/shCore.css" rel="stylesheet" type="text/css" />
-  <link href="/resources/rolling/FlexSlider/demo/css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <link href="/smartit/resources/rolling/FlexSlider/demo/css/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="/smartit/resources/rolling/FlexSlider/demo/css/shThemeDefault.css" rel="stylesheet" type="text/css" />
   <!-- Demo CSS -->
-	<link rel="stylesheet" href="/resources/rolling/FlexSlider/demo/css/demo.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="/resources/rolling/FlexSlider/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/smartit/resources/rolling/FlexSlider/demo/css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/smartit/resources/rolling/FlexSlider/flexslider.css" type="text/css" media="screen" />
 
 	<!-- Modernizr -->
-  <script src="/resources/rolling/FlexSlider/demo/js/modernizr.js"></script>
+  <script src="/smartit/resources/rolling/FlexSlider/demo/js/modernizr.js"></script>
 
 </head>
 <body class="loading">
@@ -29,17 +29,17 @@
         <div class="flexslider">
           <ul class="slides">
           <li>
-  	    	    <img src="/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_donut.jpg" />
+  	    	    <img src="/smartit/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_donut.jpg" />
   	    		</li>
           	<li>
-  	    	    <img src="/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_lemon.jpg" />
+  	    	    <img src="/smartit/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_lemon.jpg" />
   	    		</li>
   	    		
   	    		<li>
-  	    	    <img src="/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_caramel.jpg" />
+  	    	    <img src="/smartit/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_caramel.jpg" />
   	    		</li>
             <li>
-  	    	    <img src="/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    	    <img src="/smartit/resources/rolling/FlexSlider/demo/images/kitchen_adventurer_cheesecake_brownie.jpg" />
   	    		</li>
   	    	
           </ul>
@@ -55,7 +55,7 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   <!-- FlexSlider -->
-  <script defer src="/resources/rolling/FlexSlider/jquery.flexslider.js"></script>
+  <script defer src="/smartit/resources/rolling/FlexSlider/jquery.flexslider.js"></script>
 
   <script type="text/javascript">
     $(function(){
@@ -73,14 +73,14 @@
 
 
   <!-- Syntax Highlighter -->
-  <script type="text/javascript" src="/resources/rolling/FlexSlider/demo/js/shCore.js"></script>
-  <script type="text/javascript" src="/resources/rolling/FlexSlider/demo/js/shBrushXml.js"></script>
-  <script type="text/javascript" src="/resources/rolling/FlexSlider/demo/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="/smartit/resources/rolling/FlexSlider/demo/js/shCore.js"></script>
+  <script type="text/javascript" src="/smartit/resources/rolling/FlexSlider/demo/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="/smartit/resources/rolling/FlexSlider/demo/js/shBrushJScript.js"></script>
 
   <!-- Optional FlexSlider Additions -->
-  <script src="/resources/rolling/FlexSlider/demo/js/jquery.easing.js"></script>
-  <script src="/resources/rolling/FlexSlider/demo/js/jquery.mousewheel.js"></script>
-  <script defer src="/resources/rolling/FlexSlider/demo/js/demo.js"></script>
+  <script src="/smartit/resources/rolling/FlexSlider/demo/js/jquery.easing.js"></script>
+  <script src="/smartit/resources/rolling/FlexSlider/demo/js/jquery.mousewheel.js"></script>
+  <script defer src="/smartit/resources/rolling/FlexSlider/demo/js/demo.js"></script>
 
 
 <!-- SCM Music Player http://scmplayer.net -->

@@ -8,13 +8,13 @@
     <title>로그인</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
-    <link href="/resources/plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/plugins/iCheck/square/blue.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,12 +27,12 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="/sboard/list"><b>SmartItCording</b>Team</a>
+        <a href="/smartit/sboard/list"><b>SmartItCording</b>Team</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg"></p>
 
-<form action="/user/idfindmail" method="get">
+<form action="/smartit/user/idfindmail" method="get">
 <div id='expression' style="padding-bottom:20px">
 <b>회원 가입시 입력하신 이메일 주소를 입력하시면,<br></b>
 <b>아이디 및 비밀번호 변경 링크를 보내드립니다.<br></b>
@@ -61,11 +61,11 @@
     </div><!-- /.login-box -->
 
     <!-- jQuery 2.1.4 -->
-    <script src="/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="/smartit/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.2 JS -->
-    <script src="/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/smartit/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- iCheck -->
-    <script src="/resources/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+    <script src="/smartit/resources/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
     <script>
       $(function () {
         $('input').iCheck({

@@ -8,16 +8,16 @@
     <title>관리자 페이지</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="/resources/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/smartit/resources/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +26,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery 2.1.4 -->
-    <script src="/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="/smartit/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     
      
      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
@@ -42,7 +42,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="/sboard/list" class="logo">
+        <a href="/smartit/sboard/list" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
@@ -73,7 +73,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/king.jpg" class="img-circle" alt="User Image"/>
+                            <img src="/smartit/resources/dist/img/king.jpg" class="img-circle" alt="User Image"/>
                           </div>
                           <h4>
                             Support Team
@@ -85,7 +85,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/king.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/king.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             SmartIT코딩 관리자
@@ -97,7 +97,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Developers
@@ -109,7 +109,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Sales Department
@@ -121,7 +121,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="/smartit/resources/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Reviewers
@@ -250,13 +250,13 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="/resources/dist/img/king.jpg" class="user-image" alt="User Image"/>
+                  <img src="/smartit/resources/dist/img/king.jpg" class="user-image" alt="User Image"/>
                   <span class="hidden-xs">관리자</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                    <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     <p>
                       허정원 - 웹 개발자
                       <small>Member since 2010</small>
@@ -304,12 +304,12 @@
          
              <div class="user-panel">  <!-- user패널좀 수정해야할듯  -->
             <div class="pull-left image">
-              <img src="/resources/dist/img/king.jpg" class="img-circle" alt="User Image" />
+              <img src="/smartit/resources/dist/img/king.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>&nbsp;&nbsp;관리자</p>
 
-              <a href="/user/login"><i class="fa fa-circle text-admin"></i> 관리자모드</a>
+              <a href="/smartit/user/login"><i class="fa fa-circle text-admin"></i> 관리자모드</a>
             </div>
           </div>
           
@@ -317,7 +317,7 @@
          
       <!--     <div class="user-panel">
             <div class="pull-left image">
-              <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+              <img src="/smartit/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>허정원</p>
@@ -349,7 +349,7 @@
                 <c:if test="${sboardNum!='userlist'}">
                      <li class="treeview">
                 </c:if>
-              <a href="userlist">
+              <a href="/smartit/admin/userlist">
                 <i class="fa fa-files-o"></i>
                 <span>사용자 목록</span>
                 <span class="label label-primary pull-right">4</span>
@@ -363,7 +363,7 @@
             <c:if test="${sboardNum!='chartpage'}">
               <li class="treeview">
             </c:if>
-              <a href="chartpage">
+              <a href="/smartit/admin/chartpage">
                 <i class="fa fa-pie-chart"></i>
                 <span>통계</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -417,9 +417,9 @@
             <li class="header" style="background-color:#ddf5f8;"></li>
             <li class="header" style="background-color:#ddf5f8;"></li>
             
-              <li><a href="https://github.com/kofelo123/smartitcording"><i class="fa fa-github "></i> <span>깃허브</span></a></li>
-            <li><a href="#" onClick="window.open('/sboard/chat', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅</span></a></li>
-            <li><a href="#" onClick="window.open('/sboard/music', '', 'width=600, height=400,left=900, top=350'); return false;"><i class="glyphicon glyphicon-music" style="color:#25c1ef"></i> <span>뮤직플레이어</span></a></li>
+              <li><a href="https://github.com/kofelo123/smartitcording" target="_blank"><i class="fa fa-github "></i> <span>깃허브</span></a></li>
+            <li><a href="#" onClick="window.open('/smartit/sboard/chat', '', 'width=475, height=310,left=1000, top=100'); return false;"><i class="fa fa-circle-o text-yellow"></i> <span>채팅</span></a></li>
+            <li><a href="#" onClick="window.open('/smartit/sboard/music', '', 'width=600, height=400,left=900, top=350'); return false;"><i class="glyphicon glyphicon-music" style="color:#25c1ef"></i> <span>뮤직플레이어</span></a></li>
            </ul>
         </section>
         <!-- /.sidebar -->

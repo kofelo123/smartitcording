@@ -18,7 +18,7 @@ function go_save() {
     alert("이메일을 입력해 주세요.");
     document.formm.email.focus();
   } else {
-    document.formm.action = "/user/joinPost";
+    document.formm.action = "/smartit/user/joinPost";
     document.formm.submit();
   }
 }
@@ -29,7 +29,7 @@ function idcheck() {
     document.formm.uid.focus();
     return;
   }
- var url = "/user/idcheck?uid=" 
+ var url = "/smartit/user/idcheck?uid=" 
 + document.formm.uid.value;//? 로 바꾸니 controller requestmapping이 인식됨-> 동시에 파라미터가 잘전달됨.
  /* var url = "/user/idcheck&uid=" 
 + document.formm.uid.value;*/
@@ -40,7 +40,7 @@ function idcheck() {
 }/**/
 
 function post_zip() {
-  var url = "/user/findZipNum";
+  var url = "/smartit/user/findZipNum";
   window.open( url, "_blank_1",
 "toolbar=no, menubar=no, scrollbars=yes, resizable=no, width=550, height=400, top=400, left=1100 ");
 }

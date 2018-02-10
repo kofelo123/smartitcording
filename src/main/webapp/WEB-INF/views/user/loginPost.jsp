@@ -13,11 +13,11 @@
 	<c:if test="${userVO == null }"> <!-- model의 userVO여부로 로그인 성공 실패   -->
 		<script type="text/javascript">
 		alert('아이디혹은 비밀번호가 일치하지 않습니다.');
-		self.location="/user/login";
+		self.location="/smartit/user/login";
 		</script>
 	</c:if>
 	<c:if test="${userVO != null }">
-		<c:redirect url="/sboard/list"></c:redirect>
+		<c:redirect url="/smartit/sboard/list"></c:redirect>
 	</c:if>
 	
   <!-- <script type="text/javascript">

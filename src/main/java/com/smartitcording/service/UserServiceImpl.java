@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 import javax.mail.Message;
 import javax.mail.PasswordAuthentication;
@@ -30,6 +31,9 @@ public class UserServiceImpl implements UserService {
 
   @Inject
   private UserDAO dao;
+  
+  @Resource(name = "ipAddress")
+  private String ipAddress;
 
   @Override
   public UserVO login(LoginDTO dto) throws Exception {
@@ -84,7 +88,7 @@ public void idfindmail(HttpServletRequest request, ModelMap mo,UserVO user) thro
     String mailrecipient= user.getEmail3();//form으로 전달된 UserVO의 email3을 받아온다
     
     UserVO user2 = dao.idfindofmail(user); //form으로 전달된 이메일->db로 전달->id반환
-    
+    System.out.println("userTest:"+user);
     String pwUriEnc = EncryptUtil.getSHA256(user2.getUid());
     System.out.println("sha256 암호화 해쉬코드 적용으로 인한 고유의값:"+pwUriEnc);
     
@@ -100,7 +104,7 @@ public void idfindmail(HttpServletRequest request, ModelMap mo,UserVO user) thro
     String recipient = mailrecipient;    //메일을 발송할 이메일 주소를 기재해 줍니다.
     String subject = "[스마트IT코딩] 문의하신 계정 정보입니다.";
     String body = user2.getUname()+"님 반갑습니다."+user2.getUname()+"님의 아이디는:"+user2.getUid()+"입니다."
-    		      +"비밀번호 변경을 원하시면 아래 URI를 눌러주세요"+"http://localhost:8181/user/mailhashcheck?encrypthash="+pwUriEnc+"&uid="+userid;//개행은 어떻게 해야할지?
+    		      +"비밀번호 변경을 원하시면 아래 URI를 눌러주세요"+"http://"+ipAddress+":8080/smartit/user/mailhashcheck?encrypthash="+pwUriEnc+"&uid="+userid;//개행은 어떻게 해야할지?
     
     Properties props = System.getProperties();
      

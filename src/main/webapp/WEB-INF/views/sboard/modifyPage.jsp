@@ -4,6 +4,14 @@
 <%@include file="../include/header.jsp"%>
 <%@ include file="../include/analytics.jsp"%>	
 
+
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+    
+
 <style>
 .fileDrop {
   width: 80%;
@@ -45,7 +53,6 @@
 			<textarea class="form-control" name="content" rows="3"
 				placeholder="Enter ..."></textarea>
 		</div> -->
-		
 		<textarea div id="summernote" name="content"  placeholder="내용을 입력하세요" >${boardVO.content}</textarea></div>
   <script>
   $('#summernote').summernote({
@@ -97,7 +104,7 @@
 			<!-- /.box -->
 			<div class="bannerlink">
 	<div class="banner">
-		<img src="/resources/bootstrap/image/banner.jpg" />
+		<img src="/smartit/resources/bootstrap/image/banner.jpg" />
 		
 		
 	</div>
@@ -120,15 +127,15 @@
 	<!-- /.row -->
 </section>
 
-<script type="text/javascript" src="/resources/js/upload.js"></script>
+<script type="text/javascript" src="/smartit/resources/js/upload.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
 <script id="template" type="text/x-handlebars-template">
 <li>
   <span class="mailbox-attachment-icon has-img"><img src="{{imgsrc}}" alt="Attachment"></span>
   <div class="mailbox-attachment-info">
-	<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
-	<a href="{{fullName}}" 
+	<a href="/smartit{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
+	<a href="/smartit{{fullName}}" 
      class="btn btn-default btn-xs pull-right delbtn"><i class="fa fa-fw fa-remove"></i></a>
 	</span>
   </div>
@@ -333,15 +340,15 @@ $("#popup_img").on("click", function(){
 	</div>
 </form>
 
-<script type="text/javascript" src="/resources/js/upload.js"></script>
+<script type="text/javascript" src="/smartit/resources/js/upload.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
 <script id="template" type="text/x-handlebars-template">
 <li>
   <span class="mailbox-attachment-icon has-img"><img src="{{imgsrc}}" alt="Attachment"></span>
   <div class="mailbox-attachment-info">
-	<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
-	<a href="{{fullName}}" 
+	<a href="/smartit{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
+	<a href="/smartit{{fullName}}" 
      class="btn btn-default btn-xs pull-right delbtn"><i class="fa fa-fw fa-remove"></i></a>
 	</span>
   </div>
