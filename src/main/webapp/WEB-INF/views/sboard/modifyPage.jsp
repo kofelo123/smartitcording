@@ -134,8 +134,8 @@
 <li>
   <span class="mailbox-attachment-icon has-img"><img src="{{imgsrc}}" alt="Attachment"></span>
   <div class="mailbox-attachment-info">
-	<a href="/smartit{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
-	<a href="/smartit{{fullName}}" 
+	<a href="{{getLink}}" class="mailbox-attachment-name">{{fileName}}</a>
+	<a href="{{fullName}}" 
      class="btn btn-default btn-xs pull-right delbtn"><i class="fa fa-fw fa-remove"></i></a>
 	</span>
   </div>
@@ -197,7 +197,7 @@ $(".fileDrop").on("drop", function(event){
 	formData.append("file", file);	
 	
 	$.ajax({
-		  url: '/uploadAjax',
+		  url: '/smartit/uploadAjax',
 		  data: formData,
 		  dataType:'text',
 		  processData: false,
@@ -222,7 +222,7 @@ $(".uploadedList").on("click", ".delbtn", function(event){
 	var that = $(this);
 	 
 	$.ajax({
-	   url:"/deleteFile",
+	   url:"/smartit/deleteFile",
 	   type:"post",
 	   data: {fileName:$(this).attr("href")},
 	   dataType:"text",
@@ -238,7 +238,7 @@ $(".uploadedList").on("click", ".delbtn", function(event){
 var bno = ${boardVO.bno};
 var template = Handlebars.compile($("#template").html());
 
-$.getJSON("/sboard/getAttach/"+bno,function(list){
+$.getJSON("/smartit/sboard/getAttach/"+bno,function(list){
 	$(list).each(function(){
 		
 		var fileInfo = getFileInfo(this);
