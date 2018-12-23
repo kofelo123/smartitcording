@@ -7,152 +7,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad40c5c2-8d97-45e6-a928-b22d9a6dd136" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/Broadsocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Broadsocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/ReplyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/ReplyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/SampleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/SearchBoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/SearchBoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/UploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/BoardDAO2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/BoardDAO2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/BoardDAOImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/BoardDAOImpl2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyController2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyDAO2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyDAO2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyDAOImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyDAOImpl2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyService2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyService2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyServiceImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/ReplyServiceImpl2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/SearchBoardController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board2/SearchBoardController2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/BoardDAO3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/BoardDAO3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/BoardDAOImpl3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/BoardDAOImpl3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyController3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyController3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyDAO3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyDAO3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyDAOImpl3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyDAOImpl3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyService3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyService3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyServiceImpl3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/ReplyServiceImpl3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/SearchBoardController3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board3/SearchBoardController3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/BoardDAO4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/BoardDAO4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/BoardDAOImpl4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/BoardDAOImpl4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyController4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyController4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyDAO4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyDAO4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyDAOImpl4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyDAOImpl4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyService4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyService4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyServiceImpl4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/ReplyServiceImpl4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/SearchBoardController4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board4/SearchBoardController4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/BoardDAO5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/BoardDAO5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/BoardDAOImpl5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/BoardDAOImpl5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyController5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyController5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyDAO5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyDAO5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyDAOImpl5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyDAOImpl5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyService5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyService5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyServiceImpl5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/ReplyServiceImpl5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/SearchBoardController5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board5/SearchBoardController5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/BoardDAO6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/BoardDAO6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/BoardDAOImpl6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/BoardDAOImpl6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyController6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyController6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyDAO6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyDAO6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyDAOImpl6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyDAOImpl6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyService6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyService6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyServiceImpl6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/ReplyServiceImpl6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/SearchBoardController6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board6/SearchBoardController6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/BoardDAO7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/BoardDAO7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/BoardDAOImpl7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/BoardDAOImpl7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyController7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyController7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyDAO7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyDAO7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyDAOImpl7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyDAOImpl7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyService7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyService7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyServiceImpl7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/ReplyServiceImpl7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/SearchBoardController7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/controller/board7/SearchBoardController7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/AddressVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/AddressVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/BoardVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/BoardVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/LikeVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/LikeVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/MessageVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/MessageVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/PageMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/ReplyVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/ReplyVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/SampleVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/SampleVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/SearchCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/SearchCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/UserVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/domain/UserVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/dto/LoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/dto/LoginDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/interceptor/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/interceptor/AuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/interceptor/SampleInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/interceptor/SampleInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/AdminDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/AdminDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/AdminDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/AdminDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/BoardDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/BoardDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/BoardDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/MessageDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/MessageDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/MessageDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/MessageDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/PointDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/PointDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/PointDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/PointDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/ReplyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/ReplyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/ReplyDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/ReplyDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/persistence/UserDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardService7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/BoardServiceImpl7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/MessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/MessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/ReplyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/ReplyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/ReplyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/ReplyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/util/EncTestProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/util/EncTestProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/util/EncryptUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/util/EncryptUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/util/MediaUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/util/MediaUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/util/NaverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/util/NaverTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartitcording/util/UploadFileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartitcording/util/UploadFileUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parsing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parsing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.zerock/controller/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.zerock/controller/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.zerock/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.zerock/controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/controller_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/controller_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1296169101">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="xml" value="42" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="XML" value="42" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.7048346">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+                <state relative-caret-position="848">
+                  <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="servlet-context.xml" pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1121">
-                  <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+                <state relative-caret-position="76">
+                  <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#3204#3226#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="setting.properties" pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="304">
@@ -161,11 +80,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="root-context.xml" pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+                <state relative-caret-position="230">
+                  <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#2742#2757#0" expanded="true" />
+                    <element signature="e#2804#2824#0" expanded="true" />
+                    <element signature="e#2871#2891#0" expanded="true" />
+                    <element signature="e#3697#3718#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -174,7 +99,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="JDBCEncryptor.java" pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="399">
@@ -197,6 +122,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>log4j</find>
+      <find>data</find>
+      <find>file</find>
+      <find>Local</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,11 +133,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" />
       </list>
     </option>
   </component>
@@ -233,14 +161,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-35" />
-    <option name="y" value="365" />
+    <option name="x" value="10" />
+    <option name="y" value="30" />
     <option name="width" value="1940" />
-    <option name="height" value="495" />
+    <option name="height" value="945" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -250,71 +175,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartitcording-" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartitcording-" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartitcording-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartitcording-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartitcording-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartitcording-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:4.1.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:4.1.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-4.1.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="controller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:4.1.7.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-4.1.7.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="smartitcording" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -353,48 +225,30 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="smartit" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.361" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -461,7 +315,8 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="controller:war" />
         </option>
@@ -495,6 +350,7 @@
       <workItem from="1524276965217" duration="453000" />
       <workItem from="1524381694897" duration="760000" />
       <workItem from="1524555480950" duration="724000" />
+      <workItem from="1545568444289" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="Through InteliJ git push - properties Encryption by jasypt">
       <created>1523951052578</created>
@@ -507,38 +363,38 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12421000" />
+    <option name="totallyTimeSpent" value="14029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32872927" />
-      <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.33701658" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.28710938" />
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20872483" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.33701658" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32872927" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,279 +408,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Through InteliJ git push - properties Encryption by jasypt" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4579">
-          <caret line="241" column="33" selection-start-line="241" selection-start-column="33" selection-end-line="241" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4579">
-          <caret line="241" column="33" selection-start-line="241" selection-start-column="33" selection-end-line="241" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4579">
-          <caret line="241" column="33" selection-start-line="241" selection-start-column="33" selection-end-line="241" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/adminMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -839,13 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/setting.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -853,17 +429,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/smartitcording/util/JDBCEncryptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="399">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="848">
+          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#3204#3226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+          <folding>
+            <element signature="e#2742#2757#0" expanded="true" />
+            <element signature="e#2804#2824#0" expanded="true" />
+            <element signature="e#2871#2891#0" expanded="true" />
+            <element signature="e#3697#3718#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
